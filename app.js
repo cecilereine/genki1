@@ -244,16 +244,27 @@ content.addEventListener('click', event => {
   event.target.closest('.vcard, .kcard')?.classList.toggle('flip');
 });
 
-/* ---------- interface for flashcards.js ----------
-   flashcards.js is a separate classic script loaded after this one. Everything it
-   may use is listed here explicitly, so the coupling between the two files is a
-   single documented surface rather than a set of incidental globals.
+/* Every vocabulary item in a lesson scope ('all' or a lesson id), flattened into
+   cards that remember their lesson. The vocabulary flashcard deck and the quiz
+   both draw from this. */
+function vocabInScope(scope) {
+  return LESSONS
+    .filter(lesson => scope === 'all' || lesson.lesson === scope)
+    .flatMap(lesson => lesson.vocab.flatMap(group =>
+      group.items.map(item => ({ ...item, lesson: lesson.lesson, num: lesson.num, theme: group.theme }))));
+}
+
+/* ---------- interface for flashcards.js and quiz.js ----------
+   Both are separate classic scripts loaded after this one. Everything they may
+   use is listed here explicitly, so the coupling between the files is a single
+   documented surface rather than a set of incidental globals.
    `lessons:loaded` fires on document once the lesson JSON has rendered. */
 window.GENKI = {
   esc,
   $, $$,
   renderReadings,             // (kanji entry) => the ▶ on'yomi / ▷ kun'yomi lines
   readingKey: READING_KEY,    // the ▶ / ▷ legend
+  vocabInScope,               // (scope) => flattened vocabulary cards
   lessons: () => LESSONS,
   activeLesson: () => activeLesson,
 };

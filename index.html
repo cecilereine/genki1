@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GENKI I · Grammar &amp; Vocabulary Lookup</title>
-<!-- Cache busting: whenever styles.css, app.js or flashcards.js changes, bump EVERY ?v=
+<!-- Cache busting: whenever styles.css or any of the .js files changes, bump EVERY ?v=
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet.
      app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 <div class="wrap">
@@ -23,6 +23,7 @@
     <div class="row">
       <button class="fc-btn" id="fcStart">🎴 Vocabulary Flashcards</button>
       <button class="fc-btn fc-btn-kanji" id="fcStartKanji">🈶 Kanji Flashcards</button>
+      <button class="qz-btn" id="qzStart">✏️ Quiz</button>
     </div>
     <div class="row">
       <div class="tabs" id="tabs">
@@ -84,7 +85,45 @@
   </div>
 </div>
 
-<script src="app.js?v=2"></script>
-<script src="flashcards.js?v=2"></script>
+<!-- Typed-answer quiz overlay -->
+<div class="overlay" id="quizOverlay">
+  <div class="fc-panel">
+    <div class="fc-top">
+      <span class="meta" id="qzMeta">Quiz</span>
+      <button class="fc-close" id="qzClose">&times;</button>
+    </div>
+    <div class="fc-scope" id="qzScope">
+      <button data-scope="all" class="on">All</button>
+      <button data-scope="1">1</button>
+      <button data-scope="2">2</button>
+      <button data-scope="3">3</button>
+      <button data-scope="4">4</button>
+      <button data-scope="5">5</button>
+      <button data-scope="6">6</button>
+      <button data-scope="7">7</button>
+      <button data-scope="8">8</button>
+    </div>
+    <div class="fc-progress"><span id="qzBar"></span></div>
+
+    <div class="qz-prompt" id="qzPrompt"></div>
+    <input type="text" class="qz-input" id="qzInput" autocomplete="off"
+           autocapitalize="off" autocorrect="off" spellcheck="false">
+    <div class="qz-feedback" id="qzFeedback"></div>
+
+    <div class="qz-controls">
+      <button class="qz-skip" id="qzSkip">Skip</button>
+      <button class="qz-check" id="qzCheck">Check</button>
+      <button class="qz-next hidden" id="qzNext">Next →</button>
+    </div>
+    <div class="fc-tools">
+      <button id="qzDir">日 → EN</button>
+      <button id="qzRestart">🔄 Restart</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=3"></script>
+<script src="flashcards.js?v=3"></script>
+<script src="quiz.js?v=3"></script>
 </body>
 </html>

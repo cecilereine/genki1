@@ -12,11 +12,12 @@ flashcard review. Static site — no build step, no dependencies.
 | `styles.css` | All styling |
 | `app.js` | Loads the lesson JSON, renders the lists, handles search and lesson filtering |
 | `flashcards.js` | The flashcard overlay (vocabulary and kanji decks, learned-card tracking) |
+| `quiz.js` | The typed-answer vocabulary quiz (answer in English, or in Japanese with kana or kanji) |
 | `lessons/manifest.json` | The list of lesson files to load, in display order |
 | `lessons/lessonN.json` | One lesson's vocabulary, kanji and grammar |
 
-`flashcards.js` talks to `app.js` only through the `window.GENKI` object
-documented at the bottom of `app.js`.
+`flashcards.js` and `quiz.js` talk to `app.js` only through the `window.GENKI`
+object documented at the bottom of `app.js`.
 
 ## Running it locally
 
@@ -64,7 +65,8 @@ Notes:
 ## Cache busting
 
 `index.html` loads its assets as `styles.css?v=N`, `app.js?v=N`,
-`flashcards.js?v=N`, and `app.js` reuses its own `?v=` on the lesson fetches.
+`flashcards.js?v=N` and `quiz.js?v=N`, and `app.js` reuses its own `?v=` on the
+lesson fetches.
 After changing any of them, bump **every** `?v=` in `index.html` to the same new
 number, otherwise a browser can pair new HTML with a stale script or stale
 lesson data.

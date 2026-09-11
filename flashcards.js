@@ -15,7 +15,7 @@
 (() => {
 'use strict';
 
-const { esc, $, $$, renderReadings, readingKey, lessons, activeLesson } = window.GENKI;
+const { esc, $, $$, renderReadings, readingKey, vocabInScope, lessons, activeLesson } = window.GENKI;
 
 const overlay      = $('#overlay');
 const fcBody       = $('#fcBody');
@@ -73,16 +73,9 @@ const inScope = lesson => scope === 'all' || lesson.lesson === scope;
 
 /* Every card of the current type in the current lesson scope, learned or not. */
 function cardsInScope() {
-  const cards = [];
-  lessons().filter(inScope).forEach(lesson => {
-    if (fcType === 'kanji') {
-      (lesson.kanji || []).forEach(entry => cards.push({ ...entry, lesson: lesson.lesson }));
-    } else {
-      lesson.vocab.forEach(group =>
-        group.items.forEach(item => cards.push({ ...item, lesson: lesson.lesson, theme: group.theme })));
-    }
-  });
-  return cards;
+  if (fcType === 'vocab') return vocabInScope(scope);
+  return lessons().filter(inScope)
+    .flatMap(lesson => (lesson.kanji || []).map(entry => ({ ...entry, lesson: lesson.lesson })));
 }
 
 const buildDeck = () => cardsInScope().filter(card => fcIncludeChk.checked || !isLearned(card));
