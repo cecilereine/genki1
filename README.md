@@ -13,11 +13,12 @@ flashcard review. Static site — no build step, no dependencies.
 | `app.js` | Loads the lesson JSON, renders the lists, handles search and lesson filtering |
 | `flashcards.js` | The flashcard overlay (vocabulary and kanji decks, learned-card tracking) |
 | `quiz.js` | The typed-answer vocabulary quiz (answer in English, or in Japanese with kana or kanji) |
+| `drill.js` | The conjugation drill: verb and adjective forms from lessons 3–8, built from the vocabulary lists |
 | `lessons/manifest.json` | The list of lesson files to load, in display order |
 | `lessons/lessonN.json` | One lesson's vocabulary, kanji and grammar |
 
-`flashcards.js` and `quiz.js` talk to `app.js` only through the `window.GENKI`
-object documented at the bottom of `app.js`.
+`flashcards.js`, `quiz.js` and `drill.js` talk to `app.js` only through the
+`window.GENKI` object documented at the bottom of `app.js`.
 
 ## Running it locally
 
@@ -58,15 +59,18 @@ Notes:
   Either may be `[]` — 気 has no kun'yomi here, 川 no on'yomi.
 - `examples` on a kanji entry is a single `・`-separated string; the flashcard
   back shows the first four.
+- The conjugation drill finds verbs and adjectives by their vocabulary headings
+  (`う-verbs`, `る-verbs`, `Irregular Verbs`, `い-adjectives`, `な-adjectives`),
+  so keep those words in the right group.
 - To add lesson 9, drop in `lessons/lesson9.json`, add it to
-  `lessons/manifest.json`, and add the matching `<button>` to both `#tabs` and
-  `#fcScope` in `index.html`.
+  `lessons/manifest.json`, and add the matching `<button>` to `#tabs`,
+  `#fcScope`, `#qzScope` and `#drScope` in `index.html`.
 
 ## Cache busting
 
 `index.html` loads its assets as `styles.css?v=N`, `app.js?v=N`,
-`flashcards.js?v=N` and `quiz.js?v=N`, and `app.js` reuses its own `?v=` on the
-lesson fetches.
+`flashcards.js?v=N`, `quiz.js?v=N` and `drill.js?v=N`, and `app.js` reuses its
+own `?v=` on the lesson fetches.
 After changing any of them, bump **every** `?v=` in `index.html` to the same new
 number, otherwise a browser can pair new HTML with a stale script or stale
 lesson data.

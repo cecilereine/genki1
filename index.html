@@ -8,7 +8,7 @@
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet.
      app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 <div class="wrap">
@@ -24,6 +24,7 @@
       <button class="fc-btn" id="fcStart">🎴 Vocabulary Flashcards</button>
       <button class="fc-btn fc-btn-kanji" id="fcStartKanji">🈶 Kanji Flashcards</button>
       <button class="qz-btn" id="qzStart">✏️ Quiz</button>
+      <button class="dr-btn" id="drStart">🔁 Conjugation</button>
     </div>
     <div class="row">
       <div class="tabs" id="tabs">
@@ -122,8 +123,44 @@
   </div>
 </div>
 
-<script src="app.js?v=3"></script>
-<script src="flashcards.js?v=3"></script>
-<script src="quiz.js?v=3"></script>
+<!-- Conjugation drill overlay -->
+<div class="overlay" id="drillOverlay">
+  <div class="fc-panel">
+    <div class="fc-top">
+      <span class="meta" id="drMeta">Conjugation</span>
+      <button class="fc-close" id="drClose">&times;</button>
+    </div>
+    <div class="fc-scope" id="drScope">
+      <button data-scope="all" class="on">All</button>
+      <button data-scope="3">3</button>
+      <button data-scope="4">4</button>
+      <button data-scope="5">5</button>
+      <button data-scope="6">6</button>
+      <button data-scope="7">7</button>
+      <button data-scope="8">8</button>
+    </div>
+    <div class="dr-note" id="drScopeNote"></div>
+    <div class="fc-progress"><span id="drBar"></span></div>
+
+    <div class="qz-prompt" id="drPrompt"></div>
+    <input type="text" class="qz-input" id="drInput" autocomplete="off"
+           autocapitalize="off" autocorrect="off" spellcheck="false">
+    <div class="qz-feedback" id="drFeedback"></div>
+
+    <div class="qz-controls">
+      <button class="qz-skip" id="drSkip">Skip</button>
+      <button class="qz-check" id="drCheck">Check</button>
+      <button class="qz-next hidden" id="drNext">Next →</button>
+    </div>
+    <div class="fc-tools">
+      <button id="drRestart">🔄 New round</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=5"></script>
+<script src="flashcards.js?v=5"></script>
+<script src="quiz.js?v=5"></script>
+<script src="drill.js?v=5"></script>
 </body>
 </html>

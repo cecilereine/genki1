@@ -148,12 +148,13 @@ table.conj th{background:var(--blue-soft);font-weight:700;color:#1c5f8f}
 .hint{font-size:12px;color:var(--muted);margin-top:8px;padding-left:4px}
 
 /* ---------- typed-answer quiz ---------- */
-.qz-btn{
+.qz-btn,.dr-btn{
   border:none;background:var(--blue);color:#fff;font-weight:700;font-size:14px;
   padding:9px 16px;border-radius:20px;cursor:pointer;white-space:nowrap;
   box-shadow:var(--shadow);transition:.15s;
 }
-.qz-btn:hover{filter:brightness(1.05)}
+.qz-btn:hover,.dr-btn:hover{filter:brightness(1.05)}
+.dr-btn{background:var(--green-deep)}
 
 .qz-prompt{
   background:#fff;border:1px solid var(--line);border-radius:18px;
@@ -212,6 +213,15 @@ table.conj th{background:var(--blue-soft);font-weight:700;color:#1c5f8f}
 .qz-row-kw{font-weight:700}
 .qz-row-mean{color:var(--muted);font-size:13px}
 .qz-row-note{color:var(--accent);font-size:12px;margin-top:2px}
+
+/* ---------- conjugation drill (reuses the quiz's .qz-* layout) ---------- */
+.dr-note{font-size:12px;color:var(--muted);margin:-4px 2px 10px;line-height:1.45}
+.dr-form{
+  display:inline-block;font-size:13px;font-weight:700;color:#fff;background:var(--green-deep);
+  padding:4px 12px;border-radius:20px;margin-bottom:14px;
+}
+.dr-hint{font-weight:500;opacity:.85}
+.dr-mean{font-size:13px;color:var(--muted);margin-top:8px}
 
 .overlay{
   position:fixed;inset:0;z-index:100;background:rgba(20,40,35,.55);

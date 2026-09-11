@@ -244,6 +244,46 @@ content.addEventListener('click', event => {
   event.target.closest('.vcard, .kcard')?.classList.toggle('flip');
 });
 
+/* ---------- answer matching, shared by quiz.js and drill.js ---------- */
+
+/* Fold away differences in a typed Japanese answer that aren't mistakes:
+   full/half width, letter case (Tシャツ), katakana vs hiragana, spaces, and the
+   ～ that marks where a word attaches. */
+const foldJapanese = text =>
+  String(text ?? '').normalize('NFKC').toLowerCase()
+    .replace(/[~〜]/g, '')
+    .replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60))
+    .replace(/\s+/g, '');
+
+/* A bracketed part is optional and may offer alternatives; outside brackets,
+   ／ separates whole alternatives; a trailing ＋note is usage advice rather
+   than part of the word:
+     すき（な）            → すき, すきな
+     （～を）ください      → ください, をください
+     （あめ／ゆきが）ふる  → ふる, あめがふる, ゆきがふる
+     なん／なに            → なん, なに
+     ぜんぜん＋negative    → ぜんぜん */
+function expandSpelling(spelling) {
+  const written = spelling.replace(/\s*[＋+].*$/, '');
+  const match = written.match(/[（(]([^）)]*)[）)]/);
+  if (!match) return written.split(/[／/]/);
+
+  const before = written.slice(0, match.index);
+  const after = written.slice(match.index + match[0].length);
+  const choices = match[1].split(/[／/]/);
+  // "（あめ／ゆきが）" means あめが or ゆきが: a particle on the last choice belongs to them all.
+  const particle = choices.at(-1).match(/[がをにはでへと]$/)?.[0];
+  const options = choices.map(choice => (particle && !choice.endsWith(particle) ? choice + particle : choice));
+
+  return ['', ...options].flatMap(option => expandSpelling(before + option + after));
+}
+
+/* Keys pressed while a Japanese IME is converting belong to the IME: the Enter
+   that confirms a conversion must not also submit an answer, and Escape there
+   cancels the conversion rather than closing an overlay. Safari reports those
+   keys with keyCode 229 instead of isComposing. */
+const isImeKey = event => event.isComposing || event.keyCode === 229;
+
 /* Every vocabulary item in a lesson scope ('all' or a lesson id), flattened into
    cards that remember their lesson. The vocabulary flashcard deck and the quiz
    both draw from this. */
@@ -254,8 +294,8 @@ function vocabInScope(scope) {
       group.items.map(item => ({ ...item, lesson: lesson.lesson, num: lesson.num, theme: group.theme }))));
 }
 
-/* ---------- interface for flashcards.js and quiz.js ----------
-   Both are separate classic scripts loaded after this one. Everything they may
+/* ---------- interface for flashcards.js, quiz.js and drill.js ----------
+   Each is a separate classic script loaded after this one. Everything they may
    use is listed here explicitly, so the coupling between the files is a single
    documented surface rather than a set of incidental globals.
    `lessons:loaded` fires on document once the lesson JSON has rendered. */
@@ -265,6 +305,9 @@ window.GENKI = {
   renderReadings,             // (kanji entry) => the ▶ on'yomi / ▷ kun'yomi lines
   readingKey: READING_KEY,    // the ▶ / ▷ legend
   vocabInScope,               // (scope) => flattened vocabulary cards
+  foldJapanese,               // (text) => comparable form of a typed Japanese answer
+  expandSpelling,             // (spelling) => accepted variants: すき（な） → すき, すきな
+  isImeKey,                   // (keydown event) => true while a Japanese IME is converting
   lessons: () => LESSONS,
   activeLesson: () => activeLesson,
 };

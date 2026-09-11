@@ -19,7 +19,7 @@
 (() => {
 'use strict';
 
-const { esc, $, $$, vocabInScope, activeLesson } = window.GENKI;
+const { esc, $, $$, vocabInScope, activeLesson, foldJapanese, expandSpelling, isImeKey } = window.GENKI;
 
 /* ---------- English answers ---------- */
 
@@ -55,35 +55,8 @@ function englishAnswers(meaning) {
 
 /* ---------- Japanese answers ---------- */
 
-/* Fold away differences that aren't mistakes: full/half width, katakana vs
-   hiragana, spaces, and the ～ that marks where a word attaches. */
-const foldJapanese = text =>
-  String(text ?? '').normalize('NFKC')
-    .replace(/[~〜]/g, '')
-    .replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60))
-    .replace(/\s+/g, '');
-
-/* A bracketed part is optional and may offer alternatives; outside brackets,
-   ／ separates whole alternatives:
-     すき（な）            → すき, すきな
-     （～を）ください      → ください, をください
-     （あめ／ゆきが）ふる  → ふる, あめがふる, ゆきがふる
-     なん／なに            → なん, なに */
-function expandSpelling(spelling) {
-  const match = spelling.match(/[（(]([^）)]*)[）)]/);
-  if (!match) return spelling.split(/[／/]/);
-
-  const before = spelling.slice(0, match.index);
-  const after = spelling.slice(match.index + match[0].length);
-  const choices = match[1].split(/[／/]/);
-  // "（あめ／ゆきが）" means あめが or ゆきが: a particle on the last choice belongs to them all.
-  const particle = choices.at(-1).match(/[がをにはでへと]$/)?.[0];
-  const options = choices.map(choice => (particle && !choice.endsWith(particle) ? choice + particle : choice));
-
-  return ['', ...options].flatMap(option => expandSpelling(before + option + after));
-}
-
-/* Both the kana and the kanji spelling count, as does either one as written. */
+/* Both the kana and the kanji spelling count, as does either one as written.
+   foldJapanese and expandSpelling live in app.js, shared with the drill. */
 function japaneseAnswers(card) {
   const spellings = [card.kana, card.kanji].filter(Boolean);
   const forms = spellings.flatMap(spelling => [spelling, ...expandSpelling(spelling)]);
@@ -301,12 +274,6 @@ qDirBtn.addEventListener('click', () => {
   qDirBtn.textContent = direction === 'ja' ? '日 → EN' : 'EN → 日';
   startQuiz();
 });
-
-/* Keys pressed while a Japanese IME is converting belong to the IME: the Enter
-   that confirms a conversion must not also check the answer, and Escape there
-   cancels the conversion rather than closing the quiz. Safari reports those
-   keys with keyCode 229 instead of isComposing. */
-const isImeKey = event => event.isComposing || event.keyCode === 229;
 
 /* Enter checks, then Enter again moves on. Handled in one place and stopped from
    bubbling — letting the same keypress reach the document handler too would check
