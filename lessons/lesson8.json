@@ -1,0 +1,518 @@
+{
+  "lesson": "8",
+  "num": "L8",
+  "title": "バーベキュー",
+  "en": "Barbecue",
+  "vocab": [
+    {
+      "theme": "名詞 · Nouns",
+      "items": [
+        {
+          "kana": "はれ",
+          "kanji": "晴れ",
+          "mean": "sunny weather"
+        },
+        {
+          "kana": "あめ",
+          "kanji": "雨",
+          "mean": "rain"
+        },
+        {
+          "kana": "くもり",
+          "kanji": "曇り",
+          "mean": "cloudy weather"
+        },
+        {
+          "kana": "ゆき",
+          "kanji": "雪",
+          "mean": "snow"
+        },
+        {
+          "kana": "てんきよほう",
+          "kanji": "天気予報",
+          "mean": "weather forecast"
+        },
+        {
+          "kana": "きおん",
+          "kanji": "気温",
+          "mean": "temperature"
+        },
+        {
+          "kana": "なつ",
+          "kanji": "夏",
+          "mean": "summer"
+        },
+        {
+          "kana": "ふゆ",
+          "kanji": "冬",
+          "mean": "winter"
+        },
+        {
+          "kana": "けさ",
+          "kanji": "今朝",
+          "mean": "this morning"
+        },
+        {
+          "kana": "あさって",
+          "kanji": "",
+          "mean": "the day after tomorrow"
+        },
+        {
+          "kana": "まいしゅう",
+          "kanji": "毎週",
+          "mean": "every week"
+        },
+        {
+          "kana": "こんげつ",
+          "kanji": "今月",
+          "mean": "this month"
+        },
+        {
+          "kana": "らいげつ",
+          "kanji": "来月",
+          "mean": "next month"
+        },
+        {
+          "kana": "かいしゃいん",
+          "kanji": "会社員",
+          "mean": "office worker"
+        },
+        {
+          "kana": "しごと",
+          "kanji": "仕事",
+          "mean": "job; work; occupation"
+        },
+        {
+          "kana": "カメラ",
+          "kanji": "",
+          "mean": "camera"
+        },
+        {
+          "kana": "カラオケ",
+          "kanji": "",
+          "mean": "karaoke"
+        },
+        {
+          "kana": "ところ",
+          "kanji": "所",
+          "mean": "place"
+        },
+        {
+          "kana": "トマト",
+          "kanji": "",
+          "mean": "tomato"
+        },
+        {
+          "kana": "はし",
+          "kanji": "",
+          "mean": "chopsticks"
+        },
+        {
+          "kana": "パーティー",
+          "kanji": "",
+          "mean": "party"
+        },
+        {
+          "kana": "バーベキュー",
+          "kanji": "",
+          "mean": "barbecue"
+        },
+        {
+          "kana": "ホームステイ",
+          "kanji": "",
+          "mean": "homestay"
+        },
+        {
+          "kana": "おふろ",
+          "kanji": "お風呂",
+          "mean": "bath"
+        },
+        {
+          "kana": "スペイン",
+          "kanji": "",
+          "mean": "Spain"
+        },
+        {
+          "kana": "なにか",
+          "kanji": "何か",
+          "mean": "something"
+        }
+      ]
+    },
+    {
+      "theme": "な-adjectives",
+      "items": [
+        {
+          "kana": "じょうず（な）",
+          "kanji": "上手",
+          "mean": "skillful; good at (～が)"
+        },
+        {
+          "kana": "へた（な）",
+          "kanji": "下手",
+          "mean": "clumsy; poor at (～が)"
+        },
+        {
+          "kana": "ゆうめい（な）",
+          "kanji": "有名",
+          "mean": "famous"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "あらう",
+          "kanji": "洗う",
+          "mean": "to wash (～を)"
+        },
+        {
+          "kana": "いう",
+          "kanji": "言う",
+          "mean": "to say"
+        },
+        {
+          "kana": "いる",
+          "kanji": "",
+          "mean": "to need (～が)"
+        },
+        {
+          "kana": "おそくなる",
+          "kanji": "遅くなる",
+          "mean": "to be late"
+        },
+        {
+          "kana": "おふろにはいる",
+          "kanji": "お風呂に入る",
+          "mean": "to take a bath"
+        },
+        {
+          "kana": "おもう",
+          "kanji": "思う",
+          "mean": "to think"
+        },
+        {
+          "kana": "きる",
+          "kanji": "切る",
+          "mean": "to cut (～を)"
+        },
+        {
+          "kana": "つくる",
+          "kanji": "作る",
+          "mean": "to make (～を)"
+        },
+        {
+          "kana": "（あめ／ゆきが）ふる",
+          "kanji": "（雨／雪が）降る",
+          "mean": "rain/snow falls"
+        },
+        {
+          "kana": "もっていく",
+          "kanji": "持っていく",
+          "mean": "to take a thing (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "る-verbs",
+      "items": [
+        {
+          "kana": "すてる",
+          "kanji": "捨てる",
+          "mean": "to throw away (～を)"
+        },
+        {
+          "kana": "はじめる",
+          "kanji": "始める",
+          "mean": "to begin (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "不規則動詞 · Irregular Verbs",
+      "items": [
+        {
+          "kana": "うんてんする",
+          "kanji": "運転する",
+          "mean": "to drive (～を)"
+        },
+        {
+          "kana": "せんたくする",
+          "kanji": "洗濯する",
+          "mean": "to do laundry (～を)"
+        },
+        {
+          "kana": "そうじする",
+          "kanji": "掃除する",
+          "mean": "to clean (～を)"
+        },
+        {
+          "kana": "りょうりする",
+          "kanji": "料理する",
+          "mean": "to cook"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "うん",
+          "kanji": "",
+          "mean": "uh-huh; yes"
+        },
+        {
+          "kana": "ううん",
+          "kanji": "",
+          "mean": "uh-uh; no"
+        },
+        {
+          "kana": "いつも",
+          "kanji": "",
+          "mean": "always"
+        },
+        {
+          "kana": "おそく",
+          "kanji": "遅く",
+          "mean": "(do something) late"
+        },
+        {
+          "kana": "かんぱい",
+          "kanji": "乾杯",
+          "mean": "Cheers! (a toast)"
+        },
+        {
+          "kana": "みんなで",
+          "kanji": "",
+          "mean": "all together"
+        },
+        {
+          "kana": "ざんねん（ですね）",
+          "kanji": "残念（ですね）",
+          "mean": "That's too bad."
+        },
+        {
+          "kana": "まだ＋negative",
+          "kanji": "",
+          "mean": "not...yet"
+        },
+        {
+          "kana": "～について",
+          "kanji": "",
+          "mean": "about; concerning"
+        },
+        {
+          "kana": "～ど",
+          "kanji": "～度",
+          "mean": "...degrees (temperature)"
+        },
+        {
+          "kana": "どう",
+          "kanji": "",
+          "mean": "how"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "員",
+      "readings": "いん",
+      "meaning": "member",
+      "examples": "会社員(かいしゃいん) office worker・店員(てんいん) store clerk"
+    },
+    {
+      "char": "新",
+      "readings": "しん； あたら(しい)",
+      "meaning": "new",
+      "examples": "新しい(あたらしい) new・新聞(しんぶん) newspaper"
+    },
+    {
+      "char": "聞",
+      "readings": "ぶん； き(く)",
+      "meaning": "to listen",
+      "examples": "聞く(きく) to listen・新聞(しんぶん) newspaper"
+    },
+    {
+      "char": "作",
+      "readings": "さく； つく(る)",
+      "meaning": "to make",
+      "examples": "作る(つくる) to make・作文(さくぶん) composition"
+    },
+    {
+      "char": "仕",
+      "readings": "し； つか(える)",
+      "meaning": "to serve",
+      "examples": "仕事(しごと) job"
+    },
+    {
+      "char": "事",
+      "readings": "じ； ごと／こと",
+      "meaning": "thing",
+      "examples": "仕事(しごと) job・食事(しょくじ) meal"
+    },
+    {
+      "char": "電",
+      "readings": "でん",
+      "meaning": "electricity",
+      "examples": "電車(でんしゃ) train・電気(でんき) electricity"
+    },
+    {
+      "char": "車",
+      "readings": "しゃ； くるま",
+      "meaning": "car",
+      "examples": "車(くるま) car・電車(でんしゃ) train"
+    },
+    {
+      "char": "休",
+      "readings": "きゅう； やす(む)",
+      "meaning": "to rest",
+      "examples": "休む(やすむ) to be absent; to rest・休み(やすみ) holiday"
+    },
+    {
+      "char": "言",
+      "readings": "げん； い(う)／こと",
+      "meaning": "to say",
+      "examples": "言う(いう) to say・言葉(ことば) word; language"
+    },
+    {
+      "char": "読",
+      "readings": "どく； よ(む)",
+      "meaning": "to read",
+      "examples": "読む(よむ) to read・読書(どくしょ) reading books"
+    },
+    {
+      "char": "思",
+      "readings": "し； おも(う)",
+      "meaning": "to think",
+      "examples": "思う(おもう) to think"
+    },
+    {
+      "char": "次",
+      "readings": "じ； つぎ",
+      "meaning": "next",
+      "examples": "次(つぎ) next・次回(じかい) next time"
+    },
+    {
+      "char": "何",
+      "readings": "なに／なん",
+      "meaning": "what",
+      "examples": "何(なに) what・何時(なんじ) what time"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "普通形 · Short (Plain) Forms",
+      "tag": "The casual counterpart to ます／です",
+      "def": [
+        "Short (plain) forms are the casual counterpart to the long (polite) forms used so far. Verbs: dictionary form / ない-form. い-adjectives: drop です. な-adjectives and noun+です: replace です with だ (affirmative) or drop です (negative, ～じゃない)."
+      ],
+      "ex": [
+        "食べます→食べる、食べません→食べない。",
+        "静かです→静かだ、静かじゃないです→静かじゃない。"
+      ],
+      "table": {
+        "head": [
+          "Type",
+          "Long form",
+          "Short form"
+        ],
+        "rows": [
+          [
+            "Verb (aff.)",
+            "食べます",
+            "食べる"
+          ],
+          [
+            "Verb (neg.)",
+            "食べません",
+            "食べない"
+          ],
+          [
+            "な-adj/Noun (aff.)",
+            "静かです",
+            "静かだ"
+          ],
+          [
+            "な-adj/Noun (neg.)",
+            "静かじゃないです",
+            "静かじゃない"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "普通形とくだけた会話 · Short Forms in Informal Speech",
+      "tag": "Casual conversation rules",
+      "def": [
+        "Close friends and family use short forms at the end of sentences. Casual questions drop か and rely on rising intonation; だ after な-adjectives/nouns is usually dropped too, but kept before ね or よ."
+      ],
+      "ex": [
+        "今日、暇？ (Are you free today?)",
+        "メアリーさんは二年生だよ。 (Mary is a sophomore.)"
+      ]
+    },
+    {
+      "form": "普通形＋と思います",
+      "tag": "Stating an opinion in quoted-speech form",
+      "def": [
+        "Attach と思います to a short-form clause to state an opinion, \"I think that ~.\" To say you don't think something is so, it's more natural to make the clause itself negative: ～ないと思います."
+      ],
+      "ex": [
+        "たけしさんはメアリーさんが好きだと思います。 (I think Takeshi likes Mary.)"
+      ]
+    },
+    {
+      "form": "普通形＋と言っていました",
+      "tag": "Reporting what someone else said",
+      "def": [
+        "Attach と言っていました to a short-form clause to report what someone said, \"they said that ~.\" The tense of the original statement is preserved."
+      ],
+      "ex": [
+        "山下先生は結婚していないと言っていました。 (Professor Yamashita said he isn't married.)"
+      ]
+    },
+    {
+      "form": "～ないでください",
+      "tag": "A softer negative request",
+      "def": [
+        "Attach でください to a verb's short negative (ない) form for a softer request not to do something than てはいけません."
+      ],
+      "ex": [
+        "ここで写真を撮らないでください。 (Please don't take pictures here.)"
+      ]
+    },
+    {
+      "form": "動詞＋のが好きです／上手です",
+      "tag": "Nominalizing a verb with の",
+      "def": [
+        "Adding の after a verb's short form turns it into a noun, so it can pair with 好き／嫌い／上手／下手."
+      ],
+      "ex": [
+        "ロバートさんは料理を作るのが上手です。 (Robert is good at cooking.)"
+      ]
+    },
+    {
+      "form": "主語を表す が · The Subject Particle が",
+      "tag": "New information vs. known topic (は)",
+      "def": [
+        "が marks a subject that is new information to the listener, unlike は which marks an already-known topic. Question words like だれ and 何 as the subject always take が, never は."
+      ],
+      "ex": [
+        "だれが沖縄に行きましたか。 (Who went to Okinawa?)"
+      ]
+    },
+    {
+      "form": "何か／何も",
+      "tag": "\"something\" vs. \"nothing\" (+ negative)",
+      "def": [
+        "何か means \"something\" (positive statements/questions); 何も with a negative verb means \"not...anything.\""
+      ],
+      "ex": [
+        "猫が何か持ってきました。 (The cat brought something.)",
+        "猫は何も食べませんでした。 (The cat didn't eat anything.)"
+      ]
+    }
+  ]
+}

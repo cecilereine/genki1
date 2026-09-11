@@ -1,0 +1,590 @@
+{
+  "lesson": "4",
+  "num": "L4",
+  "title": "初めてのデート",
+  "en": "The First Date",
+  "vocab": [
+    {
+      "theme": "活動 · Activities",
+      "items": [
+        {
+          "kana": "ゲーム",
+          "kanji": "",
+          "mean": "game"
+        },
+        {
+          "kana": "アルバイト",
+          "kanji": "",
+          "mean": "part-time job (colloquially バイト)"
+        },
+        {
+          "kana": "かいもの",
+          "kanji": "買い物",
+          "mean": "shopping"
+        },
+        {
+          "kana": "クラス",
+          "kanji": "",
+          "mean": "class"
+        }
+      ]
+    },
+    {
+      "theme": "人と物 · People and Things",
+      "items": [
+        {
+          "kana": "いぬ",
+          "kanji": "犬",
+          "mean": "dog"
+        },
+        {
+          "kana": "ねこ",
+          "kanji": "猫",
+          "mean": "cat"
+        },
+        {
+          "kana": "ひと",
+          "kanji": "人",
+          "mean": "person"
+        },
+        {
+          "kana": "こども",
+          "kanji": "子供",
+          "mean": "child"
+        },
+        {
+          "kana": "あなた",
+          "kanji": "",
+          "mean": "you"
+        },
+        {
+          "kana": "いす",
+          "kanji": "",
+          "mean": "chair"
+        },
+        {
+          "kana": "つくえ",
+          "kanji": "机",
+          "mean": "desk"
+        },
+        {
+          "kana": "しゃしん",
+          "kanji": "写真",
+          "mean": "picture; photograph"
+        },
+        {
+          "kana": "はな",
+          "kanji": "花",
+          "mean": "flower"
+        },
+        {
+          "kana": "レポート",
+          "kanji": "",
+          "mean": "(term) paper"
+        },
+        {
+          "kana": "ごはん",
+          "kanji": "ご飯",
+          "mean": "rice; meal"
+        },
+        {
+          "kana": "パン",
+          "kanji": "",
+          "mean": "bread"
+        }
+      ]
+    },
+    {
+      "theme": "場所 · Places",
+      "items": [
+        {
+          "kana": "おてら",
+          "kanji": "お寺",
+          "mean": "temple"
+        },
+        {
+          "kana": "こうえん",
+          "kanji": "公園",
+          "mean": "park"
+        },
+        {
+          "kana": "スーパー",
+          "kanji": "",
+          "mean": "supermarket"
+        },
+        {
+          "kana": "バスてい",
+          "kanji": "バス停",
+          "mean": "bus stop"
+        },
+        {
+          "kana": "びょういん",
+          "kanji": "病院",
+          "mean": "hospital"
+        },
+        {
+          "kana": "ホテル",
+          "kanji": "",
+          "mean": "hotel"
+        },
+        {
+          "kana": "ほんや",
+          "kanji": "本屋",
+          "mean": "bookstore"
+        },
+        {
+          "kana": "まち",
+          "kanji": "町",
+          "mean": "town; city"
+        },
+        {
+          "kana": "レストラン",
+          "kanji": "",
+          "mean": "restaurant"
+        }
+      ]
+    },
+    {
+      "theme": "位置語 · Location Words",
+      "items": [
+        {
+          "kana": "みぎ",
+          "kanji": "右",
+          "mean": "right (～の)"
+        },
+        {
+          "kana": "ひだり",
+          "kanji": "左",
+          "mean": "left (～の)"
+        },
+        {
+          "kana": "まえ",
+          "kanji": "前",
+          "mean": "front (～の)"
+        },
+        {
+          "kana": "うしろ",
+          "kanji": "後ろ",
+          "mean": "back (～の)"
+        },
+        {
+          "kana": "なか",
+          "kanji": "中",
+          "mean": "inside (～の)"
+        },
+        {
+          "kana": "うえ",
+          "kanji": "上",
+          "mean": "on (～の)"
+        },
+        {
+          "kana": "した",
+          "kanji": "下",
+          "mean": "under (～の)"
+        },
+        {
+          "kana": "ちかく",
+          "kanji": "近く",
+          "mean": "near; nearby (～の)"
+        },
+        {
+          "kana": "となり",
+          "kanji": "隣",
+          "mean": "next (～の)"
+        },
+        {
+          "kana": "あいだ",
+          "kanji": "間",
+          "mean": "between (AとBの)"
+        }
+      ]
+    },
+    {
+      "theme": "時間 · Time",
+      "items": [
+        {
+          "kana": "きのう",
+          "kanji": "昨日",
+          "mean": "yesterday"
+        },
+        {
+          "kana": "～じかん",
+          "kanji": "～時間",
+          "mean": "... hours"
+        },
+        {
+          "kana": "いちじかん",
+          "kanji": "一時間",
+          "mean": "one hour"
+        },
+        {
+          "kana": "せんしゅう",
+          "kanji": "先週",
+          "mean": "last week"
+        },
+        {
+          "kana": "とき",
+          "kanji": "時",
+          "mean": "when...; at the time of... (～の)"
+        },
+        {
+          "kana": "げつようび",
+          "kanji": "月曜日",
+          "mean": "Monday"
+        },
+        {
+          "kana": "かようび",
+          "kanji": "火曜日",
+          "mean": "Tuesday"
+        },
+        {
+          "kana": "すいようび",
+          "kanji": "水曜日",
+          "mean": "Wednesday"
+        },
+        {
+          "kana": "もくようび",
+          "kanji": "木曜日",
+          "mean": "Thursday"
+        },
+        {
+          "kana": "きんようび",
+          "kanji": "金曜日",
+          "mean": "Friday"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "あう",
+          "kanji": "会う",
+          "mean": "to meet; to see (person に)"
+        },
+        {
+          "kana": "ある",
+          "kanji": "",
+          "mean": "there is... (place に thing が)"
+        },
+        {
+          "kana": "かう",
+          "kanji": "買う",
+          "mean": "to buy (～を)"
+        },
+        {
+          "kana": "かく",
+          "kanji": "書く",
+          "mean": "to write (person に thing を)"
+        },
+        {
+          "kana": "とる",
+          "kanji": "撮る",
+          "mean": "to take a picture (～を)"
+        },
+        {
+          "kana": "まつ",
+          "kanji": "待つ",
+          "mean": "to wait (～を)"
+        },
+        {
+          "kana": "わかる",
+          "kanji": "",
+          "mean": "to understand (～が)"
+        }
+      ]
+    },
+    {
+      "theme": "る-verb",
+      "items": [
+        {
+          "kana": "いる",
+          "kanji": "",
+          "mean": "(a person) is in...; stays at... (place に person が)"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "～ぐらい",
+          "kanji": "",
+          "mean": "about (approximate measurement)"
+        },
+        {
+          "kana": "ごめんなさい",
+          "kanji": "",
+          "mean": "I'm sorry."
+        },
+        {
+          "kana": "それから",
+          "kanji": "",
+          "mean": "and then"
+        },
+        {
+          "kana": "だから",
+          "kanji": "",
+          "mean": "so; therefore"
+        },
+        {
+          "kana": "たくさん",
+          "kanji": "",
+          "mean": "many; a lot"
+        },
+        {
+          "kana": "～と",
+          "kanji": "",
+          "mean": "together with (a person); and"
+        },
+        {
+          "kana": "どうして",
+          "kanji": "",
+          "mean": "why"
+        },
+        {
+          "kana": "ひとりで",
+          "kanji": "一人で",
+          "mean": "alone"
+        },
+        {
+          "kana": "もしもし",
+          "kanji": "",
+          "mean": "Hello? (on the phone)"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "日",
+      "readings": "に／にち／にっ； び／ひ／か",
+      "meaning": "day; sun",
+      "examples": "日本(にほん) Japan・日曜日(にちようび) Sunday・毎日(まいにち) every day・日記(にっき) diary"
+    },
+    {
+      "char": "本",
+      "readings": "ほん； もと",
+      "meaning": "book; basis",
+      "examples": "本(ほん) book・日本(にほん) Japan・日本語(にほんご) Japanese language"
+    },
+    {
+      "char": "人",
+      "readings": "じん／にん； ひと",
+      "meaning": "person",
+      "examples": "日本人(にほんじん) Japanese people・一人で(ひとりで) alone・三人(さんにん) three people"
+    },
+    {
+      "char": "月",
+      "readings": "げつ／がつ； つき",
+      "meaning": "moon; month",
+      "examples": "月曜日(げつようび) Monday・一月(いちがつ) January・今月(こんげつ) this month"
+    },
+    {
+      "char": "火",
+      "readings": "か； ひ／び",
+      "meaning": "fire",
+      "examples": "火曜日(かようび) Tuesday・火(ひ) fire・花火(はなび) fireworks"
+    },
+    {
+      "char": "水",
+      "readings": "すい； みず",
+      "meaning": "water",
+      "examples": "水曜日(すいようび) Wednesday・水(みず) water・水泳(すいえい) swimming"
+    },
+    {
+      "char": "木",
+      "readings": "もく； き",
+      "meaning": "tree",
+      "examples": "木曜日(もくようび) Thursday・木(き) tree"
+    },
+    {
+      "char": "金",
+      "readings": "きん； かね",
+      "meaning": "gold; money",
+      "examples": "金曜日(きんようび) Friday・お金(おかね) money"
+    },
+    {
+      "char": "土",
+      "readings": "ど／と； つち",
+      "meaning": "soil",
+      "examples": "土曜日(どようび) Saturday・土(つち) soil"
+    },
+    {
+      "char": "曜",
+      "readings": "よう",
+      "meaning": "weekday",
+      "examples": "曜日(ようび) day of the week"
+    },
+    {
+      "char": "上",
+      "readings": "じょう； うえ／のぼ(る)",
+      "meaning": "up",
+      "examples": "上(うえ) top; above・上手な(じょうずな) good at・上る(のぼる) to go up"
+    },
+    {
+      "char": "下",
+      "readings": "か； した／くだ(さい)",
+      "meaning": "down",
+      "examples": "下(した) under・下手な(へたな) poor at・下さい(ください) please give/do"
+    },
+    {
+      "char": "中",
+      "readings": "ちゅう／じゅう； なか",
+      "meaning": "middle",
+      "examples": "中(なか) inside・中国(ちゅうごく) China・一年中(いちねんじゅう) all year"
+    },
+    {
+      "char": "半",
+      "readings": "はん",
+      "meaning": "half",
+      "examples": "三時半(さんじはん) half past three・半分(はんぶん) half"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "Xが あります／います",
+      "tag": "Existence — non-living vs. living things",
+      "def": [
+        "Say something exists with [place]に[thing]があります (non-living things) or [place]に[person]がいます (people, animals). あります can also mean \"to have\" or that an event will take place."
+      ],
+      "ex": [
+        "部屋にテレビがありません。 (I don't have a TV in my room.)",
+        "あそこに猫がいます。 (There's a cat over there.)"
+      ],
+      "table": {
+        "head": [
+          "Type",
+          "Verb"
+        ],
+        "rows": [
+          [
+            "Non-living",
+            "あります"
+          ],
+          [
+            "Living (people/animals)",
+            "います"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "Xは Yの[位置]です · Describing Where Things Are",
+      "tag": "Precise spatial location",
+      "def": [
+        "Add a position word after の to say where something is relative to another place or object. Pattern: XはYの[position]です。"
+      ],
+      "ex": [
+        "銀行は図書館の隣です。 (The bank is next to the library.)",
+        "傘はテーブルの下です。 (The umbrella is under the table.)"
+      ],
+      "table": {
+        "head": [
+          "Word",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "右／左",
+            "right / left"
+          ],
+          [
+            "前／後ろ",
+            "front / behind"
+          ],
+          [
+            "中／上／下",
+            "inside / on / under"
+          ],
+          [
+            "近く／隣／間",
+            "near / next to / between"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "です の過去形 · Past Tense of です",
+      "tag": "でした／じゃなかったです",
+      "def": [
+        "Affirmative past: です → でした. Negative past: じゃないです → じゃなかったです."
+      ],
+      "ex": [
+        "昨日は雨でした。 (It was rainy yesterday.)",
+        "あれは日本の映画じゃなかったです。 (That wasn't a Japanese movie.)"
+      ]
+    },
+    {
+      "form": "動詞の過去形 · Past Tense of Verbs",
+      "tag": "ました／ませんでした",
+      "def": [
+        "Affirmative past: ます → ました. Negative past: ません → ませんでした."
+      ],
+      "ex": [
+        "メアリーさんは九時ごろうちに帰りました。 (Mary went home around nine.)",
+        "私は昨日日本語を勉強しませんでした。 (I didn't study Japanese yesterday.)"
+      ],
+      "table": {
+        "head": [
+          "",
+          "Present",
+          "Past"
+        ],
+        "rows": [
+          [
+            "Affirmative",
+            "～ます",
+            "～ました"
+          ],
+          [
+            "Negative",
+            "～ません",
+            "～ませんでした"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "も (review)",
+      "tag": "\"also/too\" attaching to any particle",
+      "def": [
+        "も means \"also/too.\" It replaces は, が, or を; with other particles like に or で, it follows them (にも, でも)."
+      ],
+      "ex": [
+        "私は先週京都に行きました。大阪にも行きました。 (I went to Kyoto last week. I went to Osaka too.)"
+      ]
+    },
+    {
+      "form": "一時間 · Duration",
+      "tag": "Bare-noun durations + ぐらい／半",
+      "def": [
+        "Duration is expressed with a bare noun like 一時間 — no particle attaches to it. Add ぐらい for \"about,\" and 半 for \"and a half\" (半 comes before ぐらい)."
+      ],
+      "ex": [
+        "昨日日本語を三時間ぐらい勉強しました。 (I studied Japanese for about three hours yesterday.)"
+      ]
+    },
+    {
+      "form": "たくさん · Quantity Words",
+      "tag": "Can go before the noun or after its particle",
+      "def": [
+        "A quantity word like たくさん can go either before the noun or right after its particle (を or が)."
+      ],
+      "ex": [
+        "京都で写真をたくさん撮りました。 (I took a lot of pictures in Kyoto.)"
+      ]
+    },
+    {
+      "form": "と",
+      "tag": "\"and\" (nouns) / \"with\" (companion)",
+      "def": [
+        "と connects two nouns (\"A and B\") or marks who you did something with (\"together with\")."
+      ],
+      "ex": [
+        "日本語と英語を話します。 (I speak Japanese and English.)",
+        "メアリーさんはソラさんと韓国に行きます。 (Mary will go to Korea with Sora.)"
+      ]
+    }
+  ]
+}

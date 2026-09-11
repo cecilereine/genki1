@@ -1,0 +1,480 @@
+{
+  "lesson": "6",
+  "num": "L6",
+  "title": "私のすきなレストラン",
+  "en": "A Day in Robert's Life",
+  "vocab": [
+    {
+      "theme": "名詞 · Nouns",
+      "items": [
+        {
+          "kana": "かんじ",
+          "kanji": "漢字",
+          "mean": "kanji; Chinese character"
+        },
+        {
+          "kana": "きょうかしょ",
+          "kanji": "教科書",
+          "mean": "textbook"
+        },
+        {
+          "kana": "ページ",
+          "kanji": "",
+          "mean": "page"
+        },
+        {
+          "kana": "つぎ",
+          "kanji": "次",
+          "mean": "next"
+        },
+        {
+          "kana": "おかね",
+          "kanji": "お金",
+          "mean": "money"
+        },
+        {
+          "kana": "にもつ",
+          "kanji": "荷物",
+          "mean": "baggage"
+        },
+        {
+          "kana": "パソコン",
+          "kanji": "",
+          "mean": "personal computer"
+        },
+        {
+          "kana": "シャワー",
+          "kanji": "",
+          "mean": "shower"
+        },
+        {
+          "kana": "エアコン",
+          "kanji": "",
+          "mean": "air conditioner"
+        },
+        {
+          "kana": "でんき",
+          "kanji": "電気",
+          "mean": "electricity; light"
+        },
+        {
+          "kana": "まど",
+          "kanji": "窓",
+          "mean": "window"
+        },
+        {
+          "kana": "でんしゃ",
+          "kanji": "電車",
+          "mean": "train"
+        },
+        {
+          "kana": "くに",
+          "kanji": "国",
+          "mean": "country; place of origin"
+        },
+        {
+          "kana": "こんしゅう",
+          "kanji": "今週",
+          "mean": "this week"
+        },
+        {
+          "kana": "らいしゅう",
+          "kanji": "来週",
+          "mean": "next week"
+        },
+        {
+          "kana": "らいねん",
+          "kanji": "来年",
+          "mean": "next year"
+        },
+        {
+          "kana": "よる",
+          "kanji": "夜",
+          "mean": "night"
+        }
+      ]
+    },
+    {
+      "theme": "な-adjective",
+      "items": [
+        {
+          "kana": "たいへん（な）",
+          "kanji": "大変",
+          "mean": "tough (situation)"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "あそぶ",
+          "kanji": "遊ぶ",
+          "mean": "to play; to spend time pleasantly"
+        },
+        {
+          "kana": "いそぐ",
+          "kanji": "急ぐ",
+          "mean": "to hurry"
+        },
+        {
+          "kana": "かえす",
+          "kanji": "返す",
+          "mean": "to return a thing (person に thing を)"
+        },
+        {
+          "kana": "けす",
+          "kanji": "消す",
+          "mean": "to turn off; to erase (～を)"
+        },
+        {
+          "kana": "しぬ",
+          "kanji": "死ぬ",
+          "mean": "to die"
+        },
+        {
+          "kana": "すわる",
+          "kanji": "座る",
+          "mean": "to sit down (seat に)"
+        },
+        {
+          "kana": "たつ",
+          "kanji": "立つ",
+          "mean": "to stand up"
+        },
+        {
+          "kana": "たばこをすう",
+          "kanji": "たばこを吸う",
+          "mean": "to smoke"
+        },
+        {
+          "kana": "つかう",
+          "kanji": "使う",
+          "mean": "to use (～を)"
+        },
+        {
+          "kana": "てつだう",
+          "kanji": "手伝う",
+          "mean": "to help (person/task を)"
+        },
+        {
+          "kana": "はいる",
+          "kanji": "入る",
+          "mean": "to enter (～に)"
+        },
+        {
+          "kana": "もつ",
+          "kanji": "持つ",
+          "mean": "to carry; to hold (～を)"
+        },
+        {
+          "kana": "やすむ",
+          "kanji": "休む",
+          "mean": "to be absent; to rest (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "る-verbs",
+      "items": [
+        {
+          "kana": "あける",
+          "kanji": "開ける",
+          "mean": "to open something (～を)"
+        },
+        {
+          "kana": "しめる",
+          "kanji": "閉める",
+          "mean": "to close something (～を)"
+        },
+        {
+          "kana": "おしえる",
+          "kanji": "教える",
+          "mean": "to teach; to instruct (person に thing を)"
+        },
+        {
+          "kana": "わすれる",
+          "kanji": "忘れる",
+          "mean": "to forget; to leave behind (～を)"
+        },
+        {
+          "kana": "おりる",
+          "kanji": "降りる",
+          "mean": "to get off (～を)"
+        },
+        {
+          "kana": "かりる",
+          "kanji": "借りる",
+          "mean": "to borrow (person に thing を)"
+        },
+        {
+          "kana": "シャワーをあびる",
+          "kanji": "シャワーを浴びる",
+          "mean": "to take a shower"
+        },
+        {
+          "kana": "つける",
+          "kanji": "",
+          "mean": "to turn on (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "不規則動詞 · Irregular Verbs",
+      "items": [
+        {
+          "kana": "でんわする",
+          "kanji": "電話する",
+          "mean": "to call (～に)"
+        },
+        {
+          "kana": "つれてくる",
+          "kanji": "連れてくる",
+          "mean": "to bring a person (～を)"
+        },
+        {
+          "kana": "もってくる",
+          "kanji": "持ってくる",
+          "mean": "to bring a thing (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "あとで",
+          "kanji": "後で",
+          "mean": "later on"
+        },
+        {
+          "kana": "すぐ",
+          "kanji": "",
+          "mean": "right away"
+        },
+        {
+          "kana": "ゆっくり",
+          "kanji": "",
+          "mean": "slowly; leisurely; unhurriedly"
+        },
+        {
+          "kana": "けっこうです",
+          "kanji": "結構です",
+          "mean": "That would be fine.; Not necessary."
+        },
+        {
+          "kana": "ほんとうですか",
+          "kanji": "本当ですか",
+          "mean": "Really?"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "東",
+      "readings": "とう； ひがし",
+      "meaning": "east",
+      "examples": "東(ひがし) east・東京(とうきょう) Tokyo・関東(かんとう) Kanto area"
+    },
+    {
+      "char": "西",
+      "readings": "せい／さい； にし",
+      "meaning": "west",
+      "examples": "西(にし) west・関西(かんさい) Kansai area"
+    },
+    {
+      "char": "南",
+      "readings": "なん； みなみ",
+      "meaning": "south",
+      "examples": "南(みなみ) south・南東(なんとう) southeast"
+    },
+    {
+      "char": "北",
+      "readings": "ほく／ほっ； きた",
+      "meaning": "north",
+      "examples": "北(きた) north・北海道(ほっかいどう) Hokkaido"
+    },
+    {
+      "char": "口",
+      "readings": "こう； ぐち／くち",
+      "meaning": "mouth",
+      "examples": "口(くち) mouth・入り口(いりぐち) entrance・人口(じんこう) population"
+    },
+    {
+      "char": "出",
+      "readings": "しゅつ／しゅっ； で／だ(す)",
+      "meaning": "to exit",
+      "examples": "出る(でる) to exit・出口(でぐち) exit・出す(だす) to take out"
+    },
+    {
+      "char": "右",
+      "readings": "う／ゆう； みぎ",
+      "meaning": "right",
+      "examples": "右(みぎ) right・右折(うせつ) right turn"
+    },
+    {
+      "char": "左",
+      "readings": "さ； ひだり",
+      "meaning": "left",
+      "examples": "左(ひだり) left・左折(させつ) left turn"
+    },
+    {
+      "char": "分",
+      "readings": "ふん／ぷん／ぶん； わ(ける)",
+      "meaning": "minute; to divide",
+      "examples": "五分(ごふん) five minutes・自分(じぶん) oneself・分ける(わける) to divide"
+    },
+    {
+      "char": "先",
+      "readings": "せん； さき",
+      "meaning": "ahead",
+      "examples": "先生(せんせい) teacher・先週(せんしゅう) last week"
+    },
+    {
+      "char": "生",
+      "readings": "せい／しょう； う(まれる)",
+      "meaning": "birth",
+      "examples": "学生(がくせい) student・先生(せんせい) teacher・生まれる(うまれる) to be born"
+    },
+    {
+      "char": "大",
+      "readings": "だい／たい； おお(きい)",
+      "meaning": "big",
+      "examples": "大学生(だいがくせい) college student・大きい(おおきい) big"
+    },
+    {
+      "char": "学",
+      "readings": "がく／がっ； まな(ぶ)",
+      "meaning": "learning",
+      "examples": "大学(だいがく) university・学校(がっこう) school・学ぶ(まなぶ) to study"
+    },
+    {
+      "char": "外",
+      "readings": "がい； そと",
+      "meaning": "outside",
+      "examples": "外国(がいこく) foreign country・外(そと) outside"
+    },
+    {
+      "char": "国",
+      "readings": "こく／ごく／こっ； くに",
+      "meaning": "country",
+      "examples": "外国(がいこく) foreign country・中国(ちゅうごく) China・国(くに) country"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "動詞のて形 · The Te-form of Verbs",
+      "tag": "Formation rules for all three verb groups",
+      "def": [
+        "る-verbs: drop る, add て. う-verbs follow sound-based rules depending on the final syllable. Irregulars: する→して, 来る→来て."
+      ],
+      "ex": [],
+      "table": {
+        "head": [
+          "Ending",
+          "Rule",
+          "Example"
+        ],
+        "rows": [
+          [
+            "る-verb",
+            "drop る + て",
+            "食べる→食べて"
+          ],
+          [
+            "う・つ・る",
+            "→って",
+            "買う→買って"
+          ],
+          [
+            "む・ぶ・ぬ",
+            "→んで",
+            "読む→読んで"
+          ],
+          [
+            "く",
+            "→いて (exception 行く→行って)",
+            "書く→書いて"
+          ],
+          [
+            "ぐ",
+            "→いで",
+            "泳ぐ→泳いで"
+          ],
+          [
+            "す",
+            "→して",
+            "話す→話して"
+          ],
+          [
+            "irregular",
+            "special",
+            "する→して／来る→来て"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "て形＋ください",
+      "tag": "Polite requests — \"please do ~\"",
+      "def": [
+        "\"Please do ~.\" Attach ください directly after the て-form."
+      ],
+      "ex": [
+        "ここに名前を書いてください。 (Please write your name here.)"
+      ]
+    },
+    {
+      "form": "二つの動作を表す · Describing Two Activities",
+      "tag": "て-form joins clauses like \"and\"",
+      "def": [
+        "The て-form links two or more verbs the way \"and\" does in English, describing a sequence, manner, or reason. The final verb's tense applies to the whole sentence."
+      ],
+      "ex": [
+        "図書館に行って、本を借ります。 (I will go to the library and check out some books.)",
+        "バスに乗って、会社に行きます。 (I go to work by bus.)"
+      ]
+    },
+    {
+      "form": "て形＋もいいです",
+      "tag": "Asking/giving permission",
+      "def": [
+        "\"You may ~\" / \"May I ~?\" — a very common way to ask if something is allowed."
+      ],
+      "ex": [
+        "トイレに行ってもいいですか。 (May I go to the bathroom?)"
+      ]
+    },
+    {
+      "form": "て形＋はいけません",
+      "tag": "Prohibition — \"must not ~\"",
+      "def": [
+        "\"You must not ~,\" a strong prohibition often used for rules."
+      ],
+      "ex": [
+        "ここで写真を撮ってはいけません。 (You must not take pictures here.)"
+      ]
+    },
+    {
+      "form": "～から",
+      "tag": "Giving a reason",
+      "def": [
+        "から attaches to the end of the clause that explains the reason, before the main clause or as a stand-alone justification."
+      ],
+      "ex": [
+        "バスに乗りましょう。タクシーは高いですから。 (Let's go by bus. Taxis are expensive.)"
+      ]
+    },
+    {
+      "form": "～ましょうか (申し出) · Offering Assistance",
+      "tag": "\"Shall I ~?\" — offering to help",
+      "def": [
+        "Beyond proposing to do something together (Lesson 5), ましょうか can also mean \"let me do it,\" offering to help someone."
+      ],
+      "ex": [
+        "荷物を持ちましょうか。 (Shall I carry your luggage?)"
+      ]
+    }
+  ]
+}

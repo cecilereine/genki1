@@ -1,0 +1,574 @@
+{
+  "lesson": "3",
+  "num": "L3",
+  "title": "デートの約束",
+  "en": "Making a Date",
+  "vocab": [
+    {
+      "theme": "娯楽とスポーツ · Entertainment & Sports",
+      "items": [
+        {
+          "kana": "えいが",
+          "kanji": "映画",
+          "mean": "movie"
+        },
+        {
+          "kana": "おんがく",
+          "kanji": "音楽",
+          "mean": "music"
+        },
+        {
+          "kana": "ざっし",
+          "kanji": "雑誌",
+          "mean": "magazine"
+        },
+        {
+          "kana": "スポーツ",
+          "kanji": "",
+          "mean": "sports"
+        },
+        {
+          "kana": "デート",
+          "kanji": "",
+          "mean": "date (romantic)"
+        },
+        {
+          "kana": "テニス",
+          "kanji": "",
+          "mean": "tennis"
+        },
+        {
+          "kana": "テレビ",
+          "kanji": "",
+          "mean": "TV"
+        }
+      ]
+    },
+    {
+      "theme": "食べ物と飲み物 · Foods and Drinks",
+      "items": [
+        {
+          "kana": "アイスクリーム",
+          "kanji": "",
+          "mean": "ice cream"
+        },
+        {
+          "kana": "ハンバーガー",
+          "kanji": "",
+          "mean": "hamburger"
+        },
+        {
+          "kana": "おさけ",
+          "kanji": "お酒",
+          "mean": "sake; alcoholic drink"
+        },
+        {
+          "kana": "おちゃ",
+          "kanji": "お茶",
+          "mean": "green tea"
+        },
+        {
+          "kana": "コーヒー",
+          "kanji": "",
+          "mean": "coffee"
+        },
+        {
+          "kana": "みず",
+          "kanji": "水",
+          "mean": "water"
+        },
+        {
+          "kana": "あさごはん",
+          "kanji": "朝ご飯",
+          "mean": "breakfast"
+        },
+        {
+          "kana": "ひるごはん",
+          "kanji": "昼ご飯",
+          "mean": "lunch"
+        },
+        {
+          "kana": "ばんごはん",
+          "kanji": "晩ご飯",
+          "mean": "dinner"
+        }
+      ]
+    },
+    {
+      "theme": "場所 · Places",
+      "items": [
+        {
+          "kana": "いえ",
+          "kanji": "家",
+          "mean": "home; house"
+        },
+        {
+          "kana": "うち",
+          "kanji": "",
+          "mean": "home; house; my place"
+        },
+        {
+          "kana": "がっこう",
+          "kanji": "学校",
+          "mean": "school"
+        },
+        {
+          "kana": "カフェ",
+          "kanji": "",
+          "mean": "cafe"
+        }
+      ]
+    },
+    {
+      "theme": "時間 · Time",
+      "items": [
+        {
+          "kana": "あした",
+          "kanji": "明日",
+          "mean": "tomorrow"
+        },
+        {
+          "kana": "きょう",
+          "kanji": "今日",
+          "mean": "today"
+        },
+        {
+          "kana": "あさ",
+          "kanji": "朝",
+          "mean": "morning"
+        },
+        {
+          "kana": "こんばん",
+          "kanji": "今晩",
+          "mean": "tonight"
+        },
+        {
+          "kana": "まいにち",
+          "kanji": "毎日",
+          "mean": "every day"
+        },
+        {
+          "kana": "まいばん",
+          "kanji": "毎晩",
+          "mean": "every night"
+        },
+        {
+          "kana": "しゅうまつ",
+          "kanji": "週末",
+          "mean": "weekend"
+        },
+        {
+          "kana": "どようび",
+          "kanji": "土曜日",
+          "mean": "Saturday"
+        },
+        {
+          "kana": "にちようび",
+          "kanji": "日曜日",
+          "mean": "Sunday"
+        },
+        {
+          "kana": "いつ",
+          "kanji": "",
+          "mean": "when"
+        },
+        {
+          "kana": "～ごろ",
+          "kanji": "",
+          "mean": "at about..."
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "いく",
+          "kanji": "行く",
+          "mean": "to go (destination に／へ)"
+        },
+        {
+          "kana": "かえる",
+          "kanji": "帰る",
+          "mean": "to go back; to return (destination に／へ)"
+        },
+        {
+          "kana": "きく",
+          "kanji": "聞く",
+          "mean": "to listen; to hear (～を)"
+        },
+        {
+          "kana": "のむ",
+          "kanji": "飲む",
+          "mean": "to drink (～を)"
+        },
+        {
+          "kana": "はなす",
+          "kanji": "話す",
+          "mean": "to speak; to talk (language を／で)"
+        },
+        {
+          "kana": "よむ",
+          "kanji": "読む",
+          "mean": "to read (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "る-verbs",
+      "items": [
+        {
+          "kana": "おきる",
+          "kanji": "起きる",
+          "mean": "to get up"
+        },
+        {
+          "kana": "たべる",
+          "kanji": "食べる",
+          "mean": "to eat (～を)"
+        },
+        {
+          "kana": "ねる",
+          "kanji": "寝る",
+          "mean": "to sleep; to go to sleep"
+        },
+        {
+          "kana": "みる",
+          "kanji": "見る",
+          "mean": "to see; to watch (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "不規則動詞 · Irregular Verbs",
+      "items": [
+        {
+          "kana": "くる",
+          "kanji": "来る",
+          "mean": "to come (destination に／へ)"
+        },
+        {
+          "kana": "する",
+          "kanji": "",
+          "mean": "to do (～を)"
+        },
+        {
+          "kana": "べんきょうする",
+          "kanji": "勉強する",
+          "mean": "to study (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "形容詞 · Adjectives",
+      "items": [
+        {
+          "kana": "いい",
+          "kanji": "",
+          "mean": "good"
+        },
+        {
+          "kana": "はやい",
+          "kanji": "早い",
+          "mean": "early"
+        }
+      ]
+    },
+    {
+      "theme": "副詞 · Adverbs",
+      "items": [
+        {
+          "kana": "あまり＋negative",
+          "kanji": "",
+          "mean": "not much"
+        },
+        {
+          "kana": "ぜんぜん＋negative",
+          "kanji": "全然",
+          "mean": "not at all"
+        },
+        {
+          "kana": "たいてい",
+          "kanji": "",
+          "mean": "usually"
+        },
+        {
+          "kana": "ちょっと",
+          "kanji": "",
+          "mean": "a little"
+        },
+        {
+          "kana": "ときどき",
+          "kanji": "時々",
+          "mean": "sometimes"
+        },
+        {
+          "kana": "よく",
+          "kanji": "",
+          "mean": "often; much"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Expressions",
+      "items": [
+        {
+          "kana": "そうですね",
+          "kanji": "",
+          "mean": "That's right.; Let me see."
+        },
+        {
+          "kana": "でも",
+          "kanji": "",
+          "mean": "but"
+        },
+        {
+          "kana": "どうですか",
+          "kanji": "",
+          "mean": "How about...?; How is...?"
+        },
+        {
+          "kana": "ええ",
+          "kanji": "",
+          "mean": "yes"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "一",
+      "readings": "いち／いっ； ひと",
+      "meaning": "one",
+      "examples": "一(いち) one・一時(いちじ) one o'clock・一年生(いちねんせい) first-year student・一分(いっぷん) one minute・一つ(ひとつ) one"
+    },
+    {
+      "char": "二",
+      "readings": "に； ふた",
+      "meaning": "two",
+      "examples": "二(に) two・二時(にじ) two o'clock・二年生(にねんせい) second-year student・二つ(ふたつ) two"
+    },
+    {
+      "char": "三",
+      "readings": "さん； みっ",
+      "meaning": "three",
+      "examples": "三(さん) three・三時(さんじ) three o'clock・三年生(さんねんせい) third-year student・三月(さんがつ) March・三つ(みっつ) three"
+    },
+    {
+      "char": "四",
+      "readings": "し； よん／よ／よっ",
+      "meaning": "four",
+      "examples": "四(よん) four・四時(よじ) four o'clock・四年生(よねんせい) fourth-year student・四月(しがつ) April・四つ(よっつ) four"
+    },
+    {
+      "char": "五",
+      "readings": "ご； いつ",
+      "meaning": "five",
+      "examples": "五(ご) five・五時(ごじ) five o'clock・五月(ごがつ) May・五歳(ごさい) five years old・五つ(いつつ) five"
+    },
+    {
+      "char": "六",
+      "readings": "ろく／ろっ； むっ",
+      "meaning": "six",
+      "examples": "六(ろく) six・六時(ろくじ) six o'clock・六百(ろっぴゃく) six hundred・六つ(むっつ) six"
+    },
+    {
+      "char": "七",
+      "readings": "しち； なな",
+      "meaning": "seven",
+      "examples": "七(しち／なな) seven・七時(しちじ) seven o'clock・七月(しちがつ) July・七つ(ななつ) seven"
+    },
+    {
+      "char": "八",
+      "readings": "はち／はっ； やっ",
+      "meaning": "eight",
+      "examples": "八(はち) eight・八時(はちじ) eight o'clock・八百(はっぴゃく) eight hundred・八つ(やっつ) eight"
+    },
+    {
+      "char": "九",
+      "readings": "きゅう／く； ここの",
+      "meaning": "nine",
+      "examples": "九(きゅう) nine・九時(くじ) nine o'clock・九月(くがつ) September・九つ(ここのつ) nine"
+    },
+    {
+      "char": "十",
+      "readings": "じゅう／じゅっ／じっ； とお",
+      "meaning": "ten",
+      "examples": "十(じゅう) ten・十時(じゅうじ) ten o'clock・十月(じゅうがつ) October・十(とお) ten"
+    },
+    {
+      "char": "百",
+      "readings": "ひゃく／びゃく／ぴゃく",
+      "meaning": "hundred",
+      "examples": "百(ひゃく) hundred・三百(さんびゃく) three hundred・六百(ろっぴゃく) six hundred・八百(はっぴゃく) eight hundred"
+    },
+    {
+      "char": "千",
+      "readings": "せん／ぜん",
+      "meaning": "thousand",
+      "examples": "千(せん) thousand・三千(さんぜん) three thousand・八千(はっせん) eight thousand・千円(せんえん) one thousand yen"
+    },
+    {
+      "char": "万",
+      "readings": "まん",
+      "meaning": "ten thousand",
+      "examples": "一万(いちまん) ten thousand・十万(じゅうまん) one hundred thousand・百万(ひゃくまん) one million"
+    },
+    {
+      "char": "円",
+      "readings": "えん； まる",
+      "meaning": "yen; circle",
+      "examples": "百円(ひゃくえん) one hundred yen・円(えん) circle・円い(まるい) round"
+    },
+    {
+      "char": "時",
+      "readings": "じ； とき",
+      "meaning": "time",
+      "examples": "一時(いちじ) one o'clock・時間(じかん) time; ...hours・時々(ときどき) sometimes・時計(とけい) watch; clock"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "動詞の活用 · Verb Conjugation",
+      "tag": "Three verb groups: ru-verbs, u-verbs, irregular",
+      "def": [
+        "Japanese verbs fall into three conjugation groups. Ru-verbs end in -eru/-iru and simply swap る for ます／ません. U-verbs end in a consonant+u and swap u for います／いません. する and 来る are irregular. Watch out for verbs like 帰る that look like ru-verbs but actually conjugate as u-verbs."
+      ],
+      "ex": [
+        "食べる → 食べます／食べません (ru-verb)",
+        "飲む → 飲みます／飲みません (u-verb)",
+        "帰る → 帰ります／帰りません (u-verb, despite the -eru ending)"
+      ],
+      "table": {
+        "head": [
+          "Group",
+          "Dictionary form",
+          "Affirmative",
+          "Negative"
+        ],
+        "rows": [
+          [
+            "Ru-verb",
+            "食べる",
+            "食べます",
+            "食べません"
+          ],
+          [
+            "U-verb",
+            "飲む",
+            "飲みます",
+            "飲みません"
+          ],
+          [
+            "Irregular",
+            "する／来る",
+            "します／来ます",
+            "しません／来ません"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "動詞と「現在形」 · Verb Types and \"Present Tense\"",
+      "tag": "Habitual actions or future plans",
+      "def": [
+        "The Japanese present tense of action verbs covers two English meanings: something you do habitually, or something you will do / plan to do in the future."
+      ],
+      "ex": [
+        "私はよくテレビを見ます。 (I often watch TV. — habitual)",
+        "私はあした京都に行きます。 (I will go to Kyoto tomorrow. — future)"
+      ]
+    },
+    {
+      "form": "助詞 を・で・に・へ · Particles",
+      "tag": "Object, place of action, goal/time, direction",
+      "def": [
+        "を marks the direct object of a verb. で marks where an action takes place. に marks the goal of movement (行く/来る/帰る) or a specific point in time. へ can replace に for the goal of movement, but never for time."
+      ],
+      "ex": [
+        "コーヒーを飲みます。 (I drink coffee.)",
+        "図書館で本を読みます。 (I will read books at the library.)",
+        "うちに／へ帰ります。 (I will return home.)"
+      ],
+      "table": {
+        "head": [
+          "Particle",
+          "Marks"
+        ],
+        "rows": [
+          [
+            "を",
+            "direct object"
+          ],
+          [
+            "で",
+            "place where the action happens"
+          ],
+          [
+            "に",
+            "goal of movement / point in time"
+          ],
+          [
+            "へ",
+            "goal of movement only (= に)"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "時の表し方 · Time References",
+      "tag": "When に is required, and when it's dropped",
+      "def": [
+        "Use に with days of the week and numerical time expressions (\"on Sunday,\" \"at 10:45\"). Don't use に with relative time words (today, tomorrow), regular intervals (every day), or the word \"when.\" Parts of the day and \"weekend\" can go either way."
+      ],
+      "ex": [
+        "日曜日に 行きます。 (I will go on Sunday.)",
+        "あした 来ます。 (I will come tomorrow — no に.)",
+        "週末（に）何をしますか。 (What will you do on the weekend? — に optional)"
+      ]
+    },
+    {
+      "form": "～ませんか",
+      "tag": "Extending an invitation",
+      "def": [
+        "ませんか (the present negative + question particle) invites someone to do something together. Its affirmative counterpart ますか can only be read as a plain question, never an invitation."
+      ],
+      "ex": [
+        "昼ご飯を食べませんか。 (Would you like to have lunch with me?)",
+        "テニスをしませんか。 (Will you play tennis with me?)"
+      ]
+    },
+    {
+      "form": "頻度の副詞 · Frequency Adverbs",
+      "tag": "毎日・よく・ときどき・あまり・ぜんぜん",
+      "def": [
+        "Frequency adverbs describe how often something happens. あまり (not often) and ぜんぜん (not at all) anticipate a negative ending, so the sentence must end in ～ません."
+      ],
+      "ex": [
+        "私はときどき図書館に行きます。 (I sometimes go to a library.)",
+        "たけしさんはあまり勉強しません。 (Takeshi doesn't study much.)"
+      ]
+    },
+    {
+      "form": "語順 · Word Order",
+      "tag": "Topic → time → place → object → verb",
+      "def": [
+        "Japanese word order is flexible since particles, not position, mark grammatical roles — but a typical sentence lines up as topic, time, place, object, then the verb or adjective at the end."
+      ],
+      "ex": [
+        "私は 今日 図書館で 日本語を 勉強します。 (I will study Japanese in the library today.)"
+      ]
+    },
+    {
+      "form": "とりたて助詞 は · The Topic Particle は",
+      "tag": "Broaching a topic — not always the subject",
+      "def": [
+        "は marks the topic of the sentence — what you want to talk about — which is often, but not always, the grammatical subject. A topic can even be the direct object of the sentence, as in 晩ご飯は？ where 晩ご飯 (dinner) is what's eaten, not who eats it."
+      ],
+      "ex": [
+        "週末は たいてい何をしますか。 (As for the weekend, what do you usually do?)",
+        "晩ご飯は？／食べません。 (How about dinner? / I will not eat [it].)"
+      ]
+    }
+  ]
+}

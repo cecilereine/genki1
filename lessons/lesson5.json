@@ -1,0 +1,499 @@
+{
+  "lesson": "5",
+  "num": "L5",
+  "title": "りょこう",
+  "en": "A Trip to Okinawa",
+  "vocab": [
+    {
+      "theme": "名詞 · Nouns",
+      "items": [
+        {
+          "kana": "たべもの",
+          "kanji": "食べ物",
+          "mean": "food"
+        },
+        {
+          "kana": "のみもの",
+          "kanji": "飲み物",
+          "mean": "drink"
+        },
+        {
+          "kana": "くだもの",
+          "kanji": "果物",
+          "mean": "fruit"
+        },
+        {
+          "kana": "やすみ",
+          "kanji": "休み",
+          "mean": "holiday; day off; absence"
+        },
+        {
+          "kana": "りょこう",
+          "kanji": "旅行",
+          "mean": "travel"
+        },
+        {
+          "kana": "うみ",
+          "kanji": "海",
+          "mean": "sea"
+        },
+        {
+          "kana": "サーフィン",
+          "kanji": "",
+          "mean": "surfing"
+        },
+        {
+          "kana": "おみやげ",
+          "kanji": "お土産",
+          "mean": "souvenir"
+        },
+        {
+          "kana": "バス",
+          "kanji": "",
+          "mean": "bus"
+        },
+        {
+          "kana": "てんき",
+          "kanji": "天気",
+          "mean": "weather"
+        },
+        {
+          "kana": "しゅくだい",
+          "kanji": "宿題",
+          "mean": "homework"
+        },
+        {
+          "kana": "テスト",
+          "kanji": "",
+          "mean": "test"
+        },
+        {
+          "kana": "たんじょうび",
+          "kanji": "誕生日",
+          "mean": "birthday"
+        },
+        {
+          "kana": "へや",
+          "kanji": "部屋",
+          "mean": "room"
+        },
+        {
+          "kana": "ぼく",
+          "kanji": "僕",
+          "mean": "I (used by men)"
+        },
+        {
+          "kana": "Lサイズ",
+          "kanji": "",
+          "mean": "size L"
+        }
+      ]
+    },
+    {
+      "theme": "い-adjectives",
+      "items": [
+        {
+          "kana": "あたらしい",
+          "kanji": "新しい",
+          "mean": "new"
+        },
+        {
+          "kana": "ふるい",
+          "kanji": "古い",
+          "mean": "old (thing — not people)"
+        },
+        {
+          "kana": "あつい",
+          "kanji": "暑い",
+          "mean": "hot (weather)"
+        },
+        {
+          "kana": "さむい",
+          "kanji": "寒い",
+          "mean": "cold (weather)"
+        },
+        {
+          "kana": "あつい",
+          "kanji": "熱い",
+          "mean": "hot (thing)"
+        },
+        {
+          "kana": "いそがしい",
+          "kanji": "忙しい",
+          "mean": "busy"
+        },
+        {
+          "kana": "おおきい",
+          "kanji": "大きい",
+          "mean": "large"
+        },
+        {
+          "kana": "ちいさい",
+          "kanji": "小さい",
+          "mean": "small"
+        },
+        {
+          "kana": "おもしろい",
+          "kanji": "面白い",
+          "mean": "interesting; funny"
+        },
+        {
+          "kana": "つまらない",
+          "kanji": "",
+          "mean": "boring"
+        },
+        {
+          "kana": "やさしい",
+          "kanji": "",
+          "mean": "easy (problem); kind (person)"
+        },
+        {
+          "kana": "むずかしい",
+          "kanji": "難しい",
+          "mean": "difficult"
+        },
+        {
+          "kana": "かっこいい",
+          "kanji": "",
+          "mean": "good-looking (conjugates like いい)"
+        },
+        {
+          "kana": "こわい",
+          "kanji": "怖い",
+          "mean": "frightening"
+        },
+        {
+          "kana": "たのしい",
+          "kanji": "楽しい",
+          "mean": "fun"
+        },
+        {
+          "kana": "やすい",
+          "kanji": "安い",
+          "mean": "inexpensive; cheap"
+        }
+      ]
+    },
+    {
+      "theme": "な-adjectives",
+      "items": [
+        {
+          "kana": "すき（な）",
+          "kanji": "好き",
+          "mean": "fond of; to like (～が)"
+        },
+        {
+          "kana": "きらい（な）",
+          "kanji": "嫌い",
+          "mean": "disgusted with; to dislike (～が)"
+        },
+        {
+          "kana": "だいすき（な）",
+          "kanji": "大好き",
+          "mean": "very fond of; to love (～が)"
+        },
+        {
+          "kana": "だいきらい（な）",
+          "kanji": "大嫌い",
+          "mean": "to hate (～が)"
+        },
+        {
+          "kana": "きれい（な）",
+          "kanji": "",
+          "mean": "beautiful; clean"
+        },
+        {
+          "kana": "げんき（な）",
+          "kanji": "元気",
+          "mean": "healthy; energetic"
+        },
+        {
+          "kana": "しずか（な）",
+          "kanji": "静か",
+          "mean": "quiet"
+        },
+        {
+          "kana": "にぎやか（な）",
+          "kanji": "",
+          "mean": "lively"
+        },
+        {
+          "kana": "ひま（な）",
+          "kanji": "暇",
+          "mean": "not busy; free (time)"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "およぐ",
+          "kanji": "泳ぐ",
+          "mean": "to swim"
+        },
+        {
+          "kana": "きく",
+          "kanji": "聞く",
+          "mean": "to ask (person に)"
+        },
+        {
+          "kana": "のる",
+          "kanji": "乗る",
+          "mean": "to ride; to board (～に)"
+        },
+        {
+          "kana": "やる",
+          "kanji": "",
+          "mean": "to do; to perform (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "る-verb",
+      "items": [
+        {
+          "kana": "でかける",
+          "kanji": "出かける",
+          "mean": "to go out"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "いっしょに",
+          "kanji": "一緒に",
+          "mean": "together"
+        },
+        {
+          "kana": "すごく",
+          "kanji": "",
+          "mean": "extremely"
+        },
+        {
+          "kana": "だいじょうぶ",
+          "kanji": "大丈夫",
+          "mean": "It's okay.; Not to worry."
+        },
+        {
+          "kana": "とても",
+          "kanji": "",
+          "mean": "very"
+        },
+        {
+          "kana": "どんな",
+          "kanji": "",
+          "mean": "what kind of..."
+        },
+        {
+          "kana": "～まい",
+          "kanji": "～枚",
+          "mean": "counter for flat objects"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "山",
+      "readings": "さん； やま",
+      "meaning": "mountain",
+      "examples": "山(やま) mountain・富士山(ふじさん) Mt. Fuji"
+    },
+    {
+      "char": "川",
+      "readings": "かわ／がわ",
+      "meaning": "river",
+      "examples": "川(かわ) river・山川さん(やまかわさん) Mr./Ms. Yamakawa"
+    },
+    {
+      "char": "元",
+      "readings": "げん／がん； もと",
+      "meaning": "origin",
+      "examples": "元気な(げんきな) fine・元日(がんじつ) New Year's Day・地元(じもと) local"
+    },
+    {
+      "char": "気",
+      "readings": "き",
+      "meaning": "spirit",
+      "examples": "元気な(げんきな) fine・天気(てんき) weather・人気(にんき) popularity"
+    },
+    {
+      "char": "天",
+      "readings": "てん",
+      "meaning": "heaven",
+      "examples": "天気(てんき) weather・天才(てんさい) genius"
+    },
+    {
+      "char": "私",
+      "readings": "し； わたし",
+      "meaning": "I; private",
+      "examples": "私(わたし) I・私立大学(しりつだいがく) private university"
+    },
+    {
+      "char": "今",
+      "readings": "こん； いま",
+      "meaning": "now",
+      "examples": "今(いま) now・今日(きょう) today・今晩(こんばん) tonight"
+    },
+    {
+      "char": "田",
+      "readings": "た／だ",
+      "meaning": "rice field",
+      "examples": "田中さん(たなかさん) Mr./Ms. Tanaka・山田さん(やまださん) Mr./Ms. Yamada"
+    },
+    {
+      "char": "女",
+      "readings": "じょ； おんな",
+      "meaning": "woman",
+      "examples": "女の人(おんなのひと) woman・女性(じょせい) woman・女の子(おんなのこ) girl"
+    },
+    {
+      "char": "男",
+      "readings": "だん； おとこ",
+      "meaning": "man",
+      "examples": "男の人(おとこのひと) man・男性(だんせい) man・男の子(おとこのこ) boy"
+    },
+    {
+      "char": "見",
+      "readings": "けん； み(る)",
+      "meaning": "to see",
+      "examples": "見る(みる) to see・見物(けんぶつ) sightseeing・意見(いけん) opinion"
+    },
+    {
+      "char": "行",
+      "readings": "こう／ぎょう； い(く)",
+      "meaning": "to go",
+      "examples": "行く(いく) to go・銀行(ぎんこう) bank・旅行(りょこう) travel"
+    },
+    {
+      "char": "食",
+      "readings": "しょく； た(べる)",
+      "meaning": "to eat",
+      "examples": "食べる(たべる) to eat・食堂(しょくどう) cafeteria・朝食(ちょうしょく) breakfast"
+    },
+    {
+      "char": "飲",
+      "readings": "いん； の(む)",
+      "meaning": "to drink",
+      "examples": "飲む(のむ) to drink・飲み物(のみもの) drink"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "形容詞（現在形） · Adjectives — Present Tense",
+      "tag": "い-adjectives vs. な-adjectives",
+      "def": [
+        "い-adjectives: add です for affirmative; drop the final い and add くない(です) for negative. な-adjectives conjugate like nouns: です／じゃないです. いい (good) is irregular — its negative is よくない, not いくない. Degree adverbs like とても (very) and ちょっと (a little) go before the adjective."
+      ],
+      "ex": [
+        "この部屋はちょっと暑いです。 (This room is a little hot.)",
+        "今日、暇じゃないです。 (I'm not free today.)"
+      ],
+      "table": {
+        "head": [
+          "Type",
+          "Affirmative",
+          "Negative"
+        ],
+        "rows": [
+          [
+            "い-adj (忙しい)",
+            "忙しいです",
+            "忙しくないです"
+          ],
+          [
+            "な-adj (静か)",
+            "静かです",
+            "静かじゃないです"
+          ],
+          [
+            "いい (irregular)",
+            "いいです",
+            "よくないです"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "形容詞（過去形） · Adjectives — Past Tense",
+      "tag": "かった／でした conjugations",
+      "def": [
+        "い-adjectives: change い to かったです (affirmative) or くなかったです (negative). な-adjectives: でした／じゃなかったです. いい's past is よかったです／よくなかったです."
+      ],
+      "ex": [
+        "沖縄の海はとてもきれいでした。 (The sea in Okinawa was very beautiful.)",
+        "テストは難しくなかったです。 (The test wasn't hard.)"
+      ],
+      "table": {
+        "head": [
+          "Type",
+          "Affirmative",
+          "Negative"
+        ],
+        "rows": [
+          [
+            "い-adj (忙しい)",
+            "忙しかったです",
+            "忙しくなかったです"
+          ],
+          [
+            "な-adj (静か)",
+            "静かでした",
+            "静かじゃなかったです"
+          ],
+          [
+            "いい (irregular)",
+            "よかったです",
+            "よくなかったです"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "形容詞の名詞修飾 · Adjectives — Noun Modification",
+      "tag": "Placing an adjective directly before a noun",
+      "def": [
+        "To modify a noun, place an い-adjective's dictionary form directly before it. For な-adjectives, keep the な before the noun."
+      ],
+      "ex": [
+        "昨日、面白い映画を見ました。 (I watched an interesting movie yesterday.)",
+        "京都できれいな写真を撮りました。 (I took a beautiful picture in Kyoto.)"
+      ]
+    },
+    {
+      "form": "好き（な）／きらい（な）",
+      "tag": "Likes & dislikes take が, not を",
+      "def": [
+        "好き and 嫌い are な-adjectives, so what's liked/disliked is marked with が, not を: XはYが好き／嫌いです。 大好き／大嫌い intensify the feeling."
+      ],
+      "ex": [
+        "ロバートさんは日本語のクラスが好きです。 (Robert likes his Japanese class.)",
+        "たけしさんはコーヒーが大好きです。 (Takeshi loves coffee.)"
+      ]
+    },
+    {
+      "form": "～ましょう／～ましょうか",
+      "tag": "\"Let's...\" / \"Shall we...?\"",
+      "def": [
+        "Drop ます from the polite stem and add ましょう to propose doing something together, or ましょうか to ask if the other person wants to."
+      ],
+      "ex": [
+        "一緒に図書館で勉強しましょう。 (Let's study at the library together.)",
+        "あそこでコーヒーを飲みましょうか。 (Shall we drink coffee over there?)"
+      ]
+    },
+    {
+      "form": "数え方 · Counting",
+      "tag": "Counters follow the noun, not precede it",
+      "def": [
+        "Different types of items take different counter words, and the number+counter usually comes after the noun it counts, not before it."
+      ],
+      "ex": [
+        "リーさんはTシャツを三枚買いました。 (Lee bought three T-shirts.)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GENKI I · Grammar &amp; Vocabulary Lookup</title>
+<!-- Cache busting: whenever styles.css, app.js or flashcards.js changes, bump EVERY ?v=
+     below to the same new number. GitHub Pages sends cache-control: max-age=600,
+     so without this a browser can pair new HTML with a stale script or stylesheet.
+     app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="lvl">BEGINNER · 初級</span>
+    <h1>GENKI I</h1>
+    <p>Grammar &amp; Vocabulary Lookup · 文法と語彙</p>
+  </header>
+
+  <div class="controls">
+    <input type="text" class="search" id="search" placeholder="🔍  Search Japanese or English… (例: 食べる, birthday, ～ている)">
+    <div class="row">
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-lesson="all">All</button>
+        <button class="tab" data-lesson="1">L1</button>
+        <button class="tab" data-lesson="2">L2</button>
+        <button class="tab" data-lesson="3">L3</button>
+        <button class="tab" data-lesson="4">L4</button>
+        <button class="tab" data-lesson="5">L5</button>
+        <button class="tab" data-lesson="6">L6</button>
+        <button class="tab" data-lesson="7">L7</button>
+        <button class="tab" data-lesson="8">L8</button>
+      </div>
+      <button class="fc-btn" id="fcStart">🎴 Vocabulary Flashcards</button>
+      <button class="fc-btn fc-btn-kanji" id="fcStartKanji">🈶 Kanji Flashcards</button>
+    </div>
+    <div class="hint">Tip: click any vocabulary or kanji card to flip it and hide the answer. Kanji flashcards reveal readings, meaning, and sample words when flipped.</div>
+    <noscript><div class="hint" style="color:#b45; font-weight:600">Note: this page loads its lesson data with JavaScript. Please enable it, or open the page in a full browser (Chrome/Safari).</div></noscript>
+  </div>
+
+  <div id="content"></div>
+
+  <footer>Source: Genki: An Integrated Course in Elementary Japanese, 3rd Edition · Lessons 1–8</footer>
+</div>
+
+<!-- Flashcard review overlay -->
+<div class="overlay" id="overlay">
+  <div class="fc-panel">
+    <div class="fc-top">
+      <span class="meta" id="fcMeta">Flashcards</span>
+      <button class="fc-close" id="fcClose">&times;</button>
+    </div>
+    <div class="fc-scope" id="fcScope">
+      <button data-scope="all" class="on">All</button>
+      <button data-scope="1">1</button>
+      <button data-scope="2">2</button>
+      <button data-scope="3">3</button>
+      <button data-scope="4">4</button>
+      <button data-scope="5">5</button>
+      <button data-scope="6">6</button>
+      <button data-scope="7">7</button>
+      <button data-scope="8">8</button>
+    </div>
+    <div class="fc-progress"><span id="fcBar"></span></div>
+    <div id="fcBody"></div>
+    <div class="fc-mark" id="fcMark">
+      <button class="unlearn" id="fcUnlearn">↩ Still learning</button>
+      <button class="learn" id="fcLearn">✓ Got it — learned</button>
+    </div>
+    <div class="fc-controls" id="fcControls">
+      <button class="prev" id="fcPrev">← Prev</button>
+      <button class="flip" id="fcFlip">Flip</button>
+      <button class="next" id="fcNext">Next →</button>
+    </div>
+    <label class="fc-inc"><input type="checkbox" id="fcInclude"> Include cards I've already learned</label>
+    <div class="fc-tools">
+      <button id="fcShuffle">🔀 Shuffle</button>
+      <button id="fcDir">日 → EN</button>
+      <button id="fcReset">🗑 Reset progress</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=1"></script>
+<script src="flashcards.js?v=1"></script>
+</body>
+</html>

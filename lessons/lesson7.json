@@ -1,0 +1,491 @@
+{
+  "lesson": "7",
+  "num": "L7",
+  "title": "家族写真",
+  "en": "Family Picture",
+  "vocab": [
+    {
+      "theme": "名詞 · Nouns",
+      "items": [
+        {
+          "kana": "かぞく",
+          "kanji": "家族",
+          "mean": "family"
+        },
+        {
+          "kana": "おじいさん",
+          "kanji": "",
+          "mean": "grandfather; old man"
+        },
+        {
+          "kana": "おばあさん",
+          "kanji": "",
+          "mean": "grandmother; old woman"
+        },
+        {
+          "kana": "おにいさん",
+          "kanji": "お兄さん",
+          "mean": "older brother"
+        },
+        {
+          "kana": "おねえさん",
+          "kanji": "お姉さん",
+          "mean": "older sister"
+        },
+        {
+          "kana": "ちち",
+          "kanji": "父",
+          "mean": "(my) father"
+        },
+        {
+          "kana": "はは",
+          "kanji": "母",
+          "mean": "(my) mother"
+        },
+        {
+          "kana": "あに",
+          "kanji": "兄",
+          "mean": "(my) older brother"
+        },
+        {
+          "kana": "あね",
+          "kanji": "姉",
+          "mean": "(my) older sister"
+        },
+        {
+          "kana": "いもうと",
+          "kanji": "妹",
+          "mean": "younger sister"
+        },
+        {
+          "kana": "おとうと",
+          "kanji": "弟",
+          "mean": "younger brother"
+        },
+        {
+          "kana": "きょうだい",
+          "kanji": "兄弟",
+          "mean": "brothers and sisters"
+        },
+        {
+          "kana": "おとこのひと",
+          "kanji": "男の人",
+          "mean": "man"
+        },
+        {
+          "kana": "おんなのひと",
+          "kanji": "女の人",
+          "mean": "woman"
+        },
+        {
+          "kana": "かいしゃ",
+          "kanji": "会社",
+          "mean": "company"
+        },
+        {
+          "kana": "しょくどう",
+          "kanji": "食堂",
+          "mean": "cafeteria; dining commons"
+        },
+        {
+          "kana": "デパート",
+          "kanji": "",
+          "mean": "department store"
+        },
+        {
+          "kana": "かみ",
+          "kanji": "髪",
+          "mean": "hair"
+        },
+        {
+          "kana": "くち",
+          "kanji": "口",
+          "mean": "mouth"
+        },
+        {
+          "kana": "め",
+          "kanji": "目",
+          "mean": "eye"
+        },
+        {
+          "kana": "めがね",
+          "kanji": "眼鏡",
+          "mean": "glasses"
+        },
+        {
+          "kana": "うた",
+          "kanji": "歌",
+          "mean": "song"
+        },
+        {
+          "kana": "サークル",
+          "kanji": "",
+          "mean": "club activity"
+        },
+        {
+          "kana": "くるま",
+          "kanji": "車",
+          "mean": "car"
+        }
+      ]
+    },
+    {
+      "theme": "い-adjectives",
+      "items": [
+        {
+          "kana": "ながい",
+          "kanji": "長い",
+          "mean": "long"
+        },
+        {
+          "kana": "みじかい",
+          "kanji": "短い",
+          "mean": "short (length)"
+        },
+        {
+          "kana": "はやい",
+          "kanji": "速い",
+          "mean": "fast"
+        },
+        {
+          "kana": "せがたかい",
+          "kanji": "背が高い",
+          "mean": "tall (stature)"
+        },
+        {
+          "kana": "せがひくい",
+          "kanji": "背が低い",
+          "mean": "short (stature)"
+        },
+        {
+          "kana": "あたまがいい",
+          "kanji": "頭がいい",
+          "mean": "bright; smart; clever"
+        },
+        {
+          "kana": "かわいい",
+          "kanji": "",
+          "mean": "cute"
+        }
+      ]
+    },
+    {
+      "theme": "な-adjectives",
+      "items": [
+        {
+          "kana": "しんせつ（な）",
+          "kanji": "親切",
+          "mean": "kind"
+        },
+        {
+          "kana": "べんり（な）",
+          "kanji": "便利",
+          "mean": "convenient"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "うたう",
+          "kanji": "歌う",
+          "mean": "to sing (～を)"
+        },
+        {
+          "kana": "かぶる",
+          "kanji": "",
+          "mean": "to put on a hat (～を)"
+        },
+        {
+          "kana": "はく",
+          "kanji": "",
+          "mean": "to put on below-waist items (～を)"
+        },
+        {
+          "kana": "しる",
+          "kanji": "知る",
+          "mean": "to get to know (～を)"
+        },
+        {
+          "kana": "しっています／知っています",
+          "kanji": "",
+          "mean": "I know"
+        },
+        {
+          "kana": "しりません／知りません",
+          "kanji": "",
+          "mean": "I do not know"
+        },
+        {
+          "kana": "すむ",
+          "kanji": "住む",
+          "mean": "to live (～にすんでいます)"
+        },
+        {
+          "kana": "はたらく",
+          "kanji": "働く",
+          "mean": "to work"
+        },
+        {
+          "kana": "ふとる",
+          "kanji": "太る",
+          "mean": "to gain weight"
+        },
+        {
+          "kana": "ふとっています／太っています",
+          "kanji": "",
+          "mean": "to be overweight"
+        }
+      ]
+    },
+    {
+      "theme": "る-verbs",
+      "items": [
+        {
+          "kana": "（めがねを）かける",
+          "kanji": "",
+          "mean": "to put on glasses"
+        },
+        {
+          "kana": "きる",
+          "kanji": "着る",
+          "mean": "to put on above-waist items (～を)"
+        },
+        {
+          "kana": "やせる",
+          "kanji": "",
+          "mean": "to lose weight"
+        },
+        {
+          "kana": "やせています",
+          "kanji": "",
+          "mean": "to be thin"
+        }
+      ]
+    },
+    {
+      "theme": "不規則動詞 · Irregular Verb",
+      "items": [
+        {
+          "kana": "けっこんする",
+          "kanji": "結婚する",
+          "mean": "to get married (～と)"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "～が",
+          "kanji": "",
+          "mean": "..., but"
+        },
+        {
+          "kana": "なにも＋negative",
+          "kanji": "何も",
+          "mean": "not...anything"
+        },
+        {
+          "kana": "～にん",
+          "kanji": "～人",
+          "mean": "counter for people"
+        },
+        {
+          "kana": "ひとり",
+          "kanji": "一人",
+          "mean": "one person"
+        },
+        {
+          "kana": "ふたり",
+          "kanji": "二人",
+          "mean": "two people"
+        },
+        {
+          "kana": "べつに＋negative",
+          "kanji": "別に",
+          "mean": "nothing in particular"
+        },
+        {
+          "kana": "もちろん",
+          "kanji": "",
+          "mean": "of course"
+        },
+        {
+          "kana": "よかったら",
+          "kanji": "",
+          "mean": "if you like"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "京",
+      "readings": "きょう",
+      "meaning": "capital",
+      "examples": "東京(とうきょう) Tokyo・京都(きょうと) Kyoto"
+    },
+    {
+      "char": "子",
+      "readings": "し； こ",
+      "meaning": "child",
+      "examples": "子ども(こども) child・女の子(おんなのこ) girl・男の子(おとこのこ) boy"
+    },
+    {
+      "char": "小",
+      "readings": "しょう； ちい(さい)",
+      "meaning": "small",
+      "examples": "小さい(ちいさい) small・小学校(しょうがっこう) elementary school"
+    },
+    {
+      "char": "会",
+      "readings": "かい； あ(う)",
+      "meaning": "to meet",
+      "examples": "会う(あう) to meet・会社(かいしゃ) company・会議(かいぎ) meeting"
+    },
+    {
+      "char": "社",
+      "readings": "しゃ／じゃ",
+      "meaning": "company",
+      "examples": "会社(かいしゃ) company・神社(じんじゃ) shrine"
+    },
+    {
+      "char": "父",
+      "readings": "ふ； ちち／とう",
+      "meaning": "father",
+      "examples": "父(ちち) father・お父さん(おとうさん) father"
+    },
+    {
+      "char": "母",
+      "readings": "ぼ； はは／かあ",
+      "meaning": "mother",
+      "examples": "母(はは) mother・お母さん(おかあさん) mother"
+    },
+    {
+      "char": "高",
+      "readings": "こう； たか(い)",
+      "meaning": "high",
+      "examples": "高い(たかい) expensive; high・高校(こうこう) high school"
+    },
+    {
+      "char": "校",
+      "readings": "こう",
+      "meaning": "school",
+      "examples": "学校(がっこう) school・高校(こうこう) high school"
+    },
+    {
+      "char": "毎",
+      "readings": "まい",
+      "meaning": "every",
+      "examples": "毎日(まいにち) every day・毎週(まいしゅう) every week"
+    },
+    {
+      "char": "語",
+      "readings": "ご",
+      "meaning": "word; language",
+      "examples": "日本語(にほんご) Japanese language・英語(えいご) English"
+    },
+    {
+      "char": "文",
+      "readings": "ぶん",
+      "meaning": "sentence",
+      "examples": "文学(ぶんがく) literature・作文(さくぶん) composition"
+    },
+    {
+      "char": "帰",
+      "readings": "き； かえ(る)",
+      "meaning": "to return",
+      "examples": "帰る(かえる) to return・帰国(きこく) going home"
+    },
+    {
+      "char": "入",
+      "readings": "にゅう； はい(る)／い(れる)",
+      "meaning": "to enter",
+      "examples": "入る(はいる) to enter・入り口(いりぐち) entrance・入れる(いれる) to put in"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "～ている（動作の進行）",
+      "tag": "\"is doing ~\" / habitual occupation",
+      "def": [
+        "Activity verbs (食べる, 読む, etc.) in their て-form + いる describe an action happening right now, or a habitual/occupational activity."
+      ],
+      "ex": [
+        "ソラさんは今勉強しています。 (Sora is studying right now.)",
+        "私は英語を教えています。 (I teach English.)"
+      ]
+    },
+    {
+      "form": "～ている（結果の状態）",
+      "tag": "Resulting state after a change verb",
+      "def": [
+        "Change verbs (結婚する, 座る, 太る, etc.) + ている describe the resulting state after a change, not the change happening in progress."
+      ],
+      "ex": [
+        "山下先生は結婚しています。 (Professor Yamashita is married.)",
+        "ゆいさんは窓の近くに座っています。 (Yui is seated near the window.)"
+      ]
+    },
+    {
+      "form": "Aさんは [体の部分]が [形容詞]です",
+      "tag": "Describing physical features",
+      "def": [
+        "To describe a person's physical features, use Aさんは[body part]が[adjective]です rather than making the body part itself the topic. Idioms like 背が高い (tall) and 頭がいい (smart) follow the same pattern."
+      ],
+      "ex": [
+        "トムさんは髪が長いです。 (Tom has long hair.)"
+      ]
+    },
+    {
+      "form": "形容詞・名詞のて形",
+      "tag": "くて／で joining descriptive clauses",
+      "def": [
+        "い-adjectives form a te-form by changing い to くて; な-adjectives and noun+です sequences add で. This joins two descriptive clauses the way て does for verbs."
+      ],
+      "ex": [
+        "あの店の食べ物は安くて、おいしいです。 (The food at that restaurant is inexpensive and delicious.)",
+        "山下先生は日本人で、五十歳ぐらいです。 (Professor Yamashita is Japanese and about fifty years old.)"
+      ],
+      "table": {
+        "head": [
+          "Type",
+          "Te-form"
+        ],
+        "rows": [
+          [
+            "い-adjective",
+            "い→くて"
+          ],
+          [
+            "な-adjective／Noun＋です",
+            "＋で"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "動詞の意向形＋に行く · Verb Stem + に行く",
+      "tag": "\"go/come/return in order to ~\"",
+      "def": [
+        "To describe moving somewhere in order to do something, attach に行く／来る／帰る to a verb's stem (the ます-form minus ます)."
+      ],
+      "ex": [
+        "デパートにかばんを買いに行きました。 (I went to a department store to buy a bag.)",
+        "メアリーさんは日本に日本語を勉強しに来ました。 (Mary came to Japan to study Japanese.)"
+      ]
+    },
+    {
+      "form": "人の数え方 · Counting People",
+      "tag": "人（にん）, with irregular 一人／二人",
+      "def": [
+        "人 is the counter for people, but \"one person\" and \"two people\" are irregular: 一人 and 二人."
+      ],
+      "ex": [
+        "私のクラスにインドネシア人の学生が一人います。 (There is one Indonesian student in my class.)"
+      ]
+    }
+  ]
+}

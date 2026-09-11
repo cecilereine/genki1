@@ -1,0 +1,419 @@
+{
+  "lesson": "1",
+  "num": "L1",
+  "title": "あたらしいともだち",
+  "en": "New Friends",
+  "vocab": [
+    {
+      "theme": "学校 · School",
+      "items": [
+        {
+          "kana": "だいがく",
+          "kanji": "大学",
+          "mean": "college; university"
+        },
+        {
+          "kana": "こうこう",
+          "kanji": "",
+          "mean": "high school"
+        },
+        {
+          "kana": "がくせい",
+          "kanji": "",
+          "mean": "student"
+        },
+        {
+          "kana": "だいがくせい",
+          "kanji": "",
+          "mean": "college student"
+        },
+        {
+          "kana": "りゅうがくせい",
+          "kanji": "",
+          "mean": "international student"
+        },
+        {
+          "kana": "せんせい",
+          "kanji": "",
+          "mean": "teacher; Professor..."
+        },
+        {
+          "kana": "～ねんせい",
+          "kanji": "",
+          "mean": "...year student"
+        },
+        {
+          "kana": "いちねんせい",
+          "kanji": "",
+          "mean": "first-year student"
+        },
+        {
+          "kana": "せんこう",
+          "kanji": "",
+          "mean": "major"
+        }
+      ]
+    },
+    {
+      "theme": "人 · People",
+      "items": [
+        {
+          "kana": "わたし",
+          "kanji": "",
+          "mean": "I"
+        },
+        {
+          "kana": "ともだち",
+          "kanji": "",
+          "mean": "friend"
+        },
+        {
+          "kana": "～さん",
+          "kanji": "",
+          "mean": "Mr./Ms...."
+        },
+        {
+          "kana": "～じん",
+          "kanji": "",
+          "mean": "...people"
+        },
+        {
+          "kana": "にほんじん",
+          "kanji": "",
+          "mean": "Japanese people"
+        }
+      ]
+    },
+    {
+      "theme": "時間 · Time",
+      "items": [
+        {
+          "kana": "いま",
+          "kanji": "",
+          "mean": "now"
+        },
+        {
+          "kana": "ごぜん",
+          "kanji": "",
+          "mean": "A.M."
+        },
+        {
+          "kana": "ごご",
+          "kanji": "",
+          "mean": "P.M."
+        },
+        {
+          "kana": "～じ",
+          "kanji": "",
+          "mean": "o'clock"
+        },
+        {
+          "kana": "いちじ",
+          "kanji": "",
+          "mean": "one o'clock"
+        },
+        {
+          "kana": "はん",
+          "kanji": "",
+          "mean": "half"
+        },
+        {
+          "kana": "にじはん",
+          "kanji": "",
+          "mean": "half past two"
+        }
+      ]
+    },
+    {
+      "theme": "その他 · Others",
+      "items": [
+        {
+          "kana": "にほん",
+          "kanji": "",
+          "mean": "Japan"
+        },
+        {
+          "kana": "アメリカ",
+          "kanji": "",
+          "mean": "U.S.A."
+        },
+        {
+          "kana": "～ご",
+          "kanji": "",
+          "mean": "...language"
+        },
+        {
+          "kana": "にほんご",
+          "kanji": "",
+          "mean": "Japanese language"
+        },
+        {
+          "kana": "～さい",
+          "kanji": "",
+          "mean": "...years old"
+        },
+        {
+          "kana": "でんわ",
+          "kanji": "",
+          "mean": "telephone"
+        },
+        {
+          "kana": "～ばん",
+          "kanji": "",
+          "mean": "number..."
+        },
+        {
+          "kana": "ばんごう",
+          "kanji": "",
+          "mean": "number"
+        },
+        {
+          "kana": "なまえ",
+          "kanji": "",
+          "mean": "name"
+        },
+        {
+          "kana": "なん／なに",
+          "kanji": "",
+          "mean": "what"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Expressions",
+      "items": [
+        {
+          "kana": "あのう",
+          "kanji": "",
+          "mean": "um..."
+        },
+        {
+          "kana": "はい",
+          "kanji": "",
+          "mean": "yes"
+        },
+        {
+          "kana": "そうです",
+          "kanji": "",
+          "mean": "That's right."
+        },
+        {
+          "kana": "そうですか",
+          "kanji": "",
+          "mean": "I see.; Is that so?"
+        }
+      ]
+    },
+    {
+      "theme": "国 · Countries",
+      "items": [
+        {
+          "kana": "イギリス",
+          "kanji": "",
+          "mean": "Britain"
+        },
+        {
+          "kana": "オーストラリア",
+          "kanji": "",
+          "mean": "Australia"
+        },
+        {
+          "kana": "かんこく",
+          "kanji": "",
+          "mean": "Korea"
+        },
+        {
+          "kana": "カナダ",
+          "kanji": "",
+          "mean": "Canada"
+        },
+        {
+          "kana": "ちゅうごく",
+          "kanji": "",
+          "mean": "China"
+        },
+        {
+          "kana": "インド",
+          "kanji": "",
+          "mean": "India"
+        },
+        {
+          "kana": "エジプト",
+          "kanji": "",
+          "mean": "Egypt"
+        },
+        {
+          "kana": "フィリピン",
+          "kanji": "",
+          "mean": "Philippines"
+        }
+      ]
+    },
+    {
+      "theme": "専攻 · Majors",
+      "items": [
+        {
+          "kana": "アジアけんきゅう",
+          "kanji": "",
+          "mean": "Asian studies"
+        },
+        {
+          "kana": "けいざい",
+          "kanji": "",
+          "mean": "economics"
+        },
+        {
+          "kana": "こうがく",
+          "kanji": "",
+          "mean": "engineering"
+        },
+        {
+          "kana": "こくさいかんけい",
+          "kanji": "",
+          "mean": "international relations"
+        },
+        {
+          "kana": "コンピューター",
+          "kanji": "",
+          "mean": "computer"
+        },
+        {
+          "kana": "せいじ",
+          "kanji": "",
+          "mean": "politics"
+        },
+        {
+          "kana": "せいぶつがく",
+          "kanji": "",
+          "mean": "biology"
+        },
+        {
+          "kana": "ビジネス",
+          "kanji": "",
+          "mean": "business"
+        },
+        {
+          "kana": "ぶんがく",
+          "kanji": "",
+          "mean": "literature"
+        },
+        {
+          "kana": "れきし",
+          "kanji": "",
+          "mean": "history"
+        }
+      ]
+    },
+    {
+      "theme": "職業 · Occupations",
+      "items": [
+        {
+          "kana": "いしゃ",
+          "kanji": "",
+          "mean": "doctor"
+        },
+        {
+          "kana": "かいしゃいん",
+          "kanji": "",
+          "mean": "office worker"
+        },
+        {
+          "kana": "かんごし",
+          "kanji": "",
+          "mean": "nurse"
+        },
+        {
+          "kana": "こうこうせい",
+          "kanji": "",
+          "mean": "high school student"
+        },
+        {
+          "kana": "しゅふ",
+          "kanji": "",
+          "mean": "housewife"
+        },
+        {
+          "kana": "だいがくいんせい",
+          "kanji": "",
+          "mean": "graduate student"
+        },
+        {
+          "kana": "べんごし",
+          "kanji": "",
+          "mean": "lawyer"
+        }
+      ]
+    },
+    {
+      "theme": "家族 · Family",
+      "items": [
+        {
+          "kana": "おかあさん",
+          "kanji": "",
+          "mean": "mother"
+        },
+        {
+          "kana": "おとうさん",
+          "kanji": "",
+          "mean": "father"
+        },
+        {
+          "kana": "おねえさん",
+          "kanji": "",
+          "mean": "older sister"
+        },
+        {
+          "kana": "おにいさん",
+          "kanji": "",
+          "mean": "older brother"
+        },
+        {
+          "kana": "いもうと",
+          "kanji": "",
+          "mean": "younger sister"
+        },
+        {
+          "kana": "おとうと",
+          "kanji": "",
+          "mean": "younger brother"
+        }
+      ]
+    }
+  ],
+  "kanji": [],
+  "grammar": [
+    {
+      "form": "Xは Yです",
+      "tag": "\"X is Y\" — basic identity statements",
+      "def": [
+        "です simply means \"is.\" Japanese sentences often drop the subject entirely when it's clear from context. When you do need to state a topic, mark it with は (pronounced \"wa\" in this role)."
+      ],
+      "ex": [
+        "がくせいです。 (I am a student.)",
+        "わたしはソラ・キムです。 (I am Sora Kim.)"
+      ]
+    },
+    {
+      "form": "～か",
+      "tag": "Turning a statement into a question",
+      "def": [
+        "Add か to the end of a statement to turn it into a question — word order doesn't change, and no question mark is used. Question words include なん／なに (what), なんじ (what time), なんさい (how old), なんねんせい (what year in school), なんばん (what number)."
+      ],
+      "ex": [
+        "りゅうがくせいですか。 (Are you an international student?)",
+        "いま、なんじですか。 (What time is it now?)"
+      ]
+    },
+    {
+      "form": "Noun1の Noun2",
+      "tag": "Connecting two nouns — possession & specification",
+      "def": [
+        "の connects two nouns: the second noun is the main idea, and the first noun restricts or specifies it — similar to the possessive \"'s\" in English, but more general."
+      ],
+      "ex": [
+        "たけしさんのでんわばんごう (Takeshi's phone number)",
+        "にほんのだいがく (a university in Japan)"
+      ]
+    }
+  ]
+}

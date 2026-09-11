@@ -1,0 +1,514 @@
+{
+  "lesson": "2",
+  "num": "L2",
+  "title": "かいもの",
+  "en": "Shopping",
+  "vocab": [
+    {
+      "theme": "指示語 · Words That Point",
+      "items": [
+        {
+          "kana": "これ",
+          "kanji": "",
+          "mean": "this one"
+        },
+        {
+          "kana": "それ",
+          "kanji": "",
+          "mean": "that one"
+        },
+        {
+          "kana": "あれ",
+          "kanji": "",
+          "mean": "that one (over there)"
+        },
+        {
+          "kana": "どれ",
+          "kanji": "",
+          "mean": "which one"
+        },
+        {
+          "kana": "この",
+          "kanji": "",
+          "mean": "this..."
+        },
+        {
+          "kana": "その",
+          "kanji": "",
+          "mean": "that..."
+        },
+        {
+          "kana": "あの",
+          "kanji": "",
+          "mean": "that... (over there)"
+        },
+        {
+          "kana": "どの",
+          "kanji": "",
+          "mean": "which..."
+        },
+        {
+          "kana": "ここ",
+          "kanji": "",
+          "mean": "here"
+        },
+        {
+          "kana": "そこ",
+          "kanji": "",
+          "mean": "there"
+        },
+        {
+          "kana": "あそこ",
+          "kanji": "",
+          "mean": "over there"
+        },
+        {
+          "kana": "どこ",
+          "kanji": "",
+          "mean": "where"
+        },
+        {
+          "kana": "だれ",
+          "kanji": "",
+          "mean": "who"
+        }
+      ]
+    },
+    {
+      "theme": "食べ物 · Food",
+      "items": [
+        {
+          "kana": "おいしい",
+          "kanji": "",
+          "mean": "delicious"
+        },
+        {
+          "kana": "さかな",
+          "kanji": "",
+          "mean": "fish"
+        },
+        {
+          "kana": "とんかつ",
+          "kanji": "",
+          "mean": "pork cutlet"
+        },
+        {
+          "kana": "にく",
+          "kanji": "",
+          "mean": "meat"
+        },
+        {
+          "kana": "メニュー",
+          "kanji": "",
+          "mean": "menu"
+        },
+        {
+          "kana": "やさい",
+          "kanji": "",
+          "mean": "vegetable"
+        }
+      ]
+    },
+    {
+      "theme": "もの · Things",
+      "items": [
+        {
+          "kana": "かさ",
+          "kanji": "",
+          "mean": "umbrella"
+        },
+        {
+          "kana": "かばん",
+          "kanji": "",
+          "mean": "bag"
+        },
+        {
+          "kana": "くつ",
+          "kanji": "",
+          "mean": "shoes"
+        },
+        {
+          "kana": "さいふ",
+          "kanji": "",
+          "mean": "wallet"
+        },
+        {
+          "kana": "ジーンズ",
+          "kanji": "",
+          "mean": "jeans"
+        },
+        {
+          "kana": "じてんしゃ",
+          "kanji": "",
+          "mean": "bicycle"
+        },
+        {
+          "kana": "しんぶん",
+          "kanji": "",
+          "mean": "newspaper"
+        },
+        {
+          "kana": "スマホ",
+          "kanji": "",
+          "mean": "smartphone; mobile"
+        },
+        {
+          "kana": "Tシャツ",
+          "kanji": "",
+          "mean": "T-shirt"
+        },
+        {
+          "kana": "とけい",
+          "kanji": "",
+          "mean": "watch; clock"
+        },
+        {
+          "kana": "ノート",
+          "kanji": "",
+          "mean": "notebook"
+        },
+        {
+          "kana": "ペン",
+          "kanji": "",
+          "mean": "pen"
+        },
+        {
+          "kana": "ぼうし",
+          "kanji": "",
+          "mean": "hat; cap"
+        },
+        {
+          "kana": "ほん",
+          "kanji": "",
+          "mean": "book"
+        }
+      ]
+    },
+    {
+      "theme": "場所 · Places",
+      "items": [
+        {
+          "kana": "ぎんこう",
+          "kanji": "",
+          "mean": "bank"
+        },
+        {
+          "kana": "コンビニ",
+          "kanji": "",
+          "mean": "convenience store"
+        },
+        {
+          "kana": "トイレ",
+          "kanji": "",
+          "mean": "toilet; restroom"
+        },
+        {
+          "kana": "としょかん",
+          "kanji": "",
+          "mean": "library"
+        },
+        {
+          "kana": "ゆうびんきょく",
+          "kanji": "",
+          "mean": "post office"
+        }
+      ]
+    },
+    {
+      "theme": "国 · Countries",
+      "items": [
+        {
+          "kana": "イギリス",
+          "kanji": "",
+          "mean": "Britain"
+        },
+        {
+          "kana": "かんこく",
+          "kanji": "",
+          "mean": "Korea"
+        },
+        {
+          "kana": "ちゅうごく",
+          "kanji": "",
+          "mean": "China"
+        }
+      ]
+    },
+    {
+      "theme": "専攻 · Majors",
+      "items": [
+        {
+          "kana": "えいご",
+          "kanji": "",
+          "mean": "English (language)"
+        },
+        {
+          "kana": "けいざい",
+          "kanji": "",
+          "mean": "economics"
+        },
+        {
+          "kana": "コンピューター",
+          "kanji": "",
+          "mean": "computer"
+        },
+        {
+          "kana": "ビジネス",
+          "kanji": "",
+          "mean": "business"
+        },
+        {
+          "kana": "れきし",
+          "kanji": "",
+          "mean": "history"
+        }
+      ]
+    },
+    {
+      "theme": "家族 · Family",
+      "items": [
+        {
+          "kana": "おかあさん",
+          "kanji": "",
+          "mean": "mother"
+        },
+        {
+          "kana": "おとうさん",
+          "kanji": "",
+          "mean": "father"
+        }
+      ]
+    },
+    {
+      "theme": "お金 · Money Matters",
+      "items": [
+        {
+          "kana": "いくら",
+          "kanji": "",
+          "mean": "how much"
+        },
+        {
+          "kana": "～えん",
+          "kanji": "",
+          "mean": "...yen"
+        },
+        {
+          "kana": "たかい",
+          "kanji": "",
+          "mean": "expensive; high"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Expressions",
+      "items": [
+        {
+          "kana": "いらっしゃいませ",
+          "kanji": "",
+          "mean": "Welcome (to our store)."
+        },
+        {
+          "kana": "（～を）おねがいします",
+          "kanji": "",
+          "mean": "..., please."
+        },
+        {
+          "kana": "（～を）ください",
+          "kanji": "",
+          "mean": "Please give me..."
+        },
+        {
+          "kana": "じゃあ",
+          "kanji": "",
+          "mean": "then...; if that is the case,..."
+        },
+        {
+          "kana": "どうぞ",
+          "kanji": "",
+          "mean": "Please.; Here it is."
+        },
+        {
+          "kana": "どうも",
+          "kanji": "",
+          "mean": "Thank you."
+        }
+      ]
+    }
+  ],
+  "kanji": [],
+  "grammar": [
+    {
+      "form": "これ／それ／あれ／どれ",
+      "tag": "\"this / that / that over there / which\" (standalone)",
+      "def": [
+        "これ refers to something close to the speaker, それ to something close to the listener, and あれ to something far from both. どれ asks \"which one\" among three or more options. These re-series words stand alone as noun phrases and are best avoided when referring to people."
+      ],
+      "ex": [
+        "これは いくらですか。 (How much is this?)",
+        "それは 三千円です。 (That is 3,000 yen.)"
+      ],
+      "table": {
+        "head": [
+          "Word",
+          "Refers to"
+        ],
+        "rows": [
+          [
+            "これ",
+            "close to speaker"
+          ],
+          [
+            "それ",
+            "close to listener"
+          ],
+          [
+            "あれ",
+            "far from both"
+          ],
+          [
+            "どれ",
+            "which (3+ options)"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "この／その／あの／どの + Noun",
+      "tag": "\"this / that / that / which\" + noun",
+      "def": [
+        "Unlike the re-series, the no-series must be followed directly by a noun. They follow the same distance logic as これ/それ/あれ/どれ and, unlike them, are fine to use when referring to people."
+      ],
+      "ex": [
+        "この時計は いくらですか。 (How much is this watch?)",
+        "あの学生は 留学生です。 (That student over there is an international student.)"
+      ],
+      "table": {
+        "head": [
+          "re-series",
+          "no-series",
+          "Refers to"
+        ],
+        "rows": [
+          [
+            "これ（は～）",
+            "この noun（は～）",
+            "close to speaker"
+          ],
+          [
+            "それ（は～）",
+            "その noun（は～）",
+            "close to listener"
+          ],
+          [
+            "あれ（は～）",
+            "あの noun（は～）",
+            "far from both"
+          ],
+          [
+            "どれ（が～）",
+            "どの noun（が～）",
+            "unknown"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "ここ／そこ／あそこ／どこ",
+      "tag": "\"here / there / over there / where\"",
+      "def": [
+        "The last ko-so-a-do set covers locations: ここ (here, near me), そこ (there, near you), あそこ (over there), and どこ (where)."
+      ],
+      "ex": [
+        "すみません。郵便局は どこですか。 (Excuse me, where is the post office?)",
+        "（郵便局は）あそこです。 (It's right over there.)"
+      ]
+    },
+    {
+      "form": "だれの Noun",
+      "tag": "\"whose ~\" — asking who something belongs to",
+      "def": [
+        "だれ is \"who\"; adding the particle の makes it \"whose.\" This builds on the Noun1のNoun2 possessive pattern from Lesson 1."
+      ],
+      "ex": [
+        "これは だれの かばんですか。 (Whose bag is this?)",
+        "それは ソラさんの かばんです。 (That is Sora's bag.)"
+      ]
+    },
+    {
+      "form": "Noun も",
+      "tag": "\"~, too\" — attaches directly to the shared noun",
+      "def": [
+        "も means \"also/too.\" Unlike English, where \"too\" can trail the whole sentence, も must attach directly after the noun that shares the property just mentioned."
+      ],
+      "ex": [
+        "たけしさんは 日本人です。 (Takeshi is Japanese.)",
+        "ゆいさんも 日本人です。 (Yui is Japanese, too.)"
+      ],
+      "table": {
+        "head": [
+          "",
+          "Pattern",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "A",
+            "はXです",
+            "A is X"
+          ],
+          [
+            "B",
+            "もXです",
+            "B too is X"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "Noun じゃないです",
+      "tag": "Negating X wa Y desu sentences",
+      "def": [
+        "To negate です after a noun, replace it with じゃないです. じゃありません is a more conservative variant, and ではありません is the most formal, written-appropriate form. です/じゃない never stand alone — they always need a noun."
+      ],
+      "ex": [
+        "山田さんは 学生じゃないです。 (Mr. Yamada is not a student.)",
+        "いいえ、日本人じゃないです。 (No, I am not Japanese.)"
+      ],
+      "table": {
+        "head": [
+          "Style",
+          "Form"
+        ],
+        "rows": [
+          [
+            "Affirmative",
+            "（Xは）Yです"
+          ],
+          [
+            "Negative (casual)",
+            "（Xは）Yじゃないです"
+          ],
+          [
+            "Negative (neutral)",
+            "（Xは）Yじゃありません"
+          ],
+          [
+            "Negative (formal)",
+            "（Xは）Yではありません"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "～ね／～よ",
+      "tag": "Confirmation vs. assertion tags",
+      "def": [
+        "Add ね when you want the listener's agreement or confirmation (\"right?\"). Add よ when you're confident about what you're saying and want to make sure the listener knows it."
+      ],
+      "ex": [
+        "リーさんの専攻は 文学ですね。 (Ms. Lee, your major is literature, right?)",
+        "とんかつは 魚じゃないですよ。 (Let me assure you, tonkatsu isn't fish.)"
+      ]
+    }
+  ]
+}
