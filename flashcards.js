@@ -15,7 +15,7 @@
 (() => {
 'use strict';
 
-const { esc, $, $$, lessons, activeLesson } = window.GENKI;
+const { esc, $, $$, renderReadings, readingKey, lessons, activeLesson } = window.GENKI;
 
 const overlay      = $('#overlay');
 const fcBody       = $('#fcBody');
@@ -109,7 +109,7 @@ function sampleWordsHtml(examples) {
 }
 
 function kanjiFaces(card) {
-  const readings = `<div class="hint2">${esc(card.readings)}</div>`;
+  const readings = `<div class="fc-readings">${renderReadings(card)}${readingKey}</div>`;
   const character = `${sideLabel('Kanji')}<div class="big">${esc(card.char)}</div>`;
   const meaning = `<div class="mean2">${esc(card.meaning)}</div>`;
 

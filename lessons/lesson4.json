@@ -358,85 +358,162 @@
   "kanji": [
     {
       "char": "日",
-      "readings": "に／にち／にっ； び／ひ／か",
+      "on": [
+        "に",
+        "にち",
+        "にっ"
+      ],
+      "kun": [
+        "び",
+        "ひ",
+        "か"
+      ],
       "meaning": "day; sun",
       "examples": "日本(にほん) Japan・日曜日(にちようび) Sunday・毎日(まいにち) every day・日記(にっき) diary"
     },
     {
       "char": "本",
-      "readings": "ほん； もと",
+      "on": [
+        "ほん"
+      ],
+      "kun": [
+        "もと"
+      ],
       "meaning": "book; basis",
       "examples": "本(ほん) book・日本(にほん) Japan・日本語(にほんご) Japanese language"
     },
     {
       "char": "人",
-      "readings": "じん／にん； ひと",
+      "on": [
+        "じん",
+        "にん"
+      ],
+      "kun": [
+        "ひと"
+      ],
       "meaning": "person",
       "examples": "日本人(にほんじん) Japanese people・一人で(ひとりで) alone・三人(さんにん) three people"
     },
     {
       "char": "月",
-      "readings": "げつ／がつ； つき",
+      "on": [
+        "げつ",
+        "がつ"
+      ],
+      "kun": [
+        "つき"
+      ],
       "meaning": "moon; month",
       "examples": "月曜日(げつようび) Monday・一月(いちがつ) January・今月(こんげつ) this month"
     },
     {
       "char": "火",
-      "readings": "か； ひ／び",
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "ひ",
+        "び"
+      ],
       "meaning": "fire",
       "examples": "火曜日(かようび) Tuesday・火(ひ) fire・花火(はなび) fireworks"
     },
     {
       "char": "水",
-      "readings": "すい； みず",
+      "on": [
+        "すい"
+      ],
+      "kun": [
+        "みず"
+      ],
       "meaning": "water",
       "examples": "水曜日(すいようび) Wednesday・水(みず) water・水泳(すいえい) swimming"
     },
     {
       "char": "木",
-      "readings": "もく； き",
+      "on": [
+        "もく"
+      ],
+      "kun": [
+        "き"
+      ],
       "meaning": "tree",
       "examples": "木曜日(もくようび) Thursday・木(き) tree"
     },
     {
       "char": "金",
-      "readings": "きん； かね",
+      "on": [
+        "きん"
+      ],
+      "kun": [
+        "かね"
+      ],
       "meaning": "gold; money",
       "examples": "金曜日(きんようび) Friday・お金(おかね) money"
     },
     {
       "char": "土",
-      "readings": "ど／と； つち",
+      "on": [
+        "ど",
+        "と"
+      ],
+      "kun": [
+        "つち"
+      ],
       "meaning": "soil",
       "examples": "土曜日(どようび) Saturday・土(つち) soil"
     },
     {
       "char": "曜",
-      "readings": "よう",
+      "on": [
+        "よう"
+      ],
+      "kun": [],
       "meaning": "weekday",
       "examples": "曜日(ようび) day of the week"
     },
     {
       "char": "上",
-      "readings": "じょう； うえ／のぼ(る)",
+      "on": [
+        "じょう"
+      ],
+      "kun": [
+        "うえ",
+        "のぼ"
+      ],
       "meaning": "up",
       "examples": "上(うえ) top; above・上手な(じょうずな) good at・上る(のぼる) to go up"
     },
     {
       "char": "下",
-      "readings": "か； した／くだ(さい)",
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "した",
+        "くだ"
+      ],
       "meaning": "down",
       "examples": "下(した) under・下手な(へたな) poor at・下さい(ください) please give/do"
     },
     {
       "char": "中",
-      "readings": "ちゅう／じゅう； なか",
+      "on": [
+        "ちゅう",
+        "じゅう"
+      ],
+      "kun": [
+        "なか"
+      ],
       "meaning": "middle",
       "examples": "中(なか) inside・中国(ちゅうごく) China・一年中(いちねんじゅう) all year"
     },
     {
       "char": "半",
-      "readings": "はん",
+      "on": [
+        "はん"
+      ],
+      "kun": [],
       "meaning": "half",
       "examples": "三時半(さんじはん) half past three・半分(はんぶん) half"
     }

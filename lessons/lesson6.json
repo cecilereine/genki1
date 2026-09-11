@@ -273,91 +273,179 @@
   "kanji": [
     {
       "char": "東",
-      "readings": "とう； ひがし",
+      "on": [
+        "とう"
+      ],
+      "kun": [
+        "ひがし"
+      ],
       "meaning": "east",
       "examples": "東(ひがし) east・東京(とうきょう) Tokyo・関東(かんとう) Kanto area"
     },
     {
       "char": "西",
-      "readings": "せい／さい； にし",
+      "on": [
+        "せい",
+        "さい"
+      ],
+      "kun": [
+        "にし"
+      ],
       "meaning": "west",
       "examples": "西(にし) west・関西(かんさい) Kansai area"
     },
     {
       "char": "南",
-      "readings": "なん； みなみ",
+      "on": [
+        "なん"
+      ],
+      "kun": [
+        "みなみ"
+      ],
       "meaning": "south",
       "examples": "南(みなみ) south・南東(なんとう) southeast"
     },
     {
       "char": "北",
-      "readings": "ほく／ほっ； きた",
+      "on": [
+        "ほく",
+        "ほっ"
+      ],
+      "kun": [
+        "きた"
+      ],
       "meaning": "north",
       "examples": "北(きた) north・北海道(ほっかいどう) Hokkaido"
     },
     {
       "char": "口",
-      "readings": "こう； ぐち／くち",
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "ぐち",
+        "くち"
+      ],
       "meaning": "mouth",
       "examples": "口(くち) mouth・入り口(いりぐち) entrance・人口(じんこう) population"
     },
     {
       "char": "出",
-      "readings": "しゅつ／しゅっ； で／だ(す)",
+      "on": [
+        "しゅっ",
+        "しゅつ"
+      ],
+      "kun": [
+        "で",
+        "だ"
+      ],
       "meaning": "to exit",
       "examples": "出る(でる) to exit・出口(でぐち) exit・出す(だす) to take out"
     },
     {
       "char": "右",
-      "readings": "う／ゆう； みぎ",
+      "on": [
+        "う",
+        "ゆう"
+      ],
+      "kun": [
+        "みぎ"
+      ],
       "meaning": "right",
       "examples": "右(みぎ) right・右折(うせつ) right turn"
     },
     {
       "char": "左",
-      "readings": "さ； ひだり",
+      "on": [
+        "さ"
+      ],
+      "kun": [
+        "ひだり"
+      ],
       "meaning": "left",
       "examples": "左(ひだり) left・左折(させつ) left turn"
     },
     {
       "char": "分",
-      "readings": "ふん／ぷん／ぶん； わ(ける)",
+      "on": [
+        "ふん",
+        "ぷん",
+        "ぶん"
+      ],
+      "kun": [
+        "わ"
+      ],
       "meaning": "minute; to divide",
       "examples": "五分(ごふん) five minutes・自分(じぶん) oneself・分ける(わける) to divide"
     },
     {
       "char": "先",
-      "readings": "せん； さき",
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "さき"
+      ],
       "meaning": "ahead",
       "examples": "先生(せんせい) teacher・先週(せんしゅう) last week"
     },
     {
       "char": "生",
-      "readings": "せい／しょう； う(まれる)",
+      "on": [
+        "せい",
+        "しょう"
+      ],
+      "kun": [
+        "う"
+      ],
       "meaning": "birth",
       "examples": "学生(がくせい) student・先生(せんせい) teacher・生まれる(うまれる) to be born"
     },
     {
       "char": "大",
-      "readings": "だい／たい； おお(きい)",
+      "on": [
+        "だい",
+        "たい"
+      ],
+      "kun": [
+        "おお"
+      ],
       "meaning": "big",
       "examples": "大学生(だいがくせい) college student・大きい(おおきい) big"
     },
     {
       "char": "学",
-      "readings": "がく／がっ； まな(ぶ)",
+      "on": [
+        "がく",
+        "がっ"
+      ],
+      "kun": [
+        "まな"
+      ],
       "meaning": "learning",
       "examples": "大学(だいがく) university・学校(がっこう) school・学ぶ(まなぶ) to study"
     },
     {
       "char": "外",
-      "readings": "がい； そと",
+      "on": [
+        "がい"
+      ],
+      "kun": [
+        "そと"
+      ],
       "meaning": "outside",
       "examples": "外国(がいこく) foreign country・外(そと) outside"
     },
     {
       "char": "国",
-      "readings": "こく／ごく／こっ； くに",
+      "on": [
+        "こく",
+        "ごく",
+        "こっ"
+      ],
+      "kun": [
+        "くに"
+      ],
       "meaning": "country",
       "examples": "外国(がいこく) foreign country・中国(ちゅうごく) China・国(くに) country"
     }

@@ -318,85 +318,152 @@
   "kanji": [
     {
       "char": "員",
-      "readings": "いん",
+      "on": [
+        "いん"
+      ],
+      "kun": [],
       "meaning": "member",
       "examples": "会社員(かいしゃいん) office worker・店員(てんいん) store clerk"
     },
     {
       "char": "新",
-      "readings": "しん； あたら(しい)",
+      "on": [
+        "しん"
+      ],
+      "kun": [
+        "あたら"
+      ],
       "meaning": "new",
       "examples": "新しい(あたらしい) new・新聞(しんぶん) newspaper"
     },
     {
       "char": "聞",
-      "readings": "ぶん； き(く)",
+      "on": [
+        "ぶん"
+      ],
+      "kun": [
+        "き"
+      ],
       "meaning": "to listen",
       "examples": "聞く(きく) to listen・新聞(しんぶん) newspaper"
     },
     {
       "char": "作",
-      "readings": "さく； つく(る)",
+      "on": [
+        "さく"
+      ],
+      "kun": [
+        "つく"
+      ],
       "meaning": "to make",
       "examples": "作る(つくる) to make・作文(さくぶん) composition"
     },
     {
       "char": "仕",
-      "readings": "し； つか(える)",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "つか"
+      ],
       "meaning": "to serve",
       "examples": "仕事(しごと) job"
     },
     {
       "char": "事",
-      "readings": "じ； ごと／こと",
+      "on": [
+        "じ"
+      ],
+      "kun": [
+        "ごと",
+        "こと"
+      ],
       "meaning": "thing",
       "examples": "仕事(しごと) job・食事(しょくじ) meal"
     },
     {
       "char": "電",
-      "readings": "でん",
+      "on": [
+        "でん"
+      ],
+      "kun": [],
       "meaning": "electricity",
       "examples": "電車(でんしゃ) train・電気(でんき) electricity"
     },
     {
       "char": "車",
-      "readings": "しゃ； くるま",
+      "on": [
+        "しゃ"
+      ],
+      "kun": [
+        "くるま"
+      ],
       "meaning": "car",
       "examples": "車(くるま) car・電車(でんしゃ) train"
     },
     {
       "char": "休",
-      "readings": "きゅう； やす(む)",
+      "on": [
+        "きゅう"
+      ],
+      "kun": [
+        "やす"
+      ],
       "meaning": "to rest",
       "examples": "休む(やすむ) to be absent; to rest・休み(やすみ) holiday"
     },
     {
       "char": "言",
-      "readings": "げん； い(う)／こと",
+      "on": [
+        "げん"
+      ],
+      "kun": [
+        "い",
+        "こと"
+      ],
       "meaning": "to say",
       "examples": "言う(いう) to say・言葉(ことば) word; language"
     },
     {
       "char": "読",
-      "readings": "どく； よ(む)",
+      "on": [
+        "どく"
+      ],
+      "kun": [
+        "よ"
+      ],
       "meaning": "to read",
       "examples": "読む(よむ) to read・読書(どくしょ) reading books"
     },
     {
       "char": "思",
-      "readings": "し； おも(う)",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "おも"
+      ],
       "meaning": "to think",
       "examples": "思う(おもう) to think"
     },
     {
       "char": "次",
-      "readings": "じ； つぎ",
+      "on": [
+        "じ"
+      ],
+      "kun": [
+        "つぎ"
+      ],
       "meaning": "next",
       "examples": "次(つぎ) next・次回(じかい) next time"
     },
     {
       "char": "何",
-      "readings": "なに／なん",
+      "on": [],
+      "kun": [
+        "なに",
+        "なん"
+      ],
       "meaning": "what",
       "examples": "何(なに) what・何時(なんじ) what time"
     }

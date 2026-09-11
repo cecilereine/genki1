@@ -104,6 +104,13 @@ section.lesson{margin-top:22px}
 .kcard.flip .kj-read,.kcard.flip .kj-mean,.kcard.flip .kj-ex{visibility:hidden}
 .kcard.flip::after{content:"👆 tap to reveal";position:absolute;left:0;right:0;bottom:10px;text-align:center;font-size:11px;color:var(--muted)}
 .kcard.flip{background:#f3edf9}
+/* On'yomi / kun'yomi lines, marked ▶ / ▷ the way the Genki kanji charts mark them. */
+.reading{line-height:1.55}
+.reading .mark{font-size:.75em;color:var(--muted);margin-right:4px}
+.reading-key{font-size:12px;color:var(--muted);margin:0 0 12px 2px}
+.reading-key .mark{font-size:.85em}
+.fc-card .fc-readings{font-size:15px;color:#8a5cbf;font-weight:600;margin-top:8px}
+.fc-card .fc-readings .reading-key{font-size:11px;font-weight:400;margin:6px 0 0}
 
 .gcard{
   background:var(--card);border:1px solid var(--line);border-radius:16px;

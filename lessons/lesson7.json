@@ -323,85 +323,148 @@
   "kanji": [
     {
       "char": "京",
-      "readings": "きょう",
+      "on": [
+        "きょう"
+      ],
+      "kun": [],
       "meaning": "capital",
       "examples": "東京(とうきょう) Tokyo・京都(きょうと) Kyoto"
     },
     {
       "char": "子",
-      "readings": "し； こ",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "こ"
+      ],
       "meaning": "child",
       "examples": "子ども(こども) child・女の子(おんなのこ) girl・男の子(おとこのこ) boy"
     },
     {
       "char": "小",
-      "readings": "しょう； ちい(さい)",
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "ちい"
+      ],
       "meaning": "small",
       "examples": "小さい(ちいさい) small・小学校(しょうがっこう) elementary school"
     },
     {
       "char": "会",
-      "readings": "かい； あ(う)",
+      "on": [
+        "かい"
+      ],
+      "kun": [
+        "あ"
+      ],
       "meaning": "to meet",
       "examples": "会う(あう) to meet・会社(かいしゃ) company・会議(かいぎ) meeting"
     },
     {
       "char": "社",
-      "readings": "しゃ／じゃ",
+      "on": [
+        "しゃ",
+        "じゃ"
+      ],
+      "kun": [],
       "meaning": "company",
       "examples": "会社(かいしゃ) company・神社(じんじゃ) shrine"
     },
     {
       "char": "父",
-      "readings": "ふ； ちち／とう",
+      "on": [
+        "ふ"
+      ],
+      "kun": [
+        "ちち",
+        "とう"
+      ],
       "meaning": "father",
       "examples": "父(ちち) father・お父さん(おとうさん) father"
     },
     {
       "char": "母",
-      "readings": "ぼ； はは／かあ",
+      "on": [
+        "ぼ"
+      ],
+      "kun": [
+        "はは",
+        "かあ"
+      ],
       "meaning": "mother",
       "examples": "母(はは) mother・お母さん(おかあさん) mother"
     },
     {
       "char": "高",
-      "readings": "こう； たか(い)",
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "たか"
+      ],
       "meaning": "high",
       "examples": "高い(たかい) expensive; high・高校(こうこう) high school"
     },
     {
       "char": "校",
-      "readings": "こう",
+      "on": [
+        "こう"
+      ],
+      "kun": [],
       "meaning": "school",
       "examples": "学校(がっこう) school・高校(こうこう) high school"
     },
     {
       "char": "毎",
-      "readings": "まい",
+      "on": [
+        "まい"
+      ],
+      "kun": [],
       "meaning": "every",
       "examples": "毎日(まいにち) every day・毎週(まいしゅう) every week"
     },
     {
       "char": "語",
-      "readings": "ご",
+      "on": [
+        "ご"
+      ],
+      "kun": [],
       "meaning": "word; language",
       "examples": "日本語(にほんご) Japanese language・英語(えいご) English"
     },
     {
       "char": "文",
-      "readings": "ぶん",
+      "on": [
+        "ぶん"
+      ],
+      "kun": [],
       "meaning": "sentence",
       "examples": "文学(ぶんがく) literature・作文(さくぶん) composition"
     },
     {
       "char": "帰",
-      "readings": "き； かえ(る)",
+      "on": [
+        "き"
+      ],
+      "kun": [
+        "かえ"
+      ],
       "meaning": "to return",
       "examples": "帰る(かえる) to return・帰国(きこく) going home"
     },
     {
       "char": "入",
-      "readings": "にゅう； はい(る)／い(れる)",
+      "on": [
+        "にゅう"
+      ],
+      "kun": [
+        "はい",
+        "い",
+        "いり"
+      ],
       "meaning": "to enter",
       "examples": "入る(はいる) to enter・入り口(いりぐち) entrance・入れる(いれる) to put in"
     }

@@ -41,7 +41,7 @@ Each `lessons/lessonN.json` is one lesson:
   "title": "あたらしいともだち", // Japanese title
   "en": "New Friends",        // English title
   "vocab":   [{ "theme": "学校 · School", "items": [{ "kana": "…", "kanji": "…", "mean": "…" }] }],
-  "kanji":   [{ "char": "一", "readings": "…", "meaning": "…", "examples": "一(いち) one・一時(いちじ) one o'clock" }],
+  "kanji":   [{ "char": "一", "on": ["いち", "いっ"], "kun": ["ひと"], "meaning": "one", "examples": "一(いち) one・一時(いちじ) one o'clock" }],
   "grammar": [{ "form": "…", "tag": "…", "def": ["paragraph", "…"], "ex": ["sentence", "…"],
                 "table": { "head": ["…"], "rows": [["…"]] } }]
 }
@@ -52,6 +52,9 @@ Notes:
 - `kanji` may be empty (lessons 1–2 introduce none) and `table` is optional on a
   grammar point.
 - `kanji` on a vocabulary item may be `""` — the card then shows kana only.
+- `on` and `kun` on a kanji entry are the on'yomi and kun'yomi exactly as the
+  Genki kanji charts list them (the book's ▶ and ▷), in hiragana like the book.
+  Either may be `[]` — 気 has no kun'yomi here, 川 no on'yomi.
 - `examples` on a kanji entry is a single `・`-separated string; the flashcard
   back shows the first four.
 - To add lesson 9, drop in `lessons/lesson9.json`, add it to

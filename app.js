@@ -7,10 +7,12 @@
      lesson.title   → Japanese lesson title
      lesson.en      → English lesson title
      lesson.vocab   → [{ theme, items: [{ kana, kanji, mean }] }]
-     lesson.kanji   → [{ char, readings, meaning, examples }]
+     lesson.kanji   → [{ char, on: [reading…], kun: [reading…], meaning, examples }]
      lesson.grammar → [{ form, tag, def: [paragraph…], ex: [sentence…], table? }]
 
    `table` is { head: [...], rows: [[...], ...] }.
+   `on` / `kun` are the on'yomi and kun'yomi exactly as the Genki kanji charts list
+   them (in hiragana, like the book); either may be empty.
    ============================================================= */
 
 let LESSONS = [];
@@ -49,14 +51,31 @@ function renderVocabGroup(group, lesson) {
     <div class="grid">${group.items.map(item => renderVocabCard(item, lesson)).join('')}</div>`;
 }
 
+/* Readings the way the Genki kanji charts print them: ▶ marks on'yomi, ▷ marks
+   kun'yomi. Only the lines a kanji actually has are shown. */
+const READING_MARKS = { on: ['▶', "on'yomi"], kun: ['▷', "kun'yomi"] };
+
+function renderReadings(entry) {
+  return ['on', 'kun']
+    .filter(kind => entry[kind]?.length)
+    .map(kind => {
+      const [mark, name] = READING_MARKS[kind];
+      return `<div class="reading ${kind}"><span class="mark" title="${name}">${mark}</span>${entry[kind].map(esc).join('　')}</div>`;
+    })
+    .join('');
+}
+
+const READING_KEY =
+  `<div class="reading-key"><span class="mark">▶</span> on'yomi　<span class="mark">▷</span> kun'yomi</div>`;
+
 function renderKanjiCard(entry, lesson) {
   return `
     <div class="kcard"
          data-id="${esc(`${lesson.lesson}|${entry.char}`)}"
-         data-search="${esc(searchText(entry.char, entry.readings, entry.meaning, entry.examples))}">
+         data-search="${esc(searchText(entry.char, entry.on.join(' '), entry.kun.join(' '), entry.meaning, entry.examples))}">
       <span class="learned-badge" title="Learned">✓</span>
       <div class="kj-char">${esc(entry.char)}</div>
-      <div class="kj-read">${esc(entry.readings)}</div>
+      <div class="kj-read">${renderReadings(entry)}</div>
       <div class="kj-mean">${esc(entry.meaning)}</div>
       <div class="kj-ex">${esc(entry.examples)}</div>
     </div>`;
@@ -66,6 +85,7 @@ function renderKanjiBlock(lesson) {
   if (!lesson.kanji?.length) return '';
   return `
     <div class="block-title"><span class="dot k"></span>漢字 · Kanji</div>
+    ${READING_KEY}
     <div class="grid">${lesson.kanji.map(entry => renderKanjiCard(entry, lesson)).join('')}</div>`;
 }
 
@@ -232,6 +252,8 @@ content.addEventListener('click', event => {
 window.GENKI = {
   esc,
   $, $$,
+  renderReadings,             // (kanji entry) => the ▶ on'yomi / ▷ kun'yomi lines
+  readingKey: READING_KEY,    // the ▶ / ▷ legend
   lessons: () => LESSONS,
   activeLesson: () => activeLesson,
 };

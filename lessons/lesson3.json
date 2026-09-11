@@ -338,91 +338,171 @@
   "kanji": [
     {
       "char": "一",
-      "readings": "いち／いっ； ひと",
+      "on": [
+        "いち",
+        "いっ"
+      ],
+      "kun": [
+        "ひと"
+      ],
       "meaning": "one",
       "examples": "一(いち) one・一時(いちじ) one o'clock・一年生(いちねんせい) first-year student・一分(いっぷん) one minute・一つ(ひとつ) one"
     },
     {
       "char": "二",
-      "readings": "に； ふた",
+      "on": [
+        "に"
+      ],
+      "kun": [
+        "ふた"
+      ],
       "meaning": "two",
       "examples": "二(に) two・二時(にじ) two o'clock・二年生(にねんせい) second-year student・二つ(ふたつ) two"
     },
     {
       "char": "三",
-      "readings": "さん； みっ",
+      "on": [
+        "さん"
+      ],
+      "kun": [
+        "みっ"
+      ],
       "meaning": "three",
       "examples": "三(さん) three・三時(さんじ) three o'clock・三年生(さんねんせい) third-year student・三月(さんがつ) March・三つ(みっつ) three"
     },
     {
       "char": "四",
-      "readings": "し； よん／よ／よっ",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "よん",
+        "よ",
+        "よっ"
+      ],
       "meaning": "four",
       "examples": "四(よん) four・四時(よじ) four o'clock・四年生(よねんせい) fourth-year student・四月(しがつ) April・四つ(よっつ) four"
     },
     {
       "char": "五",
-      "readings": "ご； いつ",
+      "on": [
+        "ご"
+      ],
+      "kun": [
+        "いつ"
+      ],
       "meaning": "five",
       "examples": "五(ご) five・五時(ごじ) five o'clock・五月(ごがつ) May・五歳(ごさい) five years old・五つ(いつつ) five"
     },
     {
       "char": "六",
-      "readings": "ろく／ろっ； むっ",
+      "on": [
+        "ろく",
+        "ろっ"
+      ],
+      "kun": [
+        "むっ"
+      ],
       "meaning": "six",
       "examples": "六(ろく) six・六時(ろくじ) six o'clock・六百(ろっぴゃく) six hundred・六つ(むっつ) six"
     },
     {
       "char": "七",
-      "readings": "しち； なな",
+      "on": [
+        "しち"
+      ],
+      "kun": [
+        "なな"
+      ],
       "meaning": "seven",
       "examples": "七(しち／なな) seven・七時(しちじ) seven o'clock・七月(しちがつ) July・七つ(ななつ) seven"
     },
     {
       "char": "八",
-      "readings": "はち／はっ； やっ",
+      "on": [
+        "はち",
+        "はっ"
+      ],
+      "kun": [
+        "やっ"
+      ],
       "meaning": "eight",
       "examples": "八(はち) eight・八時(はちじ) eight o'clock・八百(はっぴゃく) eight hundred・八つ(やっつ) eight"
     },
     {
       "char": "九",
-      "readings": "きゅう／く； ここの",
+      "on": [
+        "きゅう",
+        "く"
+      ],
+      "kun": [
+        "ここの"
+      ],
       "meaning": "nine",
       "examples": "九(きゅう) nine・九時(くじ) nine o'clock・九月(くがつ) September・九つ(ここのつ) nine"
     },
     {
       "char": "十",
-      "readings": "じゅう／じゅっ／じっ； とお",
+      "on": [
+        "じゅう",
+        "じゅっ",
+        "じっ"
+      ],
+      "kun": [
+        "とお"
+      ],
       "meaning": "ten",
       "examples": "十(じゅう) ten・十時(じゅうじ) ten o'clock・十月(じゅうがつ) October・十(とお) ten"
     },
     {
       "char": "百",
-      "readings": "ひゃく／びゃく／ぴゃく",
+      "on": [
+        "ひゃく",
+        "びゃく",
+        "ぴゃく"
+      ],
+      "kun": [],
       "meaning": "hundred",
       "examples": "百(ひゃく) hundred・三百(さんびゃく) three hundred・六百(ろっぴゃく) six hundred・八百(はっぴゃく) eight hundred"
     },
     {
       "char": "千",
-      "readings": "せん／ぜん",
+      "on": [
+        "せん",
+        "ぜん"
+      ],
+      "kun": [],
       "meaning": "thousand",
       "examples": "千(せん) thousand・三千(さんぜん) three thousand・八千(はっせん) eight thousand・千円(せんえん) one thousand yen"
     },
     {
       "char": "万",
-      "readings": "まん",
+      "on": [
+        "まん"
+      ],
+      "kun": [],
       "meaning": "ten thousand",
       "examples": "一万(いちまん) ten thousand・十万(じゅうまん) one hundred thousand・百万(ひゃくまん) one million"
     },
     {
       "char": "円",
-      "readings": "えん； まる",
+      "on": [
+        "えん"
+      ],
+      "kun": [
+        "まる"
+      ],
       "meaning": "yen; circle",
       "examples": "百円(ひゃくえん) one hundred yen・円(えん) circle・円い(まるい) round"
     },
     {
       "char": "時",
-      "readings": "じ； とき",
+      "on": [
+        "じ"
+      ],
+      "kun": [
+        "とき"
+      ],
       "meaning": "time",
       "examples": "一時(いちじ) one o'clock・時間(じかん) time; ...hours・時々(ときどき) sometimes・時計(とけい) watch; clock"
     }

@@ -298,85 +298,151 @@
   "kanji": [
     {
       "char": "山",
-      "readings": "さん； やま",
+      "on": [
+        "さん"
+      ],
+      "kun": [
+        "やま"
+      ],
       "meaning": "mountain",
       "examples": "山(やま) mountain・富士山(ふじさん) Mt. Fuji"
     },
     {
       "char": "川",
-      "readings": "かわ／がわ",
+      "on": [],
+      "kun": [
+        "かわ",
+        "がわ"
+      ],
       "meaning": "river",
       "examples": "川(かわ) river・山川さん(やまかわさん) Mr./Ms. Yamakawa"
     },
     {
       "char": "元",
-      "readings": "げん／がん； もと",
+      "on": [
+        "げん",
+        "がん"
+      ],
+      "kun": [
+        "もと"
+      ],
       "meaning": "origin",
       "examples": "元気な(げんきな) fine・元日(がんじつ) New Year's Day・地元(じもと) local"
     },
     {
       "char": "気",
-      "readings": "き",
+      "on": [
+        "き"
+      ],
+      "kun": [],
       "meaning": "spirit",
       "examples": "元気な(げんきな) fine・天気(てんき) weather・人気(にんき) popularity"
     },
     {
       "char": "天",
-      "readings": "てん",
+      "on": [
+        "てん"
+      ],
+      "kun": [],
       "meaning": "heaven",
       "examples": "天気(てんき) weather・天才(てんさい) genius"
     },
     {
       "char": "私",
-      "readings": "し； わたし",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "わたし"
+      ],
       "meaning": "I; private",
       "examples": "私(わたし) I・私立大学(しりつだいがく) private university"
     },
     {
       "char": "今",
-      "readings": "こん； いま",
+      "on": [
+        "こん"
+      ],
+      "kun": [
+        "いま"
+      ],
       "meaning": "now",
       "examples": "今(いま) now・今日(きょう) today・今晩(こんばん) tonight"
     },
     {
       "char": "田",
-      "readings": "た／だ",
+      "on": [],
+      "kun": [
+        "た",
+        "だ"
+      ],
       "meaning": "rice field",
       "examples": "田中さん(たなかさん) Mr./Ms. Tanaka・山田さん(やまださん) Mr./Ms. Yamada"
     },
     {
       "char": "女",
-      "readings": "じょ； おんな",
+      "on": [
+        "じょ"
+      ],
+      "kun": [
+        "おんな"
+      ],
       "meaning": "woman",
       "examples": "女の人(おんなのひと) woman・女性(じょせい) woman・女の子(おんなのこ) girl"
     },
     {
       "char": "男",
-      "readings": "だん； おとこ",
+      "on": [
+        "だん"
+      ],
+      "kun": [
+        "おとこ"
+      ],
       "meaning": "man",
       "examples": "男の人(おとこのひと) man・男性(だんせい) man・男の子(おとこのこ) boy"
     },
     {
       "char": "見",
-      "readings": "けん； み(る)",
+      "on": [
+        "けん"
+      ],
+      "kun": [
+        "み"
+      ],
       "meaning": "to see",
       "examples": "見る(みる) to see・見物(けんぶつ) sightseeing・意見(いけん) opinion"
     },
     {
       "char": "行",
-      "readings": "こう／ぎょう； い(く)",
+      "on": [
+        "こう",
+        "ぎょう"
+      ],
+      "kun": [
+        "い"
+      ],
       "meaning": "to go",
       "examples": "行く(いく) to go・銀行(ぎんこう) bank・旅行(りょこう) travel"
     },
     {
       "char": "食",
-      "readings": "しょく； た(べる)",
+      "on": [
+        "しょく"
+      ],
+      "kun": [
+        "た"
+      ],
       "meaning": "to eat",
       "examples": "食べる(たべる) to eat・食堂(しょくどう) cafeteria・朝食(ちょうしょく) breakfast"
     },
     {
       "char": "飲",
-      "readings": "いん； の(む)",
+      "on": [
+        "いん"
+      ],
+      "kun": [
+        "の"
+      ],
       "meaning": "to drink",
       "examples": "飲む(のむ) to drink・飲み物(のみもの) drink"
     }
