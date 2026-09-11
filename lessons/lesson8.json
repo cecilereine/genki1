@@ -476,8 +476,8 @@
         "Short (plain) forms are the casual counterpart to the long (polite) forms used so far. Verbs: dictionary form / ない-form. い-adjectives: drop です. な-adjectives and noun+です: replace です with だ (affirmative) or drop です (negative, ～じゃない)."
       ],
       "ex": [
-        "食べます→食べる、食べません→食べない。",
-        "静かです→静かだ、静かじゃないです→静かじゃない。"
+        "食[た]べます→食[た]べる、食[た]べません→食[た]べない。",
+        "静[しず]かです→静[しず]かだ、静[しず]かじゃないです→静[しず]かじゃない。"
       ],
       "table": {
         "head": [
@@ -516,8 +516,8 @@
         "Close friends and family use short forms at the end of sentences. Casual questions drop か and rely on rising intonation; だ after な-adjectives/nouns is usually dropped too, but kept before ね or よ."
       ],
       "ex": [
-        "今日、暇？ (Are you free today?)",
-        "メアリーさんは二年生だよ。 (Mary is a sophomore.)"
+        "今日[きょう]、暇[ひま]？ (Are you free today?)",
+        "メアリーさんは二年生[にねんせい]だよ。 (Mary is a sophomore.)"
       ]
     },
     {
@@ -527,7 +527,7 @@
         "Attach と思います to a short-form clause to state an opinion, \"I think that ~.\" To say you don't think something is so, it's more natural to make the clause itself negative: ～ないと思います."
       ],
       "ex": [
-        "たけしさんはメアリーさんが好きだと思います。 (I think Takeshi likes Mary.)"
+        "たけしさんはメアリーさんが好[す]きだと思[おも]います。 (I think Takeshi likes Mary.)"
       ]
     },
     {
@@ -537,7 +537,7 @@
         "Attach と言っていました to a short-form clause to report what someone said, \"they said that ~.\" The tense of the original statement is preserved."
       ],
       "ex": [
-        "山下先生は結婚していないと言っていました。 (Professor Yamashita said he isn't married.)"
+        "山下[やました]先生[せんせい]は結婚[けっこん]していないと言[い]っていました。 (Professor Yamashita said he isn't married.)"
       ]
     },
     {
@@ -547,7 +547,7 @@
         "Attach でください to a verb's short negative (ない) form for a softer request not to do something than てはいけません."
       ],
       "ex": [
-        "ここで写真を撮らないでください。 (Please don't take pictures here.)"
+        "ここで写真[しゃしん]を撮[と]らないでください。 (Please don't take pictures here.)"
       ]
     },
     {
@@ -557,7 +557,7 @@
         "Adding の after a verb's short form turns it into a noun, so it can pair with 好き／嫌い／上手／下手."
       ],
       "ex": [
-        "ロバートさんは料理を作るのが上手です。 (Robert is good at cooking.)"
+        "ロバートさんは料理[りょうり]を作[つく]るのが上手[じょうず]です。 (Robert is good at cooking.)"
       ]
     },
     {
@@ -567,7 +567,7 @@
         "が marks a subject that is new information to the listener, unlike は which marks an already-known topic. Question words like だれ and 何 as the subject always take が, never は."
       ],
       "ex": [
-        "だれが沖縄に行きましたか。 (Who went to Okinawa?)"
+        "だれが沖縄[おきなわ]に行[い]きましたか。 (Who went to Okinawa?)"
       ]
     },
     {
@@ -577,8 +577,8 @@
         "何か means \"something\" (positive statements/questions); 何も with a negative verb means \"not...anything.\""
       ],
       "ex": [
-        "猫が何か持ってきました。 (The cat brought something.)",
-        "猫は何も食べませんでした。 (The cat didn't eat anything.)"
+        "猫[ねこ]が何[なに]か持[も]ってきました。 (The cat brought something.)",
+        "猫[ねこ]は何[なに]も食[た]べませんでした。 (The cat didn't eat anything.)"
       ]
     }
   ]

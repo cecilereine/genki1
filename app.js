@@ -13,6 +13,8 @@
    `table` is { head: [...], rows: [[...], ...] }.
    `on` / `kun` are the on'yomi and kun'yomi exactly as the Genki kanji charts list
    them (in hiragana, like the book); either may be empty.
+   Example sentences carry furigana inline as 漢字[よみ]: the reading in brackets
+   belongs to the run of kanji right before it (see rubyHtml below).
    ============================================================= */
 
 let LESSONS = [];
@@ -98,15 +100,22 @@ function renderTable(table) {
   return `<table class="conj"><tr>${head}</tr>${rows}</table>`;
 }
 
+/* Furigana in example sentences, written 漢字[よみ] (the Anki notation). */
+const FURIGANA = /([㐀-鿿々〆ヶ]+)\[([^\]]+)\]/g;
+const withoutFurigana = text => text.replace(FURIGANA, '$1');   // 見[み]ます → 見ます
+const furiganaOnly    = text => text.replace(FURIGANA, '$2');   // 見[み]ます → みます
+const rubyHtml        = text => esc(text).replace(FURIGANA, '<ruby>$1<rt>$2</rt></ruby>');
+
 function renderGrammarCard(point) {
   const examples = point.ex.length
     ? `<div class="lbl ex-lbl">例文 · Examples</div>
-       <ul class="ex-list">${point.ex.map(example => `<li>${esc(example)}</li>`).join('')}</ul>`
+       <ul class="ex-list">${point.ex.map(example => `<li>${rubyHtml(example)}</li>`).join('')}</ul>`
     : '';
 
   return `
     <div class="gcard"
-         data-search="${esc(searchText(point.form, point.tag, point.def.join(' '), point.ex.join(' ')))}">
+         data-search="${esc(searchText(point.form, point.tag, point.def.join(' '),
+           point.ex.map(withoutFurigana).join(' '), point.ex.map(furiganaOnly).join(' ')))}">
       <span class="form">${esc(point.form)}</span>
       <div class="tagline">${esc(point.tag)}</div>
 

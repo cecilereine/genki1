@@ -477,8 +477,8 @@
         "Activity verbs (食べる, 読む, etc.) in their て-form + いる describe an action happening right now, or a habitual/occupational activity."
       ],
       "ex": [
-        "ソラさんは今勉強しています。 (Sora is studying right now.)",
-        "私は英語を教えています。 (I teach English.)"
+        "ソラさんは今[いま]勉強[べんきょう]しています。 (Sora is studying right now.)",
+        "私[わたし]は英語[えいご]を教[おし]えています。 (I teach English.)"
       ]
     },
     {
@@ -488,8 +488,8 @@
         "Change verbs (結婚する, 座る, 太る, etc.) + ている describe the resulting state after a change, not the change happening in progress."
       ],
       "ex": [
-        "山下先生は結婚しています。 (Professor Yamashita is married.)",
-        "ゆいさんは窓の近くに座っています。 (Yui is seated near the window.)"
+        "山下[やました]先生[せんせい]は結婚[けっこん]しています。 (Professor Yamashita is married.)",
+        "ゆいさんは窓[まど]の近[ちか]くに座[すわ]っています。 (Yui is seated near the window.)"
       ]
     },
     {
@@ -499,7 +499,7 @@
         "To describe a person's physical features, use Aさんは[body part]が[adjective]です rather than making the body part itself the topic. Idioms like 背が高い (tall) and 頭がいい (smart) follow the same pattern."
       ],
       "ex": [
-        "トムさんは髪が長いです。 (Tom has long hair.)"
+        "トムさんは髪[かみ]が長[なが]いです。 (Tom has long hair.)"
       ]
     },
     {
@@ -509,8 +509,8 @@
         "い-adjectives form a te-form by changing い to くて; な-adjectives and noun+です sequences add で. This joins two descriptive clauses the way て does for verbs."
       ],
       "ex": [
-        "あの店の食べ物は安くて、おいしいです。 (The food at that restaurant is inexpensive and delicious.)",
-        "山下先生は日本人で、五十歳ぐらいです。 (Professor Yamashita is Japanese and about fifty years old.)"
+        "あの店[みせ]の食[た]べ物[もの]は安[やす]くて、おいしいです。 (The food at that restaurant is inexpensive and delicious.)",
+        "山下[やました]先生[せんせい]は日本人[にほんじん]で、五十歳[ごじゅっさい]ぐらいです。 (Professor Yamashita is Japanese and about fifty years old.)"
       ],
       "table": {
         "head": [
@@ -536,8 +536,8 @@
         "To describe moving somewhere in order to do something, attach に行く／来る／帰る to a verb's stem (the ます-form minus ます)."
       ],
       "ex": [
-        "デパートにかばんを買いに行きました。 (I went to a department store to buy a bag.)",
-        "メアリーさんは日本に日本語を勉強しに来ました。 (Mary came to Japan to study Japanese.)"
+        "デパートにかばんを買[か]いに行[い]きました。 (I went to a department store to buy a bag.)",
+        "メアリーさんは日本[にほん]に日本語[にほんご]を勉強[べんきょう]しに来[き]ました。 (Mary came to Japan to study Japanese.)"
       ]
     },
     {
@@ -547,7 +547,7 @@
         "人 is the counter for people, but \"one person\" and \"two people\" are irregular: 一人 and 二人."
       ],
       "ex": [
-        "私のクラスにインドネシア人の学生が一人います。 (There is one Indonesian student in my class.)"
+        "私[わたし]のクラスにインドネシア人[じん]の学生[がくせい]が一人[ひとり]います。 (There is one Indonesian student in my class.)"
       ]
     }
   ]

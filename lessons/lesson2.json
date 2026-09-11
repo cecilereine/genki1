@@ -345,7 +345,7 @@
       ],
       "ex": [
         "これは いくらですか。 (How much is this?)",
-        "それは 三千円です。 (That is 3,000 yen.)"
+        "それは 三千円[さんぜんえん]です。 (That is 3,000 yen.)"
       ],
       "table": {
         "head": [
@@ -379,8 +379,8 @@
         "Unlike the re-series, the no-series must be followed directly by a noun. They follow the same distance logic as これ/それ/あれ/どれ and, unlike them, are fine to use when referring to people."
       ],
       "ex": [
-        "この時計は いくらですか。 (How much is this watch?)",
-        "あの学生は 留学生です。 (That student over there is an international student.)"
+        "この時計[とけい]は いくらですか。 (How much is this watch?)",
+        "あの学生[がくせい]は 留学生[りゅうがくせい]です。 (That student over there is an international student.)"
       ],
       "table": {
         "head": [
@@ -419,8 +419,8 @@
         "The last ko-so-a-do set covers locations: ここ (here, near me), そこ (there, near you), あそこ (over there), and どこ (where)."
       ],
       "ex": [
-        "すみません。郵便局は どこですか。 (Excuse me, where is the post office?)",
-        "（郵便局は）あそこです。 (It's right over there.)"
+        "すみません。郵便局[ゆうびんきょく]は どこですか。 (Excuse me, where is the post office?)",
+        "（郵便局[ゆうびんきょく]は）あそこです。 (It's right over there.)"
       ]
     },
     {
@@ -441,8 +441,8 @@
         "も means \"also/too.\" Unlike English, where \"too\" can trail the whole sentence, も must attach directly after the noun that shares the property just mentioned."
       ],
       "ex": [
-        "たけしさんは 日本人です。 (Takeshi is Japanese.)",
-        "ゆいさんも 日本人です。 (Yui is Japanese, too.)"
+        "たけしさんは 日本人[にほんじん]です。 (Takeshi is Japanese.)",
+        "ゆいさんも 日本人[にほんじん]です。 (Yui is Japanese, too.)"
       ],
       "table": {
         "head": [
@@ -471,8 +471,8 @@
         "To negate です after a noun, replace it with じゃないです. じゃありません is a more conservative variant, and ではありません is the most formal, written-appropriate form. です/じゃない never stand alone — they always need a noun."
       ],
       "ex": [
-        "山田さんは 学生じゃないです。 (Mr. Yamada is not a student.)",
-        "いいえ、日本人じゃないです。 (No, I am not Japanese.)"
+        "山田[やまだ]さんは 学生[がくせい]じゃないです。 (Mr. Yamada is not a student.)",
+        "いいえ、日本人[にほんじん]じゃないです。 (No, I am not Japanese.)"
       ],
       "table": {
         "head": [
@@ -506,8 +506,8 @@
         "Add ね when you want the listener's agreement or confirmation (\"right?\"). Add よ when you're confident about what you're saying and want to make sure the listener knows it."
       ],
       "ex": [
-        "リーさんの専攻は 文学ですね。 (Ms. Lee, your major is literature, right?)",
-        "とんかつは 魚じゃないですよ。 (Let me assure you, tonkatsu isn't fish.)"
+        "リーさんの専攻[せんこう]は 文学[ぶんがく]ですね。 (Ms. Lee, your major is literature, right?)",
+        "とんかつは 魚[さかな]じゃないですよ。 (Let me assure you, tonkatsu isn't fish.)"
       ]
     }
   ]

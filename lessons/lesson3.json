@@ -515,9 +515,9 @@
         "Japanese verbs fall into three conjugation groups. Ru-verbs end in -eru/-iru and simply swap る for ます／ません. U-verbs end in a consonant+u and swap u for います／いません. する and 来る are irregular. Watch out for verbs like 帰る that look like ru-verbs but actually conjugate as u-verbs."
       ],
       "ex": [
-        "食べる → 食べます／食べません (ru-verb)",
-        "飲む → 飲みます／飲みません (u-verb)",
-        "帰る → 帰ります／帰りません (u-verb, despite the -eru ending)"
+        "食[た]べる → 食[た]べます／食[た]べません (ru-verb)",
+        "飲[の]む → 飲[の]みます／飲[の]みません (u-verb)",
+        "帰[かえ]る → 帰[かえ]ります／帰[かえ]りません (u-verb, despite the -eru ending)"
       ],
       "table": {
         "head": [
@@ -555,8 +555,8 @@
         "The Japanese present tense of action verbs covers two English meanings: something you do habitually, or something you will do / plan to do in the future."
       ],
       "ex": [
-        "私はよくテレビを見ます。 (I often watch TV. — habitual)",
-        "私はあした京都に行きます。 (I will go to Kyoto tomorrow. — future)"
+        "私[わたし]はよくテレビを見[み]ます。 (I often watch TV. — habitual)",
+        "私[わたし]はあした京都[きょうと]に行[い]きます。 (I will go to Kyoto tomorrow. — future)"
       ]
     },
     {
@@ -566,9 +566,9 @@
         "を marks the direct object of a verb. で marks where an action takes place. に marks the goal of movement (行く/来る/帰る) or a specific point in time. へ can replace に for the goal of movement, but never for time."
       ],
       "ex": [
-        "コーヒーを飲みます。 (I drink coffee.)",
-        "図書館で本を読みます。 (I will read books at the library.)",
-        "うちに／へ帰ります。 (I will return home.)"
+        "コーヒーを飲[の]みます。 (I drink coffee.)",
+        "図書館[としょかん]で本[ほん]を読[よ]みます。 (I will read books at the library.)",
+        "うちに／へ帰[かえ]ります。 (I will return home.)"
       ],
       "table": {
         "head": [
@@ -602,9 +602,9 @@
         "Use に with days of the week and numerical time expressions (\"on Sunday,\" \"at 10:45\"). Don't use に with relative time words (today, tomorrow), regular intervals (every day), or the word \"when.\" Parts of the day and \"weekend\" can go either way."
       ],
       "ex": [
-        "日曜日に 行きます。 (I will go on Sunday.)",
-        "あした 来ます。 (I will come tomorrow — no に.)",
-        "週末（に）何をしますか。 (What will you do on the weekend? — に optional)"
+        "日曜日[にちようび]に 行[い]きます。 (I will go on Sunday.)",
+        "あした 来[き]ます。 (I will come tomorrow — no に.)",
+        "週末[しゅうまつ]（に）何[なに]をしますか。 (What will you do on the weekend? — に optional)"
       ]
     },
     {
@@ -614,7 +614,7 @@
         "ませんか (the present negative + question particle) invites someone to do something together. Its affirmative counterpart ますか can only be read as a plain question, never an invitation."
       ],
       "ex": [
-        "昼ご飯を食べませんか。 (Would you like to have lunch with me?)",
+        "昼[ひる]ご飯[はん]を食[た]べませんか。 (Would you like to have lunch with me?)",
         "テニスをしませんか。 (Will you play tennis with me?)"
       ]
     },
@@ -625,8 +625,8 @@
         "Frequency adverbs describe how often something happens. あまり (not often) and ぜんぜん (not at all) anticipate a negative ending, so the sentence must end in ～ません."
       ],
       "ex": [
-        "私はときどき図書館に行きます。 (I sometimes go to a library.)",
-        "たけしさんはあまり勉強しません。 (Takeshi doesn't study much.)"
+        "私[わたし]はときどき図書館[としょかん]に行[い]きます。 (I sometimes go to a library.)",
+        "たけしさんはあまり勉強[べんきょう]しません。 (Takeshi doesn't study much.)"
       ]
     },
     {
@@ -636,7 +636,7 @@
         "Japanese word order is flexible since particles, not position, mark grammatical roles — but a typical sentence lines up as topic, time, place, object, then the verb or adjective at the end."
       ],
       "ex": [
-        "私は 今日 図書館で 日本語を 勉強します。 (I will study Japanese in the library today.)"
+        "私[わたし]は 今日[きょう] 図書館[としょかん]で 日本語[にほんご]を 勉強[べんきょう]します。 (I will study Japanese in the library today.)"
       ]
     },
     {
@@ -646,8 +646,8 @@
         "は marks the topic of the sentence — what you want to talk about — which is often, but not always, the grammatical subject. A topic can even be the direct object of the sentence, as in 晩ご飯は？ where 晩ご飯 (dinner) is what's eaten, not who eats it."
       ],
       "ex": [
-        "週末は たいてい何をしますか。 (As for the weekend, what do you usually do?)",
-        "晩ご飯は？／食べません。 (How about dinner? / I will not eat [it].)"
+        "週末[しゅうまつ]は たいてい何[なに]をしますか。 (As for the weekend, what do you usually do?)",
+        "晩[ばん]ご飯[はん]は？／食[た]べません。 (How about dinner? / I will not eat [it].)"
       ]
     }
   ]

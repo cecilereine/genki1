@@ -59,6 +59,10 @@ Notes:
   Either may be `[]` — 気 has no kun'yomi here, 川 no on'yomi.
 - `examples` on a kanji entry is a single `・`-separated string; the flashcard
   back shows the first four.
+- Example sentences in `grammar[].ex` carry furigana as `漢字[よみ]`: the
+  reading belongs to the run of kanji right before the bracket, as in
+  `私[わたし]はテレビを見[み]ます。`. Search matches a sentence with or without
+  its readings.
 - The conjugation drill finds verbs and adjectives by their vocabulary headings
   (`う-verbs`, `る-verbs`, `Irregular Verbs`, `い-adjectives`, `な-adjectives`),
   so keep those words in the right group.

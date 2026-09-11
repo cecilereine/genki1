@@ -510,7 +510,7 @@
         "\"Please do ~.\" Attach ください directly after the て-form."
       ],
       "ex": [
-        "ここに名前を書いてください。 (Please write your name here.)"
+        "ここに名前[なまえ]を書[か]いてください。 (Please write your name here.)"
       ]
     },
     {
@@ -520,8 +520,8 @@
         "The て-form links two or more verbs the way \"and\" does in English, describing a sequence, manner, or reason. The final verb's tense applies to the whole sentence."
       ],
       "ex": [
-        "図書館に行って、本を借ります。 (I will go to the library and check out some books.)",
-        "バスに乗って、会社に行きます。 (I go to work by bus.)"
+        "図書館[としょかん]に行[い]って、本[ほん]を借[か]ります。 (I will go to the library and check out some books.)",
+        "バスに乗[の]って、会社[かいしゃ]に行[い]きます。 (I go to work by bus.)"
       ]
     },
     {
@@ -531,7 +531,7 @@
         "\"You may ~\" / \"May I ~?\" — a very common way to ask if something is allowed."
       ],
       "ex": [
-        "トイレに行ってもいいですか。 (May I go to the bathroom?)"
+        "トイレに行[い]ってもいいですか。 (May I go to the bathroom?)"
       ]
     },
     {
@@ -541,7 +541,7 @@
         "\"You must not ~,\" a strong prohibition often used for rules."
       ],
       "ex": [
-        "ここで写真を撮ってはいけません。 (You must not take pictures here.)"
+        "ここで写真[しゃしん]を撮[と]ってはいけません。 (You must not take pictures here.)"
       ]
     },
     {
@@ -551,7 +551,7 @@
         "から attaches to the end of the clause that explains the reason, before the main clause or as a stand-alone justification."
       ],
       "ex": [
-        "バスに乗りましょう。タクシーは高いですから。 (Let's go by bus. Taxis are expensive.)"
+        "バスに乗[の]りましょう。タクシーは高[たか]いですから。 (Let's go by bus. Taxis are expensive.)"
       ]
     },
     {
@@ -561,7 +561,7 @@
         "Beyond proposing to do something together (Lesson 5), ましょうか can also mean \"let me do it,\" offering to help someone."
       ],
       "ex": [
-        "荷物を持ちましょうか。 (Shall I carry your luggage?)"
+        "荷物[にもつ]を持[も]ちましょうか。 (Shall I carry your luggage?)"
       ]
     }
   ]

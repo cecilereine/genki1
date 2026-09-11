@@ -455,8 +455,8 @@
         "い-adjectives: add です for affirmative; drop the final い and add くない(です) for negative. な-adjectives conjugate like nouns: です／じゃないです. いい (good) is irregular — its negative is よくない, not いくない. Degree adverbs like とても (very) and ちょっと (a little) go before the adjective."
       ],
       "ex": [
-        "この部屋はちょっと暑いです。 (This room is a little hot.)",
-        "今日、暇じゃないです。 (I'm not free today.)"
+        "この部屋[へや]はちょっと暑[あつ]いです。 (This room is a little hot.)",
+        "今日[きょう]、暇[ひま]じゃないです。 (I'm not free today.)"
       ],
       "table": {
         "head": [
@@ -490,8 +490,8 @@
         "い-adjectives: change い to かったです (affirmative) or くなかったです (negative). な-adjectives: でした／じゃなかったです. いい's past is よかったです／よくなかったです."
       ],
       "ex": [
-        "沖縄の海はとてもきれいでした。 (The sea in Okinawa was very beautiful.)",
-        "テストは難しくなかったです。 (The test wasn't hard.)"
+        "沖縄[おきなわ]の海[うみ]はとてもきれいでした。 (The sea in Okinawa was very beautiful.)",
+        "テストは難[むずか]しくなかったです。 (The test wasn't hard.)"
       ],
       "table": {
         "head": [
@@ -525,8 +525,8 @@
         "To modify a noun, place an い-adjective's dictionary form directly before it. For な-adjectives, keep the な before the noun."
       ],
       "ex": [
-        "昨日、面白い映画を見ました。 (I watched an interesting movie yesterday.)",
-        "京都できれいな写真を撮りました。 (I took a beautiful picture in Kyoto.)"
+        "昨日[きのう]、面白[おもしろ]い映画[えいが]を見[み]ました。 (I watched an interesting movie yesterday.)",
+        "京都[きょうと]できれいな写真[しゃしん]を撮[と]りました。 (I took a beautiful picture in Kyoto.)"
       ]
     },
     {
@@ -536,8 +536,8 @@
         "好き and 嫌い are な-adjectives, so what's liked/disliked is marked with が, not を: XはYが好き／嫌いです。 大好き／大嫌い intensify the feeling."
       ],
       "ex": [
-        "ロバートさんは日本語のクラスが好きです。 (Robert likes his Japanese class.)",
-        "たけしさんはコーヒーが大好きです。 (Takeshi loves coffee.)"
+        "ロバートさんは日本語[にほんご]のクラスが好[す]きです。 (Robert likes his Japanese class.)",
+        "たけしさんはコーヒーが大好[だいす]きです。 (Takeshi loves coffee.)"
       ]
     },
     {
@@ -547,8 +547,8 @@
         "Drop ます from the polite stem and add ましょう to propose doing something together, or ましょうか to ask if the other person wants to."
       ],
       "ex": [
-        "一緒に図書館で勉強しましょう。 (Let's study at the library together.)",
-        "あそこでコーヒーを飲みましょうか。 (Shall we drink coffee over there?)"
+        "一緒[いっしょ]に図書館[としょかん]で勉強[べんきょう]しましょう。 (Let's study at the library together.)",
+        "あそこでコーヒーを飲[の]みましょうか。 (Shall we drink coffee over there?)"
       ]
     },
     {
@@ -558,7 +558,7 @@
         "Different types of items take different counter words, and the number+counter usually comes after the noun it counts, not before it."
       ],
       "ex": [
-        "リーさんはTシャツを三枚買いました。 (Lee bought three T-shirts.)"
+        "リーさんはTシャツを三枚[さんまい]買[か]いました。 (Lee bought three T-shirts.)"
       ]
     }
   ]

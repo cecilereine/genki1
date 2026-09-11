@@ -526,8 +526,8 @@
         "Say something exists with [place]に[thing]があります (non-living things) or [place]に[person]がいます (people, animals). あります can also mean \"to have\" or that an event will take place."
       ],
       "ex": [
-        "部屋にテレビがありません。 (I don't have a TV in my room.)",
-        "あそこに猫がいます。 (There's a cat over there.)"
+        "部屋[へや]にテレビがありません。 (I don't have a TV in my room.)",
+        "あそこに猫[ねこ]がいます。 (There's a cat over there.)"
       ],
       "table": {
         "head": [
@@ -553,8 +553,8 @@
         "Add a position word after の to say where something is relative to another place or object. Pattern: XはYの[position]です。"
       ],
       "ex": [
-        "銀行は図書館の隣です。 (The bank is next to the library.)",
-        "傘はテーブルの下です。 (The umbrella is under the table.)"
+        "銀行[ぎんこう]は図書館[としょかん]の隣[となり]です。 (The bank is next to the library.)",
+        "傘[かさ]はテーブルの下[した]です。 (The umbrella is under the table.)"
       ],
       "table": {
         "head": [
@@ -588,8 +588,8 @@
         "Affirmative past: です → でした. Negative past: じゃないです → じゃなかったです."
       ],
       "ex": [
-        "昨日は雨でした。 (It was rainy yesterday.)",
-        "あれは日本の映画じゃなかったです。 (That wasn't a Japanese movie.)"
+        "昨日[きのう]は雨[あめ]でした。 (It was rainy yesterday.)",
+        "あれは日本[にほん]の映画[えいが]じゃなかったです。 (That wasn't a Japanese movie.)"
       ]
     },
     {
@@ -599,8 +599,8 @@
         "Affirmative past: ます → ました. Negative past: ません → ませんでした."
       ],
       "ex": [
-        "メアリーさんは九時ごろうちに帰りました。 (Mary went home around nine.)",
-        "私は昨日日本語を勉強しませんでした。 (I didn't study Japanese yesterday.)"
+        "メアリーさんは九時[くじ]ごろうちに帰[かえ]りました。 (Mary went home around nine.)",
+        "私[わたし]は昨日[きのう]日本語[にほんご]を勉強[べんきょう]しませんでした。 (I didn't study Japanese yesterday.)"
       ],
       "table": {
         "head": [
@@ -629,7 +629,7 @@
         "も means \"also/too.\" It replaces は, が, or を; with other particles like に or で, it follows them (にも, でも)."
       ],
       "ex": [
-        "私は先週京都に行きました。大阪にも行きました。 (I went to Kyoto last week. I went to Osaka too.)"
+        "私[わたし]は先週[せんしゅう]京都[きょうと]に行[い]きました。大阪[おおさか]にも行[い]きました。 (I went to Kyoto last week. I went to Osaka too.)"
       ]
     },
     {
@@ -639,7 +639,7 @@
         "Duration is expressed with a bare noun like 一時間 — no particle attaches to it. Add ぐらい for \"about,\" and 半 for \"and a half\" (半 comes before ぐらい)."
       ],
       "ex": [
-        "昨日日本語を三時間ぐらい勉強しました。 (I studied Japanese for about three hours yesterday.)"
+        "昨日[きのう]日本語[にほんご]を三時間[さんじかん]ぐらい勉強[べんきょう]しました。 (I studied Japanese for about three hours yesterday.)"
       ]
     },
     {
@@ -649,7 +649,7 @@
         "A quantity word like たくさん can go either before the noun or right after its particle (を or が)."
       ],
       "ex": [
-        "京都で写真をたくさん撮りました。 (I took a lot of pictures in Kyoto.)"
+        "京都[きょうと]で写真[しゃしん]をたくさん撮[と]りました。 (I took a lot of pictures in Kyoto.)"
       ]
     },
     {
@@ -659,8 +659,8 @@
         "と connects two nouns (\"A and B\") or marks who you did something with (\"together with\")."
       ],
       "ex": [
-        "日本語と英語を話します。 (I speak Japanese and English.)",
-        "メアリーさんはソラさんと韓国に行きます。 (Mary will go to Korea with Sora.)"
+        "日本語[にほんご]と英語[えいご]を話[はな]します。 (I speak Japanese and English.)",
+        "メアリーさんはソラさんと韓国[かんこく]に行[い]きます。 (Mary will go to Korea with Sora.)"
       ]
     }
   ]

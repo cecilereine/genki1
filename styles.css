@@ -134,6 +134,12 @@ section.lesson{margin-top:22px}
 ul.ex-list{list-style:none;margin:0;padding:0}
 ul.ex-list li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px;color:var(--green);font-weight:600}
 ul.ex-list li:last-child{border-bottom:none}
+/* Furigana over the kanji in example sentences. ruby-align:center keeps a word's
+   kanji together when its reading is wider than they are (京都 under きょうと)
+   instead of spreading them apart. */
+ul.ex-list li{line-height:2.3;font-size:15px}
+ruby{ruby-align:center}
+ruby rt{font-size:.65em;font-weight:500;color:var(--muted);user-select:none}
 table.conj{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 14px}
 table.conj th,table.conj td{border:1px solid var(--line);padding:7px 9px;text-align:center}
 table.conj th{background:var(--blue-soft);font-weight:700;color:#1c5f8f}
