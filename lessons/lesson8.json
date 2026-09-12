@@ -470,7 +470,7 @@
   ],
   "grammar": [
     {
-      "form": "普通形 · Short (Plain) Forms",
+      "form": "普通形[ふつうけい] · Short (Plain) Forms",
       "tag": "The casual counterpart to ます／です",
       "def": [
         "Short (plain) forms are the casual counterpart to the long (polite) forms used so far. Verbs: dictionary form / ない-form. い-adjectives: drop です. な-adjectives and noun+です: replace です with だ (affirmative) or drop です (negative, ～じゃない)."
@@ -488,29 +488,29 @@
         "rows": [
           [
             "Verb (aff.)",
-            "食べます",
-            "食べる"
+            "食[た]べます",
+            "食[た]べる"
           ],
           [
             "Verb (neg.)",
-            "食べません",
-            "食べない"
+            "食[た]べません",
+            "食[た]べない"
           ],
           [
             "な-adj/Noun (aff.)",
-            "静かです",
-            "静かだ"
+            "静[しず]かです",
+            "静[しず]かだ"
           ],
           [
             "な-adj/Noun (neg.)",
-            "静かじゃないです",
-            "静かじゃない"
+            "静[しず]かじゃないです",
+            "静[しず]かじゃない"
           ]
         ]
       }
     },
     {
-      "form": "普通形とくだけた会話 · Short Forms in Informal Speech",
+      "form": "普通形[ふつうけい]とくだけた会話[かいわ] · Short Forms in Informal Speech",
       "tag": "Casual conversation rules",
       "def": [
         "Close friends and family use short forms at the end of sentences. Casual questions drop か and rely on rising intonation; だ after な-adjectives/nouns is usually dropped too, but kept before ね or よ."
@@ -521,20 +521,20 @@
       ]
     },
     {
-      "form": "普通形＋と思います",
+      "form": "普通形[ふつうけい]＋と思[おも]います",
       "tag": "Stating an opinion in quoted-speech form",
       "def": [
-        "Attach と思います to a short-form clause to state an opinion, \"I think that ~.\" To say you don't think something is so, it's more natural to make the clause itself negative: ～ないと思います."
+        "Attach と思[おも]います to a short-form clause to state an opinion, \"I think that ~.\" To say you don't think something is so, it's more natural to make the clause itself negative: ～ないと思[おも]います."
       ],
       "ex": [
         "たけしさんはメアリーさんが好[す]きだと思[おも]います。 (I think Takeshi likes Mary.)"
       ]
     },
     {
-      "form": "普通形＋と言っていました",
+      "form": "普通形[ふつうけい]＋と言[い]っていました",
       "tag": "Reporting what someone else said",
       "def": [
-        "Attach と言っていました to a short-form clause to report what someone said, \"they said that ~.\" The tense of the original statement is preserved."
+        "Attach と言[い]っていました to a short-form clause to report what someone said, \"they said that ~.\" The tense of the original statement is preserved."
       ],
       "ex": [
         "山下[やました]先生[せんせい]は結婚[けっこん]していないと言[い]っていました。 (Professor Yamashita said he isn't married.)"
@@ -551,30 +551,30 @@
       ]
     },
     {
-      "form": "動詞＋のが好きです／上手です",
+      "form": "動詞[どうし]＋のが好[す]きです／上手[じょうず]です",
       "tag": "Nominalizing a verb with の",
       "def": [
-        "Adding の after a verb's short form turns it into a noun, so it can pair with 好き／嫌い／上手／下手."
+        "Adding の after a verb's short form turns it into a noun, so it can pair with 好[す]き／嫌[きら]い／上手[じょうず]／下手[へた]."
       ],
       "ex": [
         "ロバートさんは料理[りょうり]を作[つく]るのが上手[じょうず]です。 (Robert is good at cooking.)"
       ]
     },
     {
-      "form": "主語を表す が · The Subject Particle が",
+      "form": "主語[しゅご]を表[あらわ]す が · The Subject Particle が",
       "tag": "New information vs. known topic (は)",
       "def": [
-        "が marks a subject that is new information to the listener, unlike は which marks an already-known topic. Question words like だれ and 何 as the subject always take が, never は."
+        "が marks a subject that is new information to the listener, unlike は which marks an already-known topic. Question words like だれ and 何[なに] as the subject always take が, never は."
       ],
       "ex": [
         "だれが沖縄[おきなわ]に行[い]きましたか。 (Who went to Okinawa?)"
       ]
     },
     {
-      "form": "何か／何も",
+      "form": "何[なに]か／何[なに]も",
       "tag": "\"something\" vs. \"nothing\" (+ negative)",
       "def": [
-        "何か means \"something\" (positive statements/questions); 何も with a negative verb means \"not...anything.\""
+        "何[なに]か means \"something\" (positive statements/questions); 何[なに]も with a negative verb means \"not...anything.\""
       ],
       "ex": [
         "猫[ねこ]が何[なに]か持[も]ってきました。 (The cat brought something.)",

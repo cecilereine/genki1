@@ -13,8 +13,9 @@
    `table` is { head: [...], rows: [[...], ...] }.
    `on` / `kun` are the on'yomi and kun'yomi exactly as the Genki kanji charts list
    them (in hiragana, like the book); either may be empty.
-   Example sentences carry furigana inline as 漢字[よみ]: the reading in brackets
-   belongs to the run of kanji right before it (see rubyHtml below).
+   Grammar text (titles, explanations, tables, example sentences) carries furigana
+   inline as 漢字[よみ]: the reading in brackets belongs to the run of kanji right
+   before it (see rubyHtml and yomiHtml below).
    ============================================================= */
 
 let LESSONS = [];
@@ -35,22 +36,45 @@ const content = $('#content');
 /* The searchable haystack for a card, lowercased and stored in data-search. */
 const searchText = (...parts) => parts.join(' ').toLowerCase();
 
-function renderVocabCard(item, lesson) {
+/* A verb or adjective card also shows its type and three key forms (see
+   conjugation.js). Its optional parts are dropped first: （めがねを）かける → かける. */
+function renderConjugation(item, kind) {
+  const forms = CONJUGATION.cardForms(expandSpelling(item.kana)[0], kind);
+  if (!forms) return '';
+  return `
+      <div class="conj">
+        <span class="conj-type">${esc(kind.name)}</span>
+        ${forms.map(({ form, text }) => `<span class="conj-form" title="${esc(form)}">${esc(text)}</span>`)
+               .join('<span class="conj-dot">·</span>')}
+      </div>`;
+}
+
+/* Every form of the word in both spellings, stored on the card so a search for
+   飲んで or のまない can find 飲む (see startsAForm). */
+const formsOf = (item, kind) =>
+  [item.kana, item.kanji].filter(Boolean)
+    .flatMap(spelling => CONJUGATION.allForms(expandSpelling(spelling)[0], kind));
+
+function renderVocabCard(item, lesson, kind) {
+  const conjugates = Boolean(kind) && CONJUGATION.isConjugable(item);
   return `
     <div class="vcard"
          data-id="${esc(`${lesson.lesson}|${item.kana}|${item.kanji}`)}"
-         data-search="${esc(searchText(item.kana, item.kanji, item.mean))}">
+         data-search="${esc(searchText(item.kana, item.kanji, item.mean))}"
+         ${conjugates ? `data-forms="${esc(formsOf(item, kind).join(' '))}"` : ''}>
       <span class="learned-badge" title="Learned">✓</span>
       <div class="kw">${esc(item.kana)}</div>
       ${item.kanji ? `<div class="kj">${esc(item.kanji)}</div>` : ''}
       <div class="mean">${esc(item.mean)}</div>
+      ${conjugates ? renderConjugation(item, kind) : ''}
     </div>`;
 }
 
 function renderVocabGroup(group, lesson) {
+  const kind = CONJUGATION.kindOf(group.theme);        // undefined unless the group is verbs or adjectives
   return `
     <div class="theme">${esc(group.theme)}</div>
-    <div class="grid">${group.items.map(item => renderVocabCard(item, lesson)).join('')}</div>`;
+    <div class="grid">${group.items.map(item => renderVocabCard(item, lesson, kind)).join('')}</div>`;
 }
 
 /* Readings the way the Genki kanji charts print them: ▶ marks on'yomi, ▷ marks
@@ -92,19 +116,25 @@ function renderKanjiBlock(lesson) {
 }
 
 function renderTable(table) {
-  const head = table.head.map(heading => `<th>${esc(heading)}</th>`).join('');
+  const head = table.head.map(heading => `<th>${yomiHtml(heading)}</th>`).join('');
   const rows = table.rows
-    .map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join('')}</tr>`)
+    .map(row => `<tr>${row.map(cell => `<td>${yomiHtml(cell)}</td>`).join('')}</tr>`)
     .join('');
 
   return `<table class="conj"><tr>${head}</tr>${rows}</table>`;
 }
 
-/* Furigana in example sentences, written 漢字[よみ] (the Anki notation). */
+/* Furigana, written 漢字[よみ] (the Anki notation). Example sentences show it above
+   the kanji; titles, explanations and tables are smaller, so there the reading
+   follows inline in a lighter color: 動詞(どうし). */
 const FURIGANA = /([㐀-鿿々〆ヶ]+)\[([^\]]+)\]/g;
 const withoutFurigana = text => text.replace(FURIGANA, '$1');   // 見[み]ます → 見ます
 const furiganaOnly    = text => text.replace(FURIGANA, '$2');   // 見[み]ます → みます
 const rubyHtml        = text => esc(text).replace(FURIGANA, '<ruby>$1<rt>$2</rt></ruby>');
+const yomiHtml        = text => esc(text).replace(FURIGANA, '$1<span class="yomi">($2)</span>');
+
+/* Grammar cards are searchable by their text as written and by its readings. */
+const bothReadings = text => `${withoutFurigana(text)} ${furiganaOnly(text)}`;
 
 function renderGrammarCard(point) {
   const examples = point.ex.length
@@ -114,13 +144,12 @@ function renderGrammarCard(point) {
 
   return `
     <div class="gcard"
-         data-search="${esc(searchText(point.form, point.tag, point.def.join(' '),
-           point.ex.map(withoutFurigana).join(' '), point.ex.map(furiganaOnly).join(' ')))}">
-      <span class="form">${esc(point.form)}</span>
-      <div class="tagline">${esc(point.tag)}</div>
+         data-search="${esc(searchText(...[point.form, point.tag, ...point.def, ...point.ex].map(bothReadings)))}">
+      <span class="form">${yomiHtml(point.form)}</span>
+      <div class="tagline">${yomiHtml(point.tag)}</div>
 
       <div class="lbl">説明 · Explanation</div>
-      <div class="def-txt">${point.def.map(esc).join('<br><br>')}</div>
+      <div class="def-txt">${point.def.map(yomiHtml).join('<br><br>')}</div>
 
       ${examples}
       ${point.table ? renderTable(point.table) : ''}
@@ -178,6 +207,11 @@ const search = $('#search');
 const tabs   = $('#tabs');
 let activeLesson = 'all';
 
+/* Conjugated forms match only from their beginning, so looking up 飲んで or のまない
+   finds 飲む while a bare ending like ます or ない doesn't match every verb. */
+const startsAForm = (card, query) =>
+  Boolean(card.dataset.forms) && card.dataset.forms.split(' ').some(form => form.startsWith(query));
+
 function applyFilters() {
   const query = search.value.trim().toLowerCase();
   let anyVisible = false;
@@ -190,7 +224,7 @@ function applyFilters() {
 
     let sectionHasMatch = false;
     $$('[data-search]', section).forEach(card => {
-      const hit = !query || card.dataset.search.includes(query);
+      const hit = !query || card.dataset.search.includes(query) || startsAForm(card, query);
       card.classList.toggle('hidden', !hit);
       if (hit) sectionHasMatch = true;
     });

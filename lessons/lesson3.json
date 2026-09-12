@@ -509,10 +509,10 @@
   ],
   "grammar": [
     {
-      "form": "動詞の活用 · Verb Conjugation",
+      "form": "動詞[どうし]の活用[かつよう] · Verb Conjugation",
       "tag": "Three verb groups: ru-verbs, u-verbs, irregular",
       "def": [
-        "Japanese verbs fall into three conjugation groups. Ru-verbs end in -eru/-iru and simply swap る for ます／ません. U-verbs end in a consonant+u and swap u for います／いません. する and 来る are irregular. Watch out for verbs like 帰る that look like ru-verbs but actually conjugate as u-verbs."
+        "Japanese verbs fall into three conjugation groups. Ru-verbs end in -eru/-iru and simply swap る for ます／ません. U-verbs end in a consonant+u and swap u for います／いません. する and 来[く]る are irregular. Watch out for verbs like 帰[かえ]る that look like ru-verbs but actually conjugate as u-verbs."
       ],
       "ex": [
         "食[た]べる → 食[た]べます／食[た]べません (ru-verb)",
@@ -529,27 +529,27 @@
         "rows": [
           [
             "Ru-verb",
-            "食べる",
-            "食べます",
-            "食べません"
+            "食[た]べる",
+            "食[た]べます",
+            "食[た]べません"
           ],
           [
             "U-verb",
-            "飲む",
-            "飲みます",
-            "飲みません"
+            "飲[の]む",
+            "飲[の]みます",
+            "飲[の]みません"
           ],
           [
             "Irregular",
-            "する／来る",
-            "します／来ます",
-            "しません／来ません"
+            "する／来[く]る",
+            "します／来[き]ます",
+            "しません／来[き]ません"
           ]
         ]
       }
     },
     {
-      "form": "動詞と「現在形」 · Verb Types and \"Present Tense\"",
+      "form": "動詞[どうし]と「現在形[げんざいけい]」 · Verb Types and \"Present Tense\"",
       "tag": "Habitual actions or future plans",
       "def": [
         "The Japanese present tense of action verbs covers two English meanings: something you do habitually, or something you will do / plan to do in the future."
@@ -560,10 +560,10 @@
       ]
     },
     {
-      "form": "助詞 を・で・に・へ · Particles",
+      "form": "助詞[じょし] を・で・に・へ · Particles",
       "tag": "Object, place of action, goal/time, direction",
       "def": [
-        "を marks the direct object of a verb. で marks where an action takes place. に marks the goal of movement (行く/来る/帰る) or a specific point in time. へ can replace に for the goal of movement, but never for time."
+        "を marks the direct object of a verb. で marks where an action takes place. に marks the goal of movement (行[い]く/来[く]る/帰[かえ]る) or a specific point in time. へ can replace に for the goal of movement, but never for time."
       ],
       "ex": [
         "コーヒーを飲[の]みます。 (I drink coffee.)",
@@ -596,7 +596,7 @@
       }
     },
     {
-      "form": "時の表し方 · Time References",
+      "form": "時[とき]の表[あらわ]し方[かた] · Time References",
       "tag": "When に is required, and when it's dropped",
       "def": [
         "Use に with days of the week and numerical time expressions (\"on Sunday,\" \"at 10:45\"). Don't use に with relative time words (today, tomorrow), regular intervals (every day), or the word \"when.\" Parts of the day and \"weekend\" can go either way."
@@ -619,8 +619,8 @@
       ]
     },
     {
-      "form": "頻度の副詞 · Frequency Adverbs",
-      "tag": "毎日・よく・ときどき・あまり・ぜんぜん",
+      "form": "頻度[ひんど]の副詞[ふくし] · Frequency Adverbs",
+      "tag": "毎日[まいにち]・よく・ときどき・あまり・ぜんぜん",
       "def": [
         "Frequency adverbs describe how often something happens. あまり (not often) and ぜんぜん (not at all) anticipate a negative ending, so the sentence must end in ～ません."
       ],
@@ -630,7 +630,7 @@
       ]
     },
     {
-      "form": "語順 · Word Order",
+      "form": "語順[ごじゅん] · Word Order",
       "tag": "Topic → time → place → object → verb",
       "def": [
         "Japanese word order is flexible since particles, not position, mark grammatical roles — but a typical sentence lines up as topic, time, place, object, then the verb or adjective at the end."
@@ -640,10 +640,10 @@
       ]
     },
     {
-      "form": "とりたて助詞 は · The Topic Particle は",
+      "form": "とりたて助詞[じょし] は · The Topic Particle は",
       "tag": "Broaching a topic — not always the subject",
       "def": [
-        "は marks the topic of the sentence — what you want to talk about — which is often, but not always, the grammatical subject. A topic can even be the direct object of the sentence, as in 晩ご飯は？ where 晩ご飯 (dinner) is what's eaten, not who eats it."
+        "は marks the topic of the sentence — what you want to talk about — which is often, but not always, the grammatical subject. A topic can even be the direct object of the sentence, as in 晩[ばん]ご飯[はん]は？ where 晩[ばん]ご飯[はん] (dinner) is what's eaten, not who eats it."
       ],
       "ex": [
         "週末[しゅうまつ]は たいてい何[なに]をしますか。 (As for the weekend, what do you usually do?)",

@@ -449,7 +449,7 @@
   ],
   "grammar": [
     {
-      "form": "形容詞（現在形） · Adjectives — Present Tense",
+      "form": "形容詞[けいようし]（現在形[げんざいけい]） · Adjectives — Present Tense",
       "tag": "い-adjectives vs. な-adjectives",
       "def": [
         "い-adjectives: add です for affirmative; drop the final い and add くない(です) for negative. な-adjectives conjugate like nouns: です／じゃないです. いい (good) is irregular — its negative is よくない, not いくない. Degree adverbs like とても (very) and ちょっと (a little) go before the adjective."
@@ -466,14 +466,14 @@
         ],
         "rows": [
           [
-            "い-adj (忙しい)",
-            "忙しいです",
-            "忙しくないです"
+            "い-adj (忙[いそが]しい)",
+            "忙[いそが]しいです",
+            "忙[いそが]しくないです"
           ],
           [
-            "な-adj (静か)",
-            "静かです",
-            "静かじゃないです"
+            "な-adj (静[しず]か)",
+            "静[しず]かです",
+            "静[しず]かじゃないです"
           ],
           [
             "いい (irregular)",
@@ -484,7 +484,7 @@
       }
     },
     {
-      "form": "形容詞（過去形） · Adjectives — Past Tense",
+      "form": "形容詞[けいようし]（過去形[かこけい]） · Adjectives — Past Tense",
       "tag": "かった／でした conjugations",
       "def": [
         "い-adjectives: change い to かったです (affirmative) or くなかったです (negative). な-adjectives: でした／じゃなかったです. いい's past is よかったです／よくなかったです."
@@ -501,14 +501,14 @@
         ],
         "rows": [
           [
-            "い-adj (忙しい)",
-            "忙しかったです",
-            "忙しくなかったです"
+            "い-adj (忙[いそが]しい)",
+            "忙[いそが]しかったです",
+            "忙[いそが]しくなかったです"
           ],
           [
-            "な-adj (静か)",
-            "静かでした",
-            "静かじゃなかったです"
+            "な-adj (静[しず]か)",
+            "静[しず]かでした",
+            "静[しず]かじゃなかったです"
           ],
           [
             "いい (irregular)",
@@ -519,7 +519,7 @@
       }
     },
     {
-      "form": "形容詞の名詞修飾 · Adjectives — Noun Modification",
+      "form": "形容詞[けいようし]の名詞[めいし]修飾[しゅうしょく] · Adjectives — Noun Modification",
       "tag": "Placing an adjective directly before a noun",
       "def": [
         "To modify a noun, place an い-adjective's dictionary form directly before it. For な-adjectives, keep the な before the noun."
@@ -530,10 +530,10 @@
       ]
     },
     {
-      "form": "好き（な）／きらい（な）",
+      "form": "好[す]き（な）／きらい（な）",
       "tag": "Likes & dislikes take が, not を",
       "def": [
-        "好き and 嫌い are な-adjectives, so what's liked/disliked is marked with が, not を: XはYが好き／嫌いです。 大好き／大嫌い intensify the feeling."
+        "好[す]き and 嫌[きら]い are な-adjectives, so what's liked/disliked is marked with が, not を: XはYが好[す]き／嫌[きら]いです。 大好[だいす]き／大嫌[だいきら]い intensify the feeling."
       ],
       "ex": [
         "ロバートさんは日本語[にほんご]のクラスが好[す]きです。 (Robert likes his Japanese class.)",
@@ -552,7 +552,7 @@
       ]
     },
     {
-      "form": "数え方 · Counting",
+      "form": "数[かぞ]え方[かた] · Counting",
       "tag": "Counters follow the noun, not precede it",
       "def": [
         "Different types of items take different counter words, and the number+counter usually comes after the noun it counts, not before it."

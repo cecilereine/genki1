@@ -10,6 +10,7 @@ flashcard review. Static site — no build step, no dependencies.
 | --- | --- |
 | `index.html` | Markup only: header, search controls, lesson tabs, flashcard overlay |
 | `styles.css` | All styling |
+| `conjugation.js` | Verb and adjective conjugation rules (no DOM), used by the vocabulary cards and the drill |
 | `app.js` | Loads the lesson JSON, renders the lists, handles search and lesson filtering |
 | `flashcards.js` | The flashcard overlay (vocabulary and kanji decks, learned-card tracking) |
 | `quiz.js` | The typed-answer vocabulary quiz (answer in English, or in Japanese with kana or kanji) |
@@ -18,7 +19,9 @@ flashcard review. Static site — no build step, no dependencies.
 | `lessons/lessonN.json` | One lesson's vocabulary, kanji and grammar |
 
 `flashcards.js`, `quiz.js` and `drill.js` talk to `app.js` only through the
-`window.GENKI` object documented at the bottom of `app.js`.
+`window.GENKI` object documented at the bottom of `app.js`. `conjugation.js`
+loads first and exposes `window.CONJUGATION`, which `app.js` and `drill.js`
+both use.
 
 ## Running it locally
 
@@ -59,11 +62,13 @@ Notes:
   Either may be `[]` — 気 has no kun'yomi here, 川 no on'yomi.
 - `examples` on a kanji entry is a single `・`-separated string; the flashcard
   back shows the first four.
-- Example sentences in `grammar[].ex` carry furigana as `漢字[よみ]`: the
-  reading belongs to the run of kanji right before the bracket, as in
-  `私[わたし]はテレビを見[み]ます。`. Search matches a sentence with or without
-  its readings.
-- The conjugation drill finds verbs and adjectives by their vocabulary headings
+- Grammar text carries furigana as `漢字[よみ]`: the reading belongs to the run
+  of kanji right before the bracket, as in `私[わたし]はテレビを見[み]ます。`.
+  Example sentences show it above the kanji; titles, explanations and tables,
+  which are smaller, show it inline as 私(わたし). Search matches the text with
+  or without its readings.
+- The conjugation line on vocabulary cards and the conjugation drill both find
+  verbs and adjectives by their vocabulary headings
   (`う-verbs`, `る-verbs`, `Irregular Verbs`, `い-adjectives`, `な-adjectives`),
   so keep those words in the right group.
 - To add lesson 9, drop in `lessons/lesson9.json`, add it to
@@ -72,9 +77,9 @@ Notes:
 
 ## Cache busting
 
-`index.html` loads its assets as `styles.css?v=N`, `app.js?v=N`,
-`flashcards.js?v=N`, `quiz.js?v=N` and `drill.js?v=N`, and `app.js` reuses its
-own `?v=` on the lesson fetches.
+`index.html` loads its assets as `styles.css?v=N`, `conjugation.js?v=N`,
+`app.js?v=N`, `flashcards.js?v=N`, `quiz.js?v=N` and `drill.js?v=N`, and
+`app.js` reuses its own `?v=` on the lesson fetches.
 After changing any of them, bump **every** `?v=` in `index.html` to the same new
 number, otherwise a browser can pair new HTML with a stale script or stale
 lesson data.

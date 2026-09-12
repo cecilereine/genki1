@@ -25,103 +25,11 @@ const ROUND_SIZE = 20;
 
 /* ---------- conjugation ---------- */
 
-/* う-verbs change their last kana: [ます-stem, ない-stem, て-form ending]. */
-const GODAN = {
-  う: ['い', 'わ', 'って'], く: ['き', 'か', 'いて'], ぐ: ['ぎ', 'が', 'いで'],
-  す: ['し', 'さ', 'して'], つ: ['ち', 'た', 'って'], ぬ: ['に', 'な', 'んで'],
-  ぶ: ['び', 'ば', 'んで'], む: ['み', 'ま', 'んで'], る: ['り', 'ら', 'って'],
-};
-
-/* 行く and its compounds (もっていく) take って, not いて. */
-const isIku = word => /(いく|行く)$/.test(word);
-
-/* The three pieces every verb form is built from: the ます-stem, the short
-   negative and the て-form. Only the ending changes, so this works on a kana
-   or a kanji spelling alike (来る keeps its kanji in every form). Returns null
-   for anything that isn't a dictionary-form verb of its type. */
-function verbParts(word, type) {
-  if (type === 'irregular') {
-    const base = word.slice(0, -2);
-    if (word.endsWith('する')) return { stem: base + 'し', nai: base + 'しない', te: base + 'して' };
-    if (word.endsWith('くる')) return { stem: base + 'き', nai: base + 'こない', te: base + 'きて' };
-    if (word.endsWith('来る')) return { stem: base + '来', nai: base + '来ない', te: base + '来て' };
-    return null;
-  }
-
-  const base = word.slice(0, -1);
-  if (type === 'ru') return word.endsWith('る') ? { stem: base, nai: base + 'ない', te: base + 'て' } : null;
-
-  const endings = GODAN[word.slice(-1)];
-  if (!endings) return null;
-  const [stem, nai, te] = endings;
-  return {
-    stem: base + stem,
-    nai: word === 'ある' ? 'ない' : base + nai + 'ない',
-    te: isIku(word) ? base + 'って' : base + te,
-  };
-}
-
-/* いい conjugates as よい (よくない, よかった), and so do its compounds
-   あたまがいい and かっこいい. かわいい is an ordinary い-adjective. */
-const isIi = word => /(^|が|っこ)いい$/.test(word);
-
-/* Every accepted answer for each adjective form. Genki teaches the くないです /
-   じゃないです negatives; the ありません and では versions count too. */
-function adjectiveParts(word, type) {
-  if (type === 'i') {
-    if (!word.endsWith('い')) return null;
-    const base = isIi(word) ? word.slice(0, -2) + 'よ' : word.slice(0, -1);
-    return {
-      neg:      [base + 'くないです', base + 'くありません'],
-      past:     [base + 'かったです'],
-      pastneg:  [base + 'くなかったです', base + 'くありませんでした'],
-      te:       [base + 'くて'],
-      shortneg: [base + 'くない'],
-    };
-  }
-
-  const withEndings = (...endings) => endings.map(ending => word + ending);
-  return {
-    neg:      withEndings('じゃないです', 'じゃありません', 'ではないです', 'ではありません'),
-    past:     withEndings('でした'),
-    pastneg:  withEndings('じゃなかったです', 'じゃありませんでした', 'ではなかったです', 'ではありませんでした'),
-    te:       withEndings('で'),
-    shortneg: withEndings('じゃない', 'ではない'),
-    shortaff: withEndings('だ'),
-  };
-}
-
-/* Each form: the lesson that introduces it, what it applies to, and how to build
-   its accepted answers from a word's parts (the first answer is the one shown). */
-const FORMS = [
-  { id: 'masu',         lesson: 3, of: 'verb', label: 'ます form',         hint: 'present, polite',         build: v => [v.stem + 'ます'] },
-  { id: 'masen',        lesson: 3, of: 'verb', label: 'ません form',       hint: 'negative, polite',        build: v => [v.stem + 'ません'] },
-  { id: 'mashita',      lesson: 4, of: 'verb', label: 'ました form',       hint: 'past, polite',            build: v => [v.stem + 'ました'] },
-  { id: 'masendeshita', lesson: 4, of: 'verb', label: 'ませんでした form', hint: 'past negative, polite',   build: v => [v.stem + 'ませんでした'] },
-  { id: 'mashou',       lesson: 5, of: 'verb', label: 'ましょう form',     hint: "let's …",                 build: v => [v.stem + 'ましょう'] },
-  { id: 'te',           lesson: 6, of: 'verb', label: 'て-form',           hint: '',                        build: v => [v.te] },
-  { id: 'teimasu',      lesson: 7, of: 'verb', label: 'ています form',     hint: 'ongoing action or state', build: v => [v.te + 'います'] },
-  { id: 'nai',          lesson: 8, of: 'verb', label: 'ない form',         hint: 'short negative',          build: v => [v.nai] },
-
-  { id: 'neg',      lesson: 5, of: 'adjective', label: 'negative',          hint: 'polite', build: a => a.neg },
-  { id: 'past',     lesson: 5, of: 'adjective', label: 'past',              hint: 'polite', build: a => a.past },
-  { id: 'pastneg',  lesson: 5, of: 'adjective', label: 'past negative',     hint: 'polite', build: a => a.pastneg },
-  { id: 'adjte',    lesson: 7, of: 'adjective', label: 'て-form',           hint: '',       build: a => a.te },
-  { id: 'shortneg', lesson: 8, of: 'adjective', label: 'short negative',    hint: '',       build: a => a.shortneg },
-  { id: 'shortaff', lesson: 8, of: 'adjective', label: 'short affirmative', hint: '',       build: a => a.shortaff },  // な-adjectives only
-];
+/* The rules themselves (verb and adjective parts, and the forms each lesson
+   introduces) live in conjugation.js, shared with the vocabulary cards. */
+const { FORMS, GODAN, kindOf, isConjugable, isIku, isIi, partsOf } = window.CONJUGATION;
 
 /* ---------- words ---------- */
-
-/* Vocabulary headings → word type. Lesson 3's plain "形容詞 · Adjectives"
-   heading holds い-adjectives (いい, はやい). */
-const TYPES = [
-  { pattern: /う-verb/,              type: 'u',         of: 'verb' },
-  { pattern: /る-verb/,              type: 'ru',        of: 'verb' },
-  { pattern: /Irregular Verb/,       type: 'irregular', of: 'verb' },
-  { pattern: /い-adjective|^形容詞/, type: 'i',         of: 'adjective' },
-  { pattern: /な-adjective/,         type: 'na',        of: 'adjective' },
-];
 
 /* Every verb and adjective up to and including a lesson. Entries that are
    already conjugated (しっています, しりません, やせています) are left out. */
@@ -129,10 +37,10 @@ function wordsUpTo(lastLesson) {
   return lessons()
     .filter(lesson => Number(lesson.lesson) <= lastLesson)
     .flatMap(lesson => lesson.vocab.flatMap(group => {
-      const kind = TYPES.find(({ pattern }) => pattern.test(group.theme));
+      const kind = kindOf(group.theme);
       if (!kind) return [];
       return group.items
-        .filter(item => !/(ています|ません)$/.test(item.kana))
+        .filter(isConjugable)
         .map(item => ({ ...item, type: kind.type, of: kind.of, num: lesson.num }));
     }));
 }
@@ -157,7 +65,7 @@ function makeQuestion(word, form) {
   if (form.of !== word.of) return null;
 
   const perSpelling = spellingsOf(word).map(variants => variants.flatMap(variant => {
-    const parts = word.of === 'verb' ? verbParts(variant, word.type) : adjectiveParts(variant, word.type);
+    const parts = partsOf(variant, word);
     return (parts && form.build(parts)) || [];
   }));
   if (!perSpelling[0]?.length) return null;

@@ -452,10 +452,10 @@
   ],
   "grammar": [
     {
-      "form": "動詞のて形 · The Te-form of Verbs",
+      "form": "動詞[どうし]のて形[けい] · The Te-form of Verbs",
       "tag": "Formation rules for all three verb groups",
       "def": [
-        "る-verbs: drop る, add て. う-verbs follow sound-based rules depending on the final syllable. Irregulars: する→して, 来る→来て."
+        "る-verbs: drop る, add て. う-verbs follow sound-based rules depending on the final syllable. Irregulars: する→して, 来[く]る→来[き]て."
       ],
       "ex": [],
       "table": {
@@ -468,43 +468,43 @@
           [
             "る-verb",
             "drop る + て",
-            "食べる→食べて"
+            "食[た]べる→食[た]べて"
           ],
           [
             "う・つ・る",
             "→って",
-            "買う→買って"
+            "買[か]う→買[か]って"
           ],
           [
             "む・ぶ・ぬ",
             "→んで",
-            "読む→読んで"
+            "読[よ]む→読[よ]んで"
           ],
           [
             "く",
-            "→いて (exception 行く→行って)",
-            "書く→書いて"
+            "→いて (exception 行[い]く→行[い]って)",
+            "書[か]く→書[か]いて"
           ],
           [
             "ぐ",
             "→いで",
-            "泳ぐ→泳いで"
+            "泳[およ]ぐ→泳[およ]いで"
           ],
           [
             "す",
             "→して",
-            "話す→話して"
+            "話[はな]す→話[はな]して"
           ],
           [
             "irregular",
             "special",
-            "する→して／来る→来て"
+            "する→して／来[く]る→来[き]て"
           ]
         ]
       }
     },
     {
-      "form": "て形＋ください",
+      "form": "て形[けい]＋ください",
       "tag": "Polite requests — \"please do ~\"",
       "def": [
         "\"Please do ~.\" Attach ください directly after the て-form."
@@ -514,7 +514,7 @@
       ]
     },
     {
-      "form": "二つの動作を表す · Describing Two Activities",
+      "form": "二[ふた]つの動作[どうさ]を表[あらわ]す · Describing Two Activities",
       "tag": "て-form joins clauses like \"and\"",
       "def": [
         "The て-form links two or more verbs the way \"and\" does in English, describing a sequence, manner, or reason. The final verb's tense applies to the whole sentence."
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "form": "て形＋もいいです",
+      "form": "て形[けい]＋もいいです",
       "tag": "Asking/giving permission",
       "def": [
         "\"You may ~\" / \"May I ~?\" — a very common way to ask if something is allowed."
@@ -535,7 +535,7 @@
       ]
     },
     {
-      "form": "て形＋はいけません",
+      "form": "て形[けい]＋はいけません",
       "tag": "Prohibition — \"must not ~\"",
       "def": [
         "\"You must not ~,\" a strong prohibition often used for rules."
@@ -555,7 +555,7 @@
       ]
     },
     {
-      "form": "～ましょうか (申し出) · Offering Assistance",
+      "form": "～ましょうか (申[もう]し出[で]) · Offering Assistance",
       "tag": "\"Shall I ~?\" — offering to help",
       "def": [
         "Beyond proposing to do something together (Lesson 5), ましょうか can also mean \"let me do it,\" offering to help someone."

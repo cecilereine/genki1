@@ -547,7 +547,7 @@
       }
     },
     {
-      "form": "Xは Yの[位置]です · Describing Where Things Are",
+      "form": "Xは Yの[位置[いち]]です · Describing Where Things Are",
       "tag": "Precise spatial location",
       "def": [
         "Add a position word after の to say where something is relative to another place or object. Pattern: XはYの[position]です。"
@@ -563,26 +563,26 @@
         ],
         "rows": [
           [
-            "右／左",
+            "右[みぎ]／左[ひだり]",
             "right / left"
           ],
           [
-            "前／後ろ",
+            "前[まえ]／後[うし]ろ",
             "front / behind"
           ],
           [
-            "中／上／下",
+            "中[なか]／上[うえ]／下[した]",
             "inside / on / under"
           ],
           [
-            "近く／隣／間",
+            "近[ちか]く／隣[となり]／間[あいだ]",
             "near / next to / between"
           ]
         ]
       }
     },
     {
-      "form": "です の過去形 · Past Tense of です",
+      "form": "です の過去形[かこけい] · Past Tense of です",
       "tag": "でした／じゃなかったです",
       "def": [
         "Affirmative past: です → でした. Negative past: じゃないです → じゃなかったです."
@@ -593,7 +593,7 @@
       ]
     },
     {
-      "form": "動詞の過去形 · Past Tense of Verbs",
+      "form": "動詞[どうし]の過去形[かこけい] · Past Tense of Verbs",
       "tag": "ました／ませんでした",
       "def": [
         "Affirmative past: ます → ました. Negative past: ません → ませんでした."
@@ -633,10 +633,10 @@
       ]
     },
     {
-      "form": "一時間 · Duration",
-      "tag": "Bare-noun durations + ぐらい／半",
+      "form": "一時間[いちじかん] · Duration",
+      "tag": "Bare-noun durations + ぐらい／半[はん]",
       "def": [
-        "Duration is expressed with a bare noun like 一時間 — no particle attaches to it. Add ぐらい for \"about,\" and 半 for \"and a half\" (半 comes before ぐらい)."
+        "Duration is expressed with a bare noun like 一時間[いちじかん] — no particle attaches to it. Add ぐらい for \"about,\" and 半[はん] for \"and a half\" (半[はん] comes before ぐらい)."
       ],
       "ex": [
         "昨日[きのう]日本語[にほんご]を三時間[さんじかん]ぐらい勉強[べんきょう]しました。 (I studied Japanese for about three hours yesterday.)"

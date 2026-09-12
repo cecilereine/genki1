@@ -87,7 +87,15 @@ section.lesson{margin-top:22px}
 .vcard .kw{font-size:18px;font-weight:800;color:var(--blue)}
 .vcard .kj{font-size:13px;color:var(--muted);margin-top:1px}
 .vcard .mean{font-size:13.5px;color:var(--ink);margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)}
-.vcard.flip .mean,.vcard.flip .kj{visibility:hidden}
+.vcard.flip .mean,.vcard.flip .kj,.vcard.flip .conj{visibility:hidden}
+/* conjugation line on verb and adjective cards (see conjugation.js) */
+.vcard .conj{margin-top:6px;font-size:12px;line-height:1.7;color:var(--ink)}
+.vcard .conj-type{
+  display:inline-block;margin-right:5px;padding:0 7px;border-radius:10px;
+  background:var(--chip);color:var(--muted);font-size:10.5px;font-weight:700;
+}
+.vcard .conj-form{white-space:nowrap}
+.vcard .conj-dot{margin:0 4px;color:var(--muted)}
 .vcard.flip::after{
   content:"👆 tap to reveal";position:absolute;left:0;right:0;bottom:12px;
   text-align:center;font-size:12px;color:var(--muted);
@@ -140,6 +148,8 @@ ul.ex-list li:last-child{border-bottom:none}
 ul.ex-list li{line-height:2.3;font-size:15px}
 ruby{ruby-align:center}
 ruby rt{font-size:.65em;font-weight:500;color:var(--muted);user-select:none}
+/* inline readings in grammar titles, explanations and tables: 動詞(どうし) */
+.yomi{font-size:.85em;font-weight:500;color:var(--muted)}
 table.conj{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 14px}
 table.conj th,table.conj td{border:1px solid var(--line);padding:7px 9px;text-align:center}
 table.conj th{background:var(--blue-soft);font-weight:700;color:#1c5f8f}
