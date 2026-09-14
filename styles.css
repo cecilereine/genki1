@@ -32,6 +32,12 @@ header.top .lvl{
 }
 header.top h1{margin:0;font-size:26px;font-weight:800}
 header.top p{margin:6px 0 0;opacity:.9;font-size:14px}
+header.top p.author{font-size:13px;opacity:.85;margin-top:8px}
+header.top p.author a{
+  color:#fff;text-decoration:none;font-weight:600;
+  border-bottom:1px solid rgba(255,255,255,.55);padding-bottom:1px;
+}
+header.top p.author a:hover{border-bottom-color:#fff}
 
 /* Ko-fi support box under the header, same as the King Sejong site */
 .kofi{
