@@ -71,6 +71,12 @@ Notes:
   verbs and adjectives by their vocabulary headings
   (`う-verbs`, `る-verbs`, `Irregular Verbs`, `い-adjectives`, `な-adjectives`),
   so keep those words in the right group.
+- A table cell may be `null` to continue the cell above it, so one label spans
+  several rows (Lesson 6's look-alike る-verbs use this).
+- `extraDrillWords` (optional, per lesson) lists verbs the conjugation drill
+  should include beyond the vocabulary, as `{ kana, kanji, mean, type }` with
+  `type` one of `u`, `ru`, `irregular`, `i`, `na`. Lesson 6 uses it for 帰る,
+  切る, 知る, 入る and 走る, so they're drilled with the て-form.
 - To add lesson 9, drop in `lessons/lesson9.json`, add it to
   `lessons/manifest.json`, and add the matching `<button>` to `#tabs`,
   `#fcScope`, `#qzScope` and `#drScope` in `index.html`.

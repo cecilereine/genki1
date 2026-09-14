@@ -455,7 +455,7 @@
       "form": "動詞[どうし]のて形[けい] · The Te-form of Verbs",
       "tag": "Formation rules for all three verb groups",
       "def": [
-        "る-verbs: drop る, add て. う-verbs follow sound-based rules depending on the final syllable. Irregulars: する→して, 来[く]る→来[き]て."
+        "る-verbs: drop る, add て. う-verbs follow sound-based rules depending on the final syllable. Irregulars: する→して, 来[く]る→来[き]て. Watch out for う-verbs that end in -iru/-eru, like 帰[かえ]る and 入[はい]る: they look like る-verbs but take って (see the last rows of the table)."
       ],
       "ex": [],
       "table": {
@@ -499,6 +499,31 @@
             "irregular",
             "special",
             "する→して／来[く]る→来[き]て"
+          ],
+          [
+            "う-verbs ending in -iru / -eru (they look like る-verbs)",
+            "→って, not →て",
+            "帰[かえ]る→帰[かえ]って (to return)"
+          ],
+          [
+            null,
+            null,
+            "切[き]る→切[き]って (to cut)"
+          ],
+          [
+            null,
+            null,
+            "知[し]る→知[し]って (to know)"
+          ],
+          [
+            null,
+            null,
+            "入[はい]る→入[はい]って (to enter)"
+          ],
+          [
+            null,
+            null,
+            "走[はし]る→走[はし]って (to run)"
           ]
         ]
       }
@@ -563,6 +588,38 @@
       "ex": [
         "荷物[にもつ]を持[も]ちましょうか。 (Shall I carry your luggage?)"
       ]
+    }
+  ],
+  "extraDrillWords": [
+    {
+      "kana": "かえる",
+      "kanji": "帰る",
+      "mean": "to return",
+      "type": "u"
+    },
+    {
+      "kana": "きる",
+      "kanji": "切る",
+      "mean": "to cut",
+      "type": "u"
+    },
+    {
+      "kana": "しる",
+      "kanji": "知る",
+      "mean": "to know",
+      "type": "u"
+    },
+    {
+      "kana": "はいる",
+      "kanji": "入る",
+      "mean": "to enter",
+      "type": "u"
+    },
+    {
+      "kana": "はしる",
+      "kanji": "走る",
+      "mean": "to run",
+      "type": "u"
     }
   ]
 }

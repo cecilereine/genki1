@@ -38,6 +38,10 @@ const GODAN = {
 /* 行く and its compounds (もっていく) take って, not いて. */
 const isIku = word => /(いく|行く)$/.test(word);
 
+/* う-verbs that end in -iru or -eru (帰る, 切る, 知る, 入る, 走る) look like
+   る-verbs but conjugate as う-verbs: 帰って, not 帰て. */
+const looksLikeRuVerb = word => /[いきしちにひみりぎじびぴえけせてねへめれげぜでべぺ]る$/.test(word);
+
 /* The three pieces every verb form is built from: the ます-stem, the short
    negative and the て-form. Only the ending changes, so this works on a kana
    or a kanji spelling alike (来る keeps its kanji in every form). Returns null
@@ -145,5 +149,5 @@ function cardForms(word, kind) {
   ];
 }
 
-return { TYPES, FORMS, GODAN, kindOf, isConjugable, isIku, isIi, verbParts, adjectiveParts, partsOf, allForms, cardForms };
+return { TYPES, FORMS, GODAN, kindOf, isConjugable, isIku, isIi, looksLikeRuVerb, verbParts, adjectiveParts, partsOf, allForms, cardForms };
 })();

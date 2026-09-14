@@ -27,22 +27,31 @@ const ROUND_SIZE = 20;
 
 /* The rules themselves (verb and adjective parts, and the forms each lesson
    introduces) live in conjugation.js, shared with the vocabulary cards. */
-const { FORMS, GODAN, kindOf, isConjugable, isIku, isIi, partsOf } = window.CONJUGATION;
+const { TYPES, FORMS, GODAN, kindOf, isConjugable, isIku, isIi, looksLikeRuVerb, partsOf } = window.CONJUGATION;
 
 /* ---------- words ---------- */
 
-/* Every verb and adjective up to and including a lesson. Entries that are
-   already conjugated (しっています, しりません, やせています) are left out. */
+/* Every verb and adjective up to and including a lesson: its vocabulary lists,
+   minus entries that are already conjugated (しっています, しりません), plus the
+   extraDrillWords a lesson adds, like the look-alike る-verbs Lesson 6 drills
+   with the て-form. An extra word already in scope from a vocabulary list isn't
+   added twice. */
 function wordsUpTo(lastLesson) {
-  return lessons()
-    .filter(lesson => Number(lesson.lesson) <= lastLesson)
-    .flatMap(lesson => lesson.vocab.flatMap(group => {
-      const kind = kindOf(group.theme);
-      if (!kind) return [];
-      return group.items
-        .filter(isConjugable)
-        .map(item => ({ ...item, type: kind.type, of: kind.of, num: lesson.num }));
-    }));
+  const inScope = lessons().filter(lesson => Number(lesson.lesson) <= lastLesson);
+  const vocabulary = inScope.flatMap(lesson => lesson.vocab.flatMap(group => {
+    const kind = kindOf(group.theme);
+    if (!kind) return [];
+    return group.items
+      .filter(isConjugable)
+      .map(item => ({ ...item, type: kind.type, of: kind.of, num: lesson.num }));
+  }));
+
+  const known = new Set(vocabulary.map(word => `${word.kana}|${word.kanji}`));
+  const extras = inScope.flatMap(lesson => (lesson.extraDrillWords || []).map(item => {
+    const kind = TYPES.find(({ type }) => type === item.type);
+    return { ...item, type: kind.type, of: kind.of, num: lesson.num };
+  }));
+  return [...vocabulary, ...extras.filter(word => !known.has(`${word.kana}|${word.kanji}`))];
 }
 
 /* The spellings a word may be answered in, one list per written form (kana,
@@ -102,11 +111,13 @@ function ruleNote({ word, form }) {
   if (word.type === 'u') {
     const last = plain.slice(-1);
     const [stem, nai, te] = GODAN[last];
+    // 帰る, 切る, 知る… end in -iru/-eru like a る-verb, which is exactly the trap.
+    const verb = looksLikeRuVerb(plain) ? 'う-verb (it only looks like a る-verb)' : 'う-verb';
     if (form.id === 'te' || form.id === 'teimasu') {
-      return isIku(plain) ? 'う-verb, but 行く is special: いく → いって' : `う-verb: ${last} → ${te}`;
+      return isIku(plain) ? 'う-verb, but 行く is special: いく → いって' : `${verb}: ${last} → ${te}`;
     }
-    if (form.id === 'nai') return plain === 'ある' ? 'う-verb, but ある is special: ない' : `う-verb: ${last} → ${nai}ない`;
-    return `う-verb: ${last} → ${stem}`;
+    if (form.id === 'nai') return plain === 'ある' ? 'う-verb, but ある is special: ない' : `${verb}: ${last} → ${nai}ない`;
+    return `${verb}: ${last} → ${stem}`;
   }
   if (word.type === 'ru') return 'る-verb: drop る';
   if (word.type === 'irregular') {

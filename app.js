@@ -9,8 +9,10 @@
      lesson.vocab   → [{ theme, items: [{ kana, kanji, mean }] }]
      lesson.kanji   → [{ char, on: [reading…], kun: [reading…], meaning, examples }]
      lesson.grammar → [{ form, tag, def: [paragraph…], ex: [sentence…], table? }]
+     lesson.extraDrillWords → [{ kana, kanji, mean, type }]   (optional; drill.js)
 
-   `table` is { head: [...], rows: [[...], ...] }.
+   `table` is { head: [...], rows: [[...], ...] }; a null cell continues the cell
+   above it, so one label can cover several rows.
    `on` / `kun` are the on'yomi and kun'yomi exactly as the Genki kanji charts list
    them (in hiragana, like the book); either may be empty.
    Grammar text (titles, explanations, tables, example sentences) carries furigana
@@ -117,8 +119,20 @@ function renderKanjiBlock(lesson) {
 
 function renderTable(table) {
   const head = table.head.map(heading => `<th>${yomiHtml(heading)}</th>`).join('');
+
+  // A null cell continues the cell above it: that cell spans the extra rows.
+  const rowsSpanned = (r, c) => {
+    let span = 1;
+    while (table.rows[r + span]?.[c] === null) span++;
+    return span;
+  };
+  const cellHtml = (cell, r, c) => {
+    if (cell === null) return '';
+    const span = rowsSpanned(r, c);
+    return `<td${span > 1 ? ` rowspan="${span}"` : ''}>${yomiHtml(cell)}</td>`;
+  };
   const rows = table.rows
-    .map(row => `<tr>${row.map(cell => `<td>${yomiHtml(cell)}</td>`).join('')}</tr>`)
+    .map((row, r) => `<tr>${row.map((cell, c) => cellHtml(cell, r, c)).join('')}</tr>`)
     .join('');
 
   return `<table class="conj"><tr>${head}</tr>${rows}</table>`;

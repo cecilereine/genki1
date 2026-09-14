@@ -33,6 +33,20 @@ header.top .lvl{
 header.top h1{margin:0;font-size:26px;font-weight:800}
 header.top p{margin:6px 0 0;opacity:.9;font-size:14px}
 
+/* Ko-fi support box under the header, same as the King Sejong site */
+.kofi{
+  display:flex;align-items:center;justify-content:center;gap:8px 16px;flex-wrap:wrap;
+  margin-top:14px;padding:14px 18px;text-align:center;
+  background:var(--accent-soft);border:1px solid #f4c7b9;border-radius:14px;
+}
+.kofi p{margin:0;font-size:14px;color:var(--ink)}
+.kofi-btn{
+  display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+  font-weight:700;font-size:14px;padding:9px 18px;border-radius:20px;
+  white-space:nowrap;transition:.15s;
+}
+.kofi-btn:hover{filter:brightness(1.1)}
+
 .controls{
   position:sticky;top:0;z-index:20;
   background:var(--bg);padding:14px 0 10px;margin-top:14px;
