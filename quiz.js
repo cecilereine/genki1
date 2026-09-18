@@ -80,6 +80,7 @@ const qNextBtn  = $('#qzNext');
 const qSkipBtn  = $('#qzSkip');
 const qFeedback = $('#qzFeedback');
 const qDirBtn   = $('#qzDir');
+const qRepeat   = $('#qzRepeat');
 
 let questions = [];
 let qIdx = 0;
@@ -208,6 +209,14 @@ function revealAnswer(card) {
   return `<div class="qz-expected">${expected}</div><div class="qz-other">${other}</div>`;
 }
 
+/* With "ask again" ticked, a missed question goes back into the queue a few
+   places later, so the quiz isn't finished until it has been answered right. */
+function askAgainLater(card) {
+  if (!qRepeat.checked) return false;
+  questions.splice(Math.min(qIdx + 5, questions.length), 0, card);
+  return true;
+}
+
 function checkAnswer() {
   if (answered) return;
   const typed = qInput.value.trim();
@@ -217,12 +226,13 @@ function checkAnswer() {
   const correct = isCorrect(typed, card);
   if (correct) score++;
   results.push({ card, typed, correct, skipped: false });
+  const again = !correct && askAgainLater(card);
 
   answered = true;
   qFeedback.className = `qz-feedback ${correct ? 'right' : 'wrong'}`;
   qFeedback.innerHTML = correct
     ? `<div class="qz-verdict">✓ Correct</div>${revealAnswer(card)}`
-    : `<div class="qz-verdict">✗ Not quite — you wrote “${esc(typed)}”</div>${revealAnswer(card)}`;
+    : `<div class="qz-verdict">✗ Not quite — you wrote “${esc(typed)}”${again ? " · you'll see it again" : ''}</div>${revealAnswer(card)}`;
 
   qMeta.textContent = `${card.num} · ${qIdx + 1}/${questions.length} · score ${score}`;
   setStage('answered');
@@ -233,10 +243,11 @@ function skipQuestion() {
   if (answered) return;
   const card = questions[qIdx];
   results.push({ card, typed: '', correct: false, skipped: true });
+  const again = askAgainLater(card);
 
   answered = true;
   qFeedback.className = 'qz-feedback wrong';
-  qFeedback.innerHTML = `<div class="qz-verdict">Skipped</div>${revealAnswer(card)}`;
+  qFeedback.innerHTML = `<div class="qz-verdict">Skipped${again ? " · you'll see it again" : ''}</div>${revealAnswer(card)}`;
   setStage('answered');
   qInput.focus();
 }

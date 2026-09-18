@@ -8,7 +8,7 @@
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet.
      app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 <div class="wrap">
@@ -122,6 +122,7 @@
       <button class="qz-check" id="qzCheck">Check</button>
       <button class="qz-next hidden" id="qzNext">Next →</button>
     </div>
+    <label class="fc-inc"><input type="checkbox" id="qzRepeat"> Ask missed words again until I get them right</label>
     <div class="fc-tools">
       <button id="qzDir">日 → EN</button>
       <button id="qzRestart">🔄 Restart</button>
@@ -164,10 +165,10 @@
   </div>
 </div>
 
-<script src="conjugation.js?v=12"></script>
-<script src="app.js?v=12"></script>
-<script src="flashcards.js?v=12"></script>
-<script src="quiz.js?v=12"></script>
-<script src="drill.js?v=12"></script>
+<script src="conjugation.js?v=13"></script>
+<script src="app.js?v=13"></script>
+<script src="flashcards.js?v=13"></script>
+<script src="quiz.js?v=13"></script>
+<script src="drill.js?v=13"></script>
 </body>
 </html>
