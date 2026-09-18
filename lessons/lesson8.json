@@ -473,10 +473,11 @@
       "form": "普通形[ふつうけい] · Short (Plain) Forms",
       "tag": "The casual counterpart to ます／です",
       "def": [
-        "Short (plain) forms are the casual counterpart to the long (polite) forms used so far. Verbs: dictionary form / ない-form. い-adjectives: drop です. な-adjectives and noun+です: replace です with だ (affirmative) or drop です (negative, ～じゃない)."
+        "Short (plain) forms are the casual counterpart to the long (polite) forms used so far. Verbs: dictionary form / ない-form. い-adjectives: drop です from both forms, so 高[たか]いです→高[たか]い and 高[たか]くないです→高[たか]くない. な-adjectives and noun+です: replace です with だ (affirmative) or drop です (negative, ～じゃない)."
       ],
       "ex": [
         "食[た]べます→食[た]べる、食[た]べません→食[た]べない。",
+        "高[たか]いです→高[たか]い、高[たか]くないです→高[たか]くない。",
         "静[しず]かです→静[しず]かだ、静[しず]かじゃないです→静[しず]かじゃない。"
       ],
       "table": {
@@ -495,6 +496,16 @@
             "Verb (neg.)",
             "食[た]べません",
             "食[た]べない"
+          ],
+          [
+            "い-adj (aff.)",
+            "高[たか]いです",
+            "高[たか]い"
+          ],
+          [
+            "い-adj (neg.)",
+            "高[たか]くないです",
+            "高[たか]くない"
           ],
           [
             "な-adj/Noun (aff.)",

@@ -105,6 +105,19 @@ function describeScope(scope) {
   return `Lesson ${scope}: ${names.join(', ')} — using ${words} from ${range}.`;
 }
 
+/* What each form adds, for the one-line explanation shown under an answer. */
+const RU_ENDINGS = {
+  masu: 'ます', masen: 'ません', mashita: 'ました', masendeshita: 'ませんでした',
+  mashou: 'ましょう', te: 'て', teimasu: 'ています', nai: 'ない',
+};
+const I_ENDINGS = {
+  neg: 'くないです', past: 'かったです', pastneg: 'くなかったです', adjte: 'くて', shortneg: 'くない',
+};
+const NA_ENDINGS = {
+  neg: 'じゃないです', past: 'でした', pastneg: 'じゃなかったです', adjte: 'で',
+  shortneg: 'じゃない', shortaff: 'だ',
+};
+
 /* One line on why the answer looks the way it does. */
 function ruleNote({ word, form }) {
   const plain = expandSpelling(word.kana)[0];             // the word without its optional parts
@@ -119,12 +132,16 @@ function ruleNote({ word, form }) {
     if (form.id === 'nai') return plain === 'ある' ? 'う-verb, but ある is special: ない' : `${verb}: ${last} → ${nai}ない`;
     return `${verb}: ${last} → ${stem}`;
   }
-  if (word.type === 'ru') return 'る-verb: drop る';
+  if (word.type === 'ru') return `る-verb: drop る, add ${RU_ENDINGS[form.id]}`;
   if (word.type === 'irregular') {
     return plain.endsWith('する') ? 'irregular verb: する → し／しない／して' : 'irregular verb: くる → き／こない／きて';
   }
-  if (word.type === 'i') return isIi(plain) ? 'いい is special: it conjugates as よい' : 'い-adjective: the final い changes';
-  return 'な-adjective: conjugates like a noun + です';
+  if (word.type === 'i') {
+    return isIi(plain)
+      ? `いい is special: it conjugates as よい — よ${I_ENDINGS[form.id]}`
+      : `い-adjective: い → ${I_ENDINGS[form.id]}`;
+  }
+  return `な-adjective: works like a noun — add ${NA_ENDINGS[form.id]}`;
 }
 
 /* ---------- state ---------- */
