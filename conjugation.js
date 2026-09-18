@@ -123,6 +123,58 @@ const FORMS = [
   { id: 'shortaff', lesson: 8, of: 'adjective', label: 'short affirmative', hint: '',       build: a => a.shortaff },  // な-adjectives only
 ];
 
+/* The rules behind a form, as a small table the drill can show while you answer.
+   Built from the same rules used to conjugate, so it can't drift out of sync;
+   examples are in kana so they read at a glance. */
+function ruleTable(formId) {
+  const changes = index => Object.entries(GODAN).map(([kana, parts]) => `${kana}→${parts[index]}`).join('、');
+  const verb = (word, type, pick) => `${word}→${pick(verbParts(word, type))}`;
+  const head = ['Type', 'Rule', 'Example'];
+
+  if (['masu', 'masen', 'mashita', 'masendeshita', 'mashou'].includes(formId)) {
+    return { title: 'ます-stem — then add ます／ません／ました／ませんでした／ましょう', head, rows: [
+      ['う-verb', `last kana → い-row: ${changes(0)}`, verb('のむ', 'u', v => v.stem + 'ます')],
+      ['る-verb', 'drop る', verb('たべる', 'ru', v => v.stem + 'ます')],
+      ['irregular', 'する→します、くる→きます', ''],
+    ] };
+  }
+
+  if (formId === 'te' || formId === 'teimasu') {
+    const teOf = kana => GODAN[kana][2];
+    return { title: formId === 'te' ? 'て-form' : 'て-form + います', head, rows: [
+      ['う・つ・る', `→${teOf('う')}`, verb('かう', 'u', v => v.te)],
+      ['む・ぶ・ぬ', `→${teOf('む')}`, verb('のむ', 'u', v => v.te)],
+      ['く', `→${teOf('く')}`, verb('かく', 'u', v => v.te)],
+      ['ぐ', `→${teOf('ぐ')}`, verb('およぐ', 'u', v => v.te)],
+      ['す', `→${teOf('す')}`, verb('はなす', 'u', v => v.te)],
+      ['る-verb', 'drop る, add て', verb('たべる', 'ru', v => v.te)],
+      ['irregular', 'する→して、くる→きて', ''],
+      ['exceptions', 'いく→いって; -iru/-eru う-verbs look like る-verbs', verb('かえる', 'u', v => v.te)],
+    ] };
+  }
+
+  if (formId === 'nai') {
+    return { title: 'ない form — the short negative', head, rows: [
+      ['う-verb', `last kana → あ-row + ない: ${changes(1)}`, verb('のむ', 'u', v => v.nai)],
+      ['る-verb', 'drop る, add ない', verb('たべる', 'ru', v => v.nai)],
+      ['irregular', 'する→しない、くる→こない', ''],
+      ['ある', 'ある→ない', ''],
+    ] };
+  }
+
+  const i = adjectiveParts('たかい', 'i');
+  const na = adjectiveParts('しずか', 'na');
+  return { title: 'Adjective forms', head: ['Form', 'い-adjective (たかい)', 'な-adjective (しずか)'], rows: [
+    ['negative',          i.neg[0],       na.neg[0]],
+    ['past',              i.past[0],      na.past[0]],
+    ['past negative',     i.pastneg[0],   na.pastneg[0]],
+    ['て-form',           i.te[0],        na.te[0]],
+    ['short negative',    i.shortneg[0],  na.shortneg[0]],
+    ['short affirmative', 'たかい',        na.shortaff[0]],
+    ['いい is special',   'よくない、よかった、よくて', '—'],
+  ] };
+}
+
 /* Every form of a word, in one spelling. */
 function allForms(word, kind) {
   const parts = partsOf(word, kind);
@@ -149,5 +201,5 @@ function cardForms(word, kind) {
   ];
 }
 
-return { TYPES, FORMS, GODAN, kindOf, isConjugable, isIku, isIi, looksLikeRuVerb, verbParts, adjectiveParts, partsOf, allForms, cardForms };
+return { TYPES, FORMS, GODAN, kindOf, isConjugable, isIku, isIi, looksLikeRuVerb, verbParts, adjectiveParts, partsOf, allForms, cardForms, ruleTable };
 })();

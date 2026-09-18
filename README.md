@@ -71,6 +71,9 @@ Notes:
   verbs and adjectives by their vocabulary headings
   (`う-verbs`, `る-verbs`, `Irregular Verbs`, `い-adjectives`, `な-adjectives`),
   so keep those words in the right group.
+- A grammar point may set `ruleTable` to `masu`, `te`, `nai` or `adjective` to
+  show the shared conjugation rule table from `conjugation.js` beneath it — the
+  same table the drill's "Show the rule" button opens.
 - A table cell may be `null` to continue the cell above it, so one label spans
   several rows (Lesson 6's look-alike る-verbs use this).
 - `extraDrillWords` (optional, per lesson) lists verbs the conjugation drill

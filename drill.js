@@ -27,7 +27,7 @@ const ROUND_SIZE = 20;
 
 /* The rules themselves (verb and adjective parts, and the forms each lesson
    introduces) live in conjugation.js, shared with the vocabulary cards. */
-const { TYPES, FORMS, GODAN, kindOf, isConjugable, isIku, isIi, looksLikeRuVerb, partsOf } = window.CONJUGATION;
+const { TYPES, FORMS, GODAN, kindOf, isConjugable, isIku, isIi, looksLikeRuVerb, partsOf, ruleTable } = window.CONJUGATION;
 
 /* ---------- words ---------- */
 
@@ -155,6 +155,9 @@ const dCheckBtn = $('#drCheck');
 const dNextBtn  = $('#drNext');
 const dSkipBtn  = $('#drSkip');
 const dFeedback = $('#drFeedback');
+const dRules    = $('#drRules');
+const dRulesBtn = $('#drRulesBtn');
+const dRepeat   = $('#drRepeat');
 
 let questions = [];
 let qIdx = 0;
@@ -162,6 +165,7 @@ let score = 0;
 let answered = false;
 let scope = 'all';
 let results = [];          // one entry per answered question, for the end-of-round summary
+let showRules = false;     // the rule table stays open across questions once opened
 
 const shuffle = items => {
   for (let i = items.length - 1; i > 0; i--) {
@@ -172,6 +176,31 @@ const shuffle = items => {
 };
 
 /* ---------- rendering ---------- */
+
+/* The rules for the form being asked, shown above the answer box while it's open. */
+function renderRules(form) {
+  dRules.classList.toggle('hidden', !showRules || !form);
+  if (!showRules || !form) return;
+
+  const { title, head, rows } = ruleTable(form.id);
+  const cells = row => row.map(cell => `<td>${esc(cell)}</td>`).join('');
+  dRules.innerHTML =
+    `<div class="dr-rules-title">${esc(title)}</div>
+     <div class="table-wrap">
+       <table class="conj">
+         <tr>${head.map(heading => `<th>${esc(heading)}</th>`).join('')}</tr>
+         ${rows.map(row => `<tr>${cells(row)}</tr>`).join('')}
+       </table>
+     </div>`;
+}
+
+/* With "ask again" ticked, a missed question goes back into the round a few
+   places later, so it isn't over until that one has been answered right. */
+function askAgainLater(question) {
+  if (!dRepeat.checked) return false;
+  questions.splice(Math.min(qIdx + 5, questions.length), 0, question);
+  return true;
+}
 
 function startRound() {
   questions = shuffle(questionsFor(scope)).slice(0, ROUND_SIZE);
@@ -209,6 +238,7 @@ function renderQuestion() {
        </div>`;
     dFeedback.className = 'qz-feedback';
     dFeedback.innerHTML = renderSummary();
+    renderRules(null);
     setStage('done');
     return;
   }
@@ -220,6 +250,7 @@ function renderQuestion() {
      <div class="qz-word">${esc(word.kana)}</div>
      ${word.kanji ? `<div class="qz-kanji">${esc(word.kanji)}</div>` : ''}
      <div class="dr-mean">${esc(word.mean)}</div>`;
+  renderRules(form);
 
   dFeedback.className = 'qz-feedback';
   dFeedback.textContent = '';
@@ -276,12 +307,13 @@ function checkAnswer() {
   const correct = question.accepted.has(foldJapanese(typed));
   if (correct) score++;
   results.push({ question, typed, correct, skipped: false });
+  const again = !correct && askAgainLater(question);
 
   answered = true;
   dFeedback.className = `qz-feedback ${correct ? 'right' : 'wrong'}`;
   dFeedback.innerHTML = correct
     ? `<div class="qz-verdict">✓ Correct</div>${revealAnswer(question)}`
-    : `<div class="qz-verdict">✗ Not quite — you wrote “${esc(typed)}”</div>${revealAnswer(question)}`;
+    : `<div class="qz-verdict">✗ Not quite — you wrote “${esc(typed)}”${again ? " · you'll see it again" : ''}</div>${revealAnswer(question)}`;
 
   dMeta.textContent = metaText();
   setStage('answered');
@@ -292,10 +324,11 @@ function skipQuestion() {
   if (answered) return;
   const question = questions[qIdx];
   results.push({ question, typed: '', correct: false, skipped: true });
+  const again = askAgainLater(question);
 
   answered = true;
   dFeedback.className = 'qz-feedback wrong';
-  dFeedback.innerHTML = `<div class="qz-verdict">Skipped</div>${revealAnswer(question)}`;
+  dFeedback.innerHTML = `<div class="qz-verdict">Skipped${again ? " · you'll see it again" : ''}</div>${revealAnswer(question)}`;
   setStage('answered');
   dInput.focus();
 }
@@ -333,6 +366,12 @@ dCheckBtn.addEventListener('click', checkAnswer);
 dNextBtn.addEventListener('click', nextQuestion);
 dSkipBtn.addEventListener('click', skipQuestion);
 $('#drRestart').addEventListener('click', startRound);
+
+dRulesBtn.addEventListener('click', () => {
+  showRules = !showRules;
+  dRulesBtn.textContent = showRules ? '📖 Hide the rule' : '📖 Show the rule';
+  renderRules(questions[qIdx]?.form);
+});
 
 /* Enter checks, then Enter again moves on. Handled in one place and stopped from
    bubbling — letting the same keypress reach the document handler too would check

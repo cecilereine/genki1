@@ -8,11 +8,13 @@
      lesson.en      → English lesson title
      lesson.vocab   → [{ theme, items: [{ kana, kanji, mean }] }]
      lesson.kanji   → [{ char, on: [reading…], kun: [reading…], meaning, examples }]
-     lesson.grammar → [{ form, tag, def: [paragraph…], ex: [sentence…], table? }]
+     lesson.grammar → [{ form, tag, def: [paragraph…], ex: [sentence…], table?, ruleTable? }]
      lesson.extraDrillWords → [{ kana, kanji, mean, type }]   (optional; drill.js)
 
    `table` is { head: [...], rows: [[...], ...] }; a null cell continues the cell
-   above it, so one label can cover several rows.
+   above it, so one label can cover several rows. `ruleTable` ('masu', 'te', 'nai'
+   or 'adjective') adds the shared rule table from conjugation.js, the same one
+   the drill shows.
    `on` / `kun` are the on'yomi and kun'yomi exactly as the Genki kanji charts list
    them (in hiragana, like the book); either may be empty.
    Grammar text (titles, explanations, tables, example sentences) carries furigana
@@ -135,7 +137,7 @@ function renderTable(table) {
     .map((row, r) => `<tr>${row.map((cell, c) => cellHtml(cell, r, c)).join('')}</tr>`)
     .join('');
 
-  return `<table class="conj"><tr>${head}</tr>${rows}</table>`;
+  return `<div class="table-wrap"><table class="conj"><tr>${head}</tr>${rows}</table></div>`;
 }
 
 /* Furigana, written 漢字[よみ] (the Anki notation). Example sentences show it above
@@ -149,6 +151,17 @@ const yomiHtml        = text => esc(text).replace(FURIGANA, '$1<span class="yomi
 
 /* Grammar cards are searchable by their text as written and by its readings. */
 const bothReadings = text => `${withoutFurigana(text)} ${furiganaOnly(text)}`;
+
+/* The shared conjugation rules for a form (conjugation.js), so the table you
+   drill with is in the lesson too. */
+function renderRuleTable(point) {
+  if (!point.ruleTable) return '';
+  const { title, head, rows } = CONJUGATION.ruleTable(point.ruleTable);
+  return `
+      <div class="lbl">活用<span class="yomi">(かつよう)</span>のルール · Conjugation rules</div>
+      <div class="rule-note">${esc(title)}</div>
+      ${renderTable({ head, rows })}`;
+}
 
 function renderGrammarCard(point) {
   const examples = point.ex.length
@@ -167,6 +180,7 @@ function renderGrammarCard(point) {
 
       ${examples}
       ${point.table ? renderTable(point.table) : ''}
+      ${renderRuleTable(point)}
     </div>`;
 }
 
