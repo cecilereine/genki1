@@ -1,0 +1,629 @@
+{
+  "lesson": "9",
+  "num": "L9",
+  "title": "かぶき",
+  "en": "Kabuki",
+  "vocab": [
+    {
+      "theme": "名詞 · Nouns",
+      "items": [
+        {
+          "kana": "たんご",
+          "kanji": "単語",
+          "mean": "word; vocabulary"
+        },
+        {
+          "kana": "さくぶん",
+          "kanji": "作文",
+          "mean": "essay; composition"
+        },
+        {
+          "kana": "しけん",
+          "kanji": "試験",
+          "mean": "exam"
+        },
+        {
+          "kana": "てがみ",
+          "kanji": "手紙",
+          "mean": "letter"
+        },
+        {
+          "kana": "メール",
+          "kanji": "",
+          "mean": "e-mail"
+        },
+        {
+          "kana": "ギター",
+          "kanji": "",
+          "mean": "guitar"
+        },
+        {
+          "kana": "ピアノ",
+          "kanji": "",
+          "mean": "piano"
+        },
+        {
+          "kana": "コンサート",
+          "kanji": "",
+          "mean": "concert"
+        },
+        {
+          "kana": "チケット",
+          "kanji": "",
+          "mean": "ticket"
+        },
+        {
+          "kana": "かぶき",
+          "kanji": "歌舞伎",
+          "mean": "Kabuki; traditional Japanese theatrical art"
+        },
+        {
+          "kana": "スキー",
+          "kanji": "",
+          "mean": "ski"
+        },
+        {
+          "kana": "おべんとう",
+          "kanji": "お弁当",
+          "mean": "boxed lunch"
+        },
+        {
+          "kana": "ピザ",
+          "kanji": "",
+          "mean": "pizza"
+        },
+        {
+          "kana": "びょうき",
+          "kanji": "病気",
+          "mean": "illness; sickness"
+        },
+        {
+          "kana": "くすり",
+          "kanji": "薬",
+          "mean": "medicine"
+        },
+        {
+          "kana": "いいこ",
+          "kanji": "いい子",
+          "mean": "good child"
+        },
+        {
+          "kana": "いろ",
+          "kanji": "色",
+          "mean": "color"
+        },
+        {
+          "kana": "こんど",
+          "kanji": "今度",
+          "mean": "near future"
+        },
+        {
+          "kana": "せんげつ",
+          "kanji": "先月",
+          "mean": "last month"
+        },
+        {
+          "kana": "きょねん",
+          "kanji": "去年",
+          "mean": "last year"
+        }
+      ]
+    },
+    {
+      "theme": "い-adjectives",
+      "items": [
+        {
+          "kana": "あおい",
+          "kanji": "青い",
+          "mean": "blue"
+        },
+        {
+          "kana": "あかい",
+          "kanji": "赤い",
+          "mean": "red"
+        },
+        {
+          "kana": "くろい",
+          "kanji": "黒い",
+          "mean": "black"
+        },
+        {
+          "kana": "しろい",
+          "kanji": "白い",
+          "mean": "white"
+        },
+        {
+          "kana": "さびしい",
+          "kanji": "寂しい",
+          "mean": "lonely"
+        },
+        {
+          "kana": "わかい",
+          "kanji": "若い",
+          "mean": "young"
+        }
+      ]
+    },
+    {
+      "theme": "な-adjective",
+      "items": [
+        {
+          "kana": "いじわる（な）",
+          "kanji": "意地悪",
+          "mean": "mean-spirited"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "おどる",
+          "kanji": "踊る",
+          "mean": "to dance"
+        },
+        {
+          "kana": "おわる",
+          "kanji": "終わる",
+          "mean": "(something) ends (～が)"
+        },
+        {
+          "kana": "くすりをのむ",
+          "kanji": "薬を飲む",
+          "mean": "to take medicine"
+        },
+        {
+          "kana": "にんきがある",
+          "kanji": "人気がある",
+          "mean": "to be popular"
+        },
+        {
+          "kana": "はじまる",
+          "kanji": "始まる",
+          "mean": "(something) begins (～が)"
+        },
+        {
+          "kana": "ひく",
+          "kanji": "弾く",
+          "mean": "to play (a string instrument or piano) (～を)"
+        },
+        {
+          "kana": "もらう",
+          "kanji": "",
+          "mean": "to get (from somebody) (person に thing を)"
+        }
+      ]
+    },
+    {
+      "theme": "る-verbs",
+      "items": [
+        {
+          "kana": "おぼえる",
+          "kanji": "覚える",
+          "mean": "to memorize (～を)"
+        },
+        {
+          "kana": "でる",
+          "kanji": "出る",
+          "mean": "to appear; to attend (～に); to exit (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "不規則動詞 · Irregular Verbs",
+      "items": [
+        {
+          "kana": "うんどうする",
+          "kanji": "運動する",
+          "mean": "to exercise"
+        },
+        {
+          "kana": "さんぽする",
+          "kanji": "散歩する",
+          "mean": "to take a walk"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "そう",
+          "kanji": "",
+          "mean": "(I think) so"
+        },
+        {
+          "kana": "～から",
+          "kanji": "",
+          "mean": "from..."
+        },
+        {
+          "kana": "～まで",
+          "kanji": "",
+          "mean": "to (a place/a time)"
+        },
+        {
+          "kana": "ぜひ",
+          "kanji": "是非",
+          "mean": "by all means"
+        },
+        {
+          "kana": "ところで",
+          "kanji": "",
+          "mean": "by the way"
+        },
+        {
+          "kana": "みんな",
+          "kanji": "",
+          "mean": "all"
+        },
+        {
+          "kana": "もう",
+          "kanji": "",
+          "mean": "already"
+        }
+      ]
+    },
+    {
+      "theme": "数 · Numbers (small items)",
+      "items": [
+        {
+          "kana": "ひとつ",
+          "kanji": "一つ",
+          "mean": "one"
+        },
+        {
+          "kana": "ふたつ",
+          "kanji": "二つ",
+          "mean": "two"
+        },
+        {
+          "kana": "みっつ",
+          "kanji": "三つ",
+          "mean": "three"
+        },
+        {
+          "kana": "よっつ",
+          "kanji": "四つ",
+          "mean": "four"
+        },
+        {
+          "kana": "いつつ",
+          "kanji": "五つ",
+          "mean": "five"
+        },
+        {
+          "kana": "むっつ",
+          "kanji": "六つ",
+          "mean": "six"
+        },
+        {
+          "kana": "ななつ",
+          "kanji": "七つ",
+          "mean": "seven"
+        },
+        {
+          "kana": "やっつ",
+          "kanji": "八つ",
+          "mean": "eight"
+        },
+        {
+          "kana": "ここのつ",
+          "kanji": "九つ",
+          "mean": "nine"
+        },
+        {
+          "kana": "とお",
+          "kanji": "十",
+          "mean": "ten"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "午",
+      "on": [
+        "ご"
+      ],
+      "kun": [],
+      "meaning": "noon",
+      "examples": "午前(ごぜん) A.M.・午前中(ごぜんちゅう) in the morning・正午(しょうご) noon"
+    },
+    {
+      "char": "後",
+      "on": [
+        "ご"
+      ],
+      "kun": [
+        "あと",
+        "うし"
+      ],
+      "meaning": "after",
+      "examples": "午後(ごご) P.M.・～の後(のあと) after …・後で(あとで) later・後ろ(うしろ) back; behind・最後に(さいごに) lastly"
+    },
+    {
+      "char": "前",
+      "on": [
+        "ぜん"
+      ],
+      "kun": [
+        "まえ"
+      ],
+      "meaning": "before",
+      "examples": "前(まえ) before; front・午前(ごぜん) A.M.・名前(なまえ) name・前売り(まえうり) advance sale"
+    },
+    {
+      "char": "名",
+      "on": [
+        "めい",
+        "みょう"
+      ],
+      "kun": [
+        "な"
+      ],
+      "meaning": "name",
+      "examples": "名前(なまえ) name・有名な(ゆうめいな) famous・名刺(めいし) name card・氏名(しめい) full name・名字(みょうじ) family name"
+    },
+    {
+      "char": "白",
+      "on": [
+        "はく"
+      ],
+      "kun": [
+        "しろ"
+      ],
+      "meaning": "white",
+      "examples": "白い(しろい) white・白紙(はくし) blank sheet・白(しろ) white color・白鳥(はくちょう) swan"
+    },
+    {
+      "char": "雨",
+      "on": [
+        "う"
+      ],
+      "kun": [
+        "あめ"
+      ],
+      "meaning": "rain",
+      "examples": "雨(あめ) rain・雨期(うき) rainy season・梅雨(つゆ) rainy season・大雨(おおあめ) heavy rain"
+    },
+    {
+      "char": "書",
+      "on": [
+        "しょ"
+      ],
+      "kun": [
+        "か"
+      ],
+      "meaning": "to write",
+      "examples": "書く(かく) to write・辞書(じしょ) dictionary・教科書(きょうかしょ) textbook・図書館(としょかん) library"
+    },
+    {
+      "char": "友",
+      "on": [
+        "ゆう"
+      ],
+      "kun": [
+        "とも"
+      ],
+      "meaning": "friend",
+      "examples": "友だち(ともだち) friend・親友(しんゆう) best friend・友人(ゆうじん) friend・友情(ゆうじょう) friendship"
+    },
+    {
+      "char": "間",
+      "on": [
+        "かん",
+        "げん"
+      ],
+      "kun": [
+        "あいだ"
+      ],
+      "meaning": "between",
+      "examples": "時間(じかん) time・二時間(にじかん) two hours・間(あいだ) between・人間(にんげん) human being・一週間(いっしゅうかん) one week"
+    },
+    {
+      "char": "家",
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "いえ"
+      ],
+      "meaning": "house",
+      "examples": "家(いえ) house・家族(かぞく) family・家(うち) house; home・家内(かない) my wife・作家(さっか) author"
+    },
+    {
+      "char": "話",
+      "on": [
+        "わ"
+      ],
+      "kun": [
+        "はな",
+        "はなし"
+      ],
+      "meaning": "to speak",
+      "examples": "話す(はなす) to speak・話(はなし) talk; story・電話(でんわ) telephone・会話(かいわ) conversation"
+    },
+    {
+      "char": "少",
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "すこ",
+        "すく"
+      ],
+      "meaning": "little",
+      "examples": "少し(すこし) a little・少ない(すくない) few・少々(しょうしょう) a little・少女(しょうじょ) girl・少年(しょうねん) boy"
+    },
+    {
+      "char": "古",
+      "on": [
+        "こ"
+      ],
+      "kun": [
+        "ふる"
+      ],
+      "meaning": "old",
+      "examples": "古い(ふるい) old (for things)・中古(ちゅうこ) secondhand・古代(こだい) ancient times"
+    },
+    {
+      "char": "知",
+      "on": [
+        "ち"
+      ],
+      "kun": [
+        "し"
+      ],
+      "meaning": "to know",
+      "examples": "知る(しる) to know・知人(ちじん) acquaintance・知り合い(しりあい) acquaintance"
+    },
+    {
+      "char": "来",
+      "on": [
+        "らい"
+      ],
+      "kun": [
+        "く",
+        "き",
+        "こ"
+      ],
+      "meaning": "to come",
+      "examples": "来る(くる) to come・来ます(きます) to come・来ない(こない) not to come・来週(らいしゅう) next week・来日(らいにち) visit to Japan"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "普通形[ふつうけい]の過去形[かこけい] · Past Tense Short Forms",
+      "tag": "Three rules: て→た, い→かった, でした→だった",
+      "def": [
+        "Eight forms, but only three rules. Verbs: replace the て-form endings て and で with た and だ. い-adjectives: replace the last い with かった — the same as dropping です from the long form. な-adjectives and nouns: replace でした with だった. Negation needs no extra rule: ない conjugates like an い-adjective, so every ない becomes なかった."
+      ],
+      "ex": [
+        "食[た]べる→食[た]べて→食[た]べた、読[よ]む→読[よ]んで→読[よ]んだ",
+        "かわいい→かわいかった、静[しず]か→静[しず]かだった、学生[がくせい]→学生[がくせい]だった",
+        "読[よ]まない→読[よ]まなかった、かわいくない→かわいくなかった"
+      ],
+      "table": {
+        "head": [
+          "Type",
+          "Past affirmative",
+          "Past negative"
+        ],
+        "rows": [
+          [
+            "verb",
+            "食[た]べた／読[よ]んだ",
+            "読[よ]まなかった"
+          ],
+          [
+            "い-adj",
+            "かわいかった",
+            "かわいくなかった"
+          ],
+          [
+            "な-adj",
+            "静[しず]かだった",
+            "静[しず]かじゃなかった"
+          ],
+          [
+            "noun + です",
+            "学生[がくせい]だった",
+            "学生[がくせい]じゃなかった"
+          ]
+        ]
+      },
+      "ruleTable": "ta"
+    },
+    {
+      "form": "普通形[ふつうけい]の過去形[かこけい]とくだけた会話[かいわ] · Past Short Forms in Informal Speech",
+      "tag": "か is dropped, but だった stays",
+      "def": [
+        "Past short forms are used in casual speech just like the present ones, and the question particle か is dropped. Unlike だ in the present tense, だった is not dropped."
+      ],
+      "ex": [
+        "けさ、朝[あさ]ご飯[はん]を食[た]べた？ (Did you have breakfast this morning?)",
+        "うん、食[た]べた。／ううん、食[た]べなかった。 (Yes, I did. / No, I didn't.)",
+        "先週[せんしゅう]は忙[いそが]しかった？ (Were you busy last week?)",
+        "ううん、忙[いそが]しくなかった。ひまだった。 (No, I wasn't. I had free time.)"
+      ]
+    },
+    {
+      "form": "普通形[ふつうけい]の過去形[かこけい]＋と思[おも]います",
+      "tag": "Saying what you think happened",
+      "def": [
+        "Use a past short form with ～と思[おも]います to report what you think took place."
+      ],
+      "ex": [
+        "トムさんが食[た]べたと思[おも]います。 (I think Tom ate it.)",
+        "去年[きょねん]の冬[ふゆ]はあまり寒[さむ]くなかったと思[おも]います。 (I don't think last winter was very cold.)"
+      ]
+    },
+    {
+      "form": "普通形[ふつうけい]の過去形[かこけい]＋と言[い]っていました",
+      "tag": "Reporting what someone said",
+      "def": [
+        "Report what you heard with a short form + と言[い]っていました. Japanese has no \"sequence of tense\": the tense of the original sentence is kept, so something said in the present stays in the present inside the quote."
+      ],
+      "ex": [
+        "ヤスミンさんは、昼[ひる]ご飯[はん]を食[た]べなかったと言[い]っていました。 (Yasmin said that she didn't have lunch.)",
+        "ヤスミンさんは晩[ばん]ご飯[はん]を食[た]べていると言[い]っていました。 (Yasmin said that she was having dinner.)"
+      ]
+    },
+    {
+      "form": "名詞修飾[めいししゅうしょく] · Qualifying Nouns with Verbs and Adjectives",
+      "tag": "The describing phrase goes in front of the noun",
+      "def": [
+        "A verb or adjective phrase simply goes before the noun it describes — there is no word for \"who\" or \"that\". Verb + ている is especially common for describing people by what they are doing."
+      ],
+      "ex": [
+        "おもしろい人[ひと] (a person who is interesting)",
+        "髪[かみ]が長[なが]い人[ひと] (a person who has long hair)",
+        "猫[ねこ]が好[す]きな人[ひと] (a person who likes cats)",
+        "めがねをかけている人[ひと] (a person who wears glasses)",
+        "あそこで本[ほん]を読[よ]んでいる人[ひと]です。 (Yui is the one who is reading a book over there.)",
+        "あそこで写真[しゃしん]を撮[と]っている学生[がくせい]はロバートさんです。 (The student taking pictures over there is Robert.)"
+      ]
+    },
+    {
+      "form": "もう～ました／まだ～ていません",
+      "tag": "\"already …\" and \"not … yet\"",
+      "def": [
+        "～ました covers both \"did\" and \"have done\", so with もう it means you have already done something. For \"not yet\", use まだ with ている in the negative — not the past negative, which only describes a finished time period like きのう."
+      ],
+      "ex": [
+        "もう宿題[しゅくだい]をしました。 (I have already done the homework.)",
+        "まだ宿題[しゅくだい]をしていません。 (I have not done the homework yet.)",
+        "きのう宿題[しゅくだい]をしませんでした。 (I did not do the homework yesterday.)"
+      ],
+      "table": {
+        "head": [
+          "Pattern",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "もう～ました",
+            "have already …"
+          ],
+          [
+            "まだ～ていません",
+            "have not … yet"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "説明[せつめい]＋から、状況[じょうきょう] · Explanation から, Situation",
+      "tag": "Putting the reason first",
+      "def": [
+        "から means \"because\" (Lesson 6). The explanation + から can move to the front of the sentence it explains, which reads more like \"therefore\" than \"because\" in English. Both long and short forms appear before から; the long form is more polite and is common in requests and suggestions."
+      ],
+      "ex": [
+        "あした試験[しけん]があるから、今晩[こんばん]勉強[べんきょう]します。 (I will study this evening, because we will have an exam tomorrow.)",
+        "寒[さむ]かったから、出[で]かけませんでした。 (We didn't go out, because it was cold.)",
+        "かぶきのチケットがありますから、一緒[いっしょ]に見[み]に行[い]きましょう。 (Let's go to see Kabuki. I have tickets.)"
+      ]
+    }
+  ]
+}

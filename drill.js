@@ -108,14 +108,15 @@ function describeScope(scope) {
 /* What each form adds, for the one-line explanation shown under an answer. */
 const RU_ENDINGS = {
   masu: 'ます', masen: 'ません', mashita: 'ました', masendeshita: 'ませんでした',
-  mashou: 'ましょう', te: 'て', teimasu: 'ています', nai: 'ない',
+  mashou: 'ましょう', te: 'て', teimasu: 'ています', nai: 'ない', ta: 'た', nakatta: 'なかった',
 };
 const I_ENDINGS = {
-  neg: 'くないです', past: 'かったです', pastneg: 'くなかったです', adjte: 'くて', shortneg: 'くない',
+  neg: 'くないです', past: 'かったです', pastneg: 'くなかったです', adjte: 'くて',
+  shortneg: 'くない', shortpast: 'かった', shortpastneg: 'くなかった',
 };
 const NA_ENDINGS = {
   neg: 'じゃないです', past: 'でした', pastneg: 'じゃなかったです', adjte: 'で',
-  shortneg: 'じゃない', shortaff: 'だ',
+  shortneg: 'じゃない', shortaff: 'だ', shortpast: 'だった', shortpastneg: 'じゃなかった',
 };
 
 /* One line on why the answer looks the way it does. */
@@ -129,7 +130,16 @@ function ruleNote({ word, form }) {
     if (form.id === 'te' || form.id === 'teimasu') {
       return isIku(plain) ? 'う-verb, but 行く is special: いく → いって' : `${verb}: ${last} → ${te}`;
     }
-    if (form.id === 'nai') return plain === 'ある' ? 'う-verb, but ある is special: ない' : `${verb}: ${last} → ${nai}ない`;
+    if (form.id === 'ta') {
+      const ta = te.replace(/て$/, 'た').replace(/で$/, 'だ');
+      return isIku(plain) ? 'う-verb, but 行く is special: いく → いった' : `${verb}: ${last} → ${ta}`;
+    }
+    if (form.id === 'nai') {
+      return plain.endsWith('ある') ? 'う-verb, but ある is special: ない' : `${verb}: ${last} → ${nai}ない`;
+    }
+    if (form.id === 'nakatta') {
+      return plain.endsWith('ある') ? 'う-verb, but ある is special: なかった' : `${verb}: ${last} → ${nai}なかった`;
+    }
     return `${verb}: ${last} → ${stem}`;
   }
   if (word.type === 'ru') return `る-verb: drop る, add ${RU_ENDINGS[form.id]}`;

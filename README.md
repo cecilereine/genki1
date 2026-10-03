@@ -80,9 +80,10 @@ Notes:
   should include beyond the vocabulary, as `{ kana, kanji, mean, type }` with
   `type` one of `u`, `ru`, `irregular`, `i`, `na`. Lesson 6 uses it for 帰る,
   切る, 知る, 入る and 走る, so they're drilled with the て-form.
-- To add lesson 9, drop in `lessons/lesson9.json`, add it to
+- To add lesson 10, drop in `lessons/lesson10.json`, add it to
   `lessons/manifest.json`, and add the matching `<button>` to `#tabs`,
-  `#fcScope`, `#qzScope` and `#drScope` in `index.html`.
+  `#fcScope`, `#qzScope` and `#drScope` in `index.html`. A lesson that teaches
+  new conjugation forms also needs them in `FORMS` in `conjugation.js`.
 
 ## Cache busting
 

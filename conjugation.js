@@ -42,31 +42,41 @@ const isIku = word => /(いく|行く)$/.test(word);
    る-verbs but conjugate as う-verbs: 帰って, not 帰て. */
 const looksLikeRuVerb = word => /[いきしちにひみりぎじびぴえけせてねへめれげぜでべぺ]る$/.test(word);
 
-/* The three pieces every verb form is built from: the ます-stem, the short
-   negative and the て-form. Only the ending changes, so this works on a kana
+/* The pieces every verb form is built from: the ます-stem, the short negative,
+   the て-form, and the short past forms built from those two (て→た, で→だ,
+   ない→なかった). Only the ending changes, so this works on a kana
    or a kanji spelling alike (来る keeps its kanji in every form). Returns null
    for anything that isn't a dictionary-form verb of its type. */
 function verbParts(word, type) {
   if (type === 'irregular') {
     const base = word.slice(0, -2);
-    if (word.endsWith('する')) return { stem: base + 'し', nai: base + 'しない', te: base + 'して' };
-    if (word.endsWith('くる')) return { stem: base + 'き', nai: base + 'こない', te: base + 'きて' };
-    if (word.endsWith('来る')) return { stem: base + '来', nai: base + '来ない', te: base + '来て' };
+    if (word.endsWith('する')) return pastForms({ stem: base + 'し', nai: base + 'しない', te: base + 'して' });
+    if (word.endsWith('くる')) return pastForms({ stem: base + 'き', nai: base + 'こない', te: base + 'きて' });
+    if (word.endsWith('来る')) return pastForms({ stem: base + '来', nai: base + '来ない', te: base + '来て' });
     return null;
   }
 
   const base = word.slice(0, -1);
-  if (type === 'ru') return word.endsWith('る') ? { stem: base, nai: base + 'ない', te: base + 'て' } : null;
+  if (type === 'ru') return word.endsWith('る') ? pastForms({ stem: base, nai: base + 'ない', te: base + 'て' }) : null;
 
   const endings = GODAN[word.slice(-1)];
   if (!endings) return null;
   const [stem, nai, te] = endings;
-  return {
+  return pastForms({
     stem: base + stem,
-    nai: word === 'ある' ? 'ない' : base + nai + 'ない',
+    // ある has no あら- form, and neither does a phrase ending in it (人気がある → 人気がない)
+    nai: word.endsWith('ある') ? word.slice(0, -2) + 'ない' : base + nai + 'ない',
     te: isIku(word) ? base + 'って' : base + te,
-  };
+  });
 }
+
+/* The short past forms follow from the て-form and the ない-form: 飲んで→飲んだ,
+   飲まない→飲まなかった. */
+const pastForms = parts => ({
+  ...parts,
+  ta: parts.te.replace(/て$/, 'た').replace(/で$/, 'だ'),
+  nakatta: parts.nai.replace(/ない$/, 'なかった'),
+});
 
 /* いい conjugates as よい (よくない, よかった), and so do its compounds
    あたまがいい and かっこいい. かわいい is an ordinary い-adjective. */
@@ -82,9 +92,10 @@ function adjectiveParts(word, type) {
       neg:       [base + 'くないです', base + 'くありません'],
       past:      [base + 'かったです'],
       pastneg:   [base + 'くなかったです', base + 'くありませんでした'],
-      te:        [base + 'くて'],
-      shortneg:  [base + 'くない'],
-      shortpast: [base + 'かった'],
+      te:           [base + 'くて'],
+      shortneg:     [base + 'くない'],
+      shortpast:    [base + 'かった'],
+      shortpastneg: [base + 'くなかった'],
     };
   }
 
@@ -94,8 +105,10 @@ function adjectiveParts(word, type) {
     past:     withEndings('でした'),
     pastneg:  withEndings('じゃなかったです', 'じゃありませんでした', 'ではなかったです', 'ではありませんでした'),
     te:       withEndings('で'),
-    shortneg: withEndings('じゃない', 'ではない'),
-    shortaff: withEndings('だ'),
+    shortneg:     withEndings('じゃない', 'ではない'),
+    shortaff:     withEndings('だ'),
+    shortpast:    withEndings('だった'),
+    shortpastneg: withEndings('じゃなかった', 'ではなかった'),
   };
 }
 
@@ -114,6 +127,8 @@ const FORMS = [
   { id: 'te',           lesson: 6, of: 'verb', label: 'て-form',           hint: '',                        build: v => [v.te] },
   { id: 'teimasu',      lesson: 7, of: 'verb', label: 'ています form',     hint: 'ongoing action or state', build: v => [v.te + 'います'] },
   { id: 'nai',          lesson: 8, of: 'verb', label: 'ない form',         hint: 'short negative',          build: v => [v.nai] },
+  { id: 'ta',           lesson: 9, of: 'verb', label: 'た form',           hint: 'short past',              build: v => [v.ta] },
+  { id: 'nakatta',      lesson: 9, of: 'verb', label: 'なかった form',      hint: 'short past negative',     build: v => [v.nakatta] },
 
   { id: 'neg',      lesson: 5, of: 'adjective', label: 'negative',          hint: 'polite', build: a => a.neg },
   { id: 'past',     lesson: 5, of: 'adjective', label: 'past',              hint: 'polite', build: a => a.past },
@@ -121,6 +136,8 @@ const FORMS = [
   { id: 'adjte',    lesson: 7, of: 'adjective', label: 'て-form',           hint: '',       build: a => a.te },
   { id: 'shortneg', lesson: 8, of: 'adjective', label: 'short negative',    hint: '',       build: a => a.shortneg },
   { id: 'shortaff', lesson: 8, of: 'adjective', label: 'short affirmative', hint: '',       build: a => a.shortaff },  // な-adjectives only
+  { id: 'shortpast',    lesson: 9, of: 'adjective', label: 'short past',          hint: '', build: a => a.shortpast },
+  { id: 'shortpastneg', lesson: 9, of: 'adjective', label: 'short past negative', hint: '', build: a => a.shortpastneg },
 ];
 
 /* The rules behind a form, as a small table the drill can show while you answer.
@@ -139,26 +156,32 @@ function ruleTable(formId) {
     ] };
   }
 
-  if (formId === 'te' || formId === 'teimasu') {
-    const teOf = kana => GODAN[kana][2];
-    return { title: formId === 'te' ? 'て-form' : 'て-form + います', head, rows: [
-      ['う・つ・る', `→${teOf('う')}`, verb('かう', 'u', v => v.te)],
-      ['む・ぶ・ぬ', `→${teOf('む')}`, verb('のむ', 'u', v => v.te)],
-      ['く', `→${teOf('く')}`, verb('かく', 'u', v => v.te)],
-      ['ぐ', `→${teOf('ぐ')}`, verb('およぐ', 'u', v => v.te)],
-      ['す', `→${teOf('す')}`, verb('はなす', 'u', v => v.te)],
-      ['る-verb', 'drop る, add て', verb('たべる', 'ru', v => v.te)],
-      ['irregular', 'する→して、くる→きて', ''],
-      ['exceptions', 'いく→いって; -iru/-eru う-verbs look like る-verbs', verb('かえる', 'u', v => v.te)],
+  if (['te', 'teimasu', 'ta'].includes(formId)) {
+    const past = formId === 'ta';                       // the た form is the て form with て→た, で→だ
+    const pick = past ? (v => v.ta) : (v => v.te);
+    const ending = kana => (past ? pick : (v => v.te))(verbParts(kana === 'う' ? 'かう' : kana === 'む' ? 'のむ' : kana === 'く' ? 'かく' : kana === 'ぐ' ? 'およぐ' : 'はなす', 'u')).slice(-2);
+    const titles = { te: 'て-form', teimasu: 'て-form + います', ta: 'た form — the short past' };
+    return { title: titles[formId], head, rows: [
+      ['う・つ・る', `→${ending('う')}`, verb('かう', 'u', pick)],
+      ['む・ぶ・ぬ', `→${ending('む')}`, verb('のむ', 'u', pick)],
+      ['く', `→${ending('く')}`, verb('かく', 'u', pick)],
+      ['ぐ', `→${ending('ぐ')}`, verb('およぐ', 'u', pick)],
+      ['す', `→${ending('す')}`, verb('はなす', 'u', pick)],
+      ['る-verb', `drop る, add ${past ? 'た' : 'て'}`, verb('たべる', 'ru', pick)],
+      ['irregular', past ? 'する→した、くる→きた' : 'する→して、くる→きて', ''],
+      ['exceptions', `いく→${past ? 'いった' : 'いって'}; -iru/-eru う-verbs look like る-verbs`, verb('かえる', 'u', pick)],
     ] };
   }
 
-  if (formId === 'nai') {
-    return { title: 'ない form — the short negative', head, rows: [
-      ['う-verb', `last kana → あ-row + ない: ${changes(1)}`, verb('のむ', 'u', v => v.nai)],
-      ['る-verb', 'drop る, add ない', verb('たべる', 'ru', v => v.nai)],
-      ['irregular', 'する→しない、くる→こない', ''],
-      ['ある', 'ある→ない', ''],
+  if (formId === 'nai' || formId === 'nakatta') {
+    const past = formId === 'nakatta';                  // ない → なかった
+    const pick = past ? (v => v.nakatta) : (v => v.nai);
+    const tail = past ? 'なかった' : 'ない';
+    return { title: past ? 'なかった form — the short past negative' : 'ない form — the short negative', head, rows: [
+      ['う-verb', `last kana → あ-row + ${tail}: ${changes(1)}`, verb('のむ', 'u', pick)],
+      ['る-verb', `drop る, add ${tail}`, verb('たべる', 'ru', pick)],
+      ['irregular', past ? 'する→しなかった、くる→こなかった' : 'する→しない、くる→こない', ''],
+      ['ある', past ? 'ある→なかった' : 'ある→ない', ''],
     ] };
   }
 
@@ -171,6 +194,8 @@ function ruleTable(formId) {
     ['て-form',           i.te[0],        na.te[0]],
     ['short negative',    i.shortneg[0],  na.shortneg[0]],
     ['short affirmative', 'たかい',        na.shortaff[0]],
+    ['short past',        i.shortpast[0], na.shortpast[0]],
+    ['short past neg.',   i.shortpastneg[0], na.shortpastneg[0]],
     ['いい is special',   'よくない、よかった、よくて', '—'],
   ] };
 }

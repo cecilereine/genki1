@@ -8,7 +8,7 @@
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet.
      app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
-<link rel="stylesheet" href="styles.css?v=17">
+<link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
 <div class="wrap">
@@ -43,6 +43,7 @@
         <button class="tab" data-lesson="6">L6</button>
         <button class="tab" data-lesson="7">L7</button>
         <button class="tab" data-lesson="8">L8</button>
+        <button class="tab" data-lesson="9">L9</button>
       </div>
     </div>
     <div class="hint">Tip: click any vocabulary or kanji card to flip it and hide the answer. Kanji flashcards reveal readings, meaning, and sample words when flipped.</div>
@@ -71,6 +72,7 @@
       <button data-scope="6">6</button>
       <button data-scope="7">7</button>
       <button data-scope="8">8</button>
+      <button data-scope="9">9</button>
     </div>
     <div class="fc-progress"><span id="fcBar"></span></div>
     <div id="fcBody"></div>
@@ -109,6 +111,7 @@
       <button data-scope="6">6</button>
       <button data-scope="7">7</button>
       <button data-scope="8">8</button>
+      <button data-scope="9">9</button>
     </div>
     <div class="fc-progress"><span id="qzBar"></span></div>
 
@@ -145,6 +148,7 @@
       <button data-scope="6">6</button>
       <button data-scope="7">7</button>
       <button data-scope="8">8</button>
+      <button data-scope="9">9</button>
     </div>
     <div class="dr-note" id="drScopeNote"></div>
     <div class="fc-progress"><span id="drBar"></span></div>
@@ -168,10 +172,10 @@
   </div>
 </div>
 
-<script src="conjugation.js?v=17"></script>
-<script src="app.js?v=17"></script>
-<script src="flashcards.js?v=17"></script>
-<script src="quiz.js?v=17"></script>
-<script src="drill.js?v=17"></script>
+<script src="conjugation.js?v=20"></script>
+<script src="app.js?v=20"></script>
+<script src="flashcards.js?v=20"></script>
+<script src="quiz.js?v=20"></script>
+<script src="drill.js?v=20"></script>
 </body>
 </html>

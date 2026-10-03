@@ -235,6 +235,15 @@ const search = $('#search');
 const tabs   = $('#tabs');
 let activeLesson = 'all';
 
+/* An English query matches at the start of a word, so "sit" finds "to sit down"
+   and "situation" but not "university", while a prefix like "univ" still finds it.
+   Japanese has no word boundaries to use, so it stays a plain substring match. */
+function buildMatcher(query) {
+  if (!/^[a-z0-9]/.test(query)) return text => text.includes(query);
+  const pattern = new RegExp(`\\b${escapeRegExp(query)}`);
+  return text => pattern.test(text);
+}
+
 /* Conjugated forms match only from their beginning, so looking up 飲んで or のまない
    finds 飲む while a bare ending like ます or ない doesn't match every verb. */
 const startsAForm = (card, query) =>
@@ -242,6 +251,7 @@ const startsAForm = (card, query) =>
 
 function applyFilters() {
   const query = search.value.trim().toLowerCase();
+  const matchesText = buildMatcher(query);
   let anyVisible = false;
 
   $$('section.lesson').forEach(section => {
@@ -252,7 +262,7 @@ function applyFilters() {
 
     let sectionHasMatch = false;
     $$('[data-search]', section).forEach(card => {
-      const hit = !query || card.dataset.search.includes(query) || startsAForm(card, query);
+      const hit = !query || matchesText(card.dataset.search) || startsAForm(card, query);
       card.classList.toggle('hidden', !hit);
       if (hit) sectionHasMatch = true;
     });
@@ -276,10 +286,17 @@ function applyFilters() {
 
 /* Wraps matches in <mark>, after first unwrapping the previous pass's marks. */
 function highlight(query) {
-  $$('mark').forEach(mark => mark.replaceWith(document.createTextNode(mark.textContent)));
+  $$('mark').forEach(mark => {
+    const parent = mark.parentNode;
+    mark.replaceWith(document.createTextNode(mark.textContent));
+    // merge the pieces back, or the next search can't match across the old split
+    parent.normalize();
+  });
   if (!query) return;
 
-  const pattern = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+  // the same word-start rule as the filter, so only what matched gets highlighted
+  const boundary = /^[a-z0-9]/.test(query) ? '\\b' : '';
+  const pattern = new RegExp(`(${boundary}${escapeRegExp(query)})`, 'gi');
   $$('.vcard:not(.hidden), .kcard:not(.hidden), .gcard:not(.hidden)')
     .forEach(card => markMatches(card, pattern));
 }
