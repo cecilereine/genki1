@@ -234,6 +234,7 @@ async function loadLessons() {
 const search = $('#search');
 const tabs   = $('#tabs');
 const searchNote = $('#searchNote');
+const searchClear = $('#searchClear');
 let activeLesson = 'all';
 
 /* An English query matches at the start of a word, so "sit" finds "to sit down"
@@ -286,6 +287,7 @@ function applyFilters() {
   });
 
   $('#noresult')?.classList.toggle('hidden', anyVisible);
+  searchClear.classList.toggle('hidden', !search.value);
   updateSearchNote(query);
   highlight(query);
 }
@@ -343,6 +345,21 @@ tabs.addEventListener('click', event => {
 });
 
 search.addEventListener('input', applyFilters);
+
+/* The × inside the search box, and Escape while typing in it, both empty the box
+   and hand the cursor back so the next word can be typed straight away. */
+searchClear.addEventListener('click', () => {
+  search.value = '';
+  search.focus();
+  applyFilters();
+});
+
+search.addEventListener('keydown', event => {
+  // Escape mid-conversion belongs to the IME: it cancels the reading being typed.
+  if (isImeKey(event) || event.key !== 'Escape' || !search.value) return;
+  search.value = '';
+  applyFilters();
+});
 
 // In-place flip: click a vocabulary or kanji card to hide/reveal its answer.
 content.addEventListener('click', event => {

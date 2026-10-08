@@ -57,11 +57,20 @@ header.top p.author a:hover{border-bottom-color:#fff}
   position:sticky;top:0;z-index:20;
   background:var(--bg);padding:14px 0 10px;margin-top:14px;
 }
+.search-wrap{position:relative}
 .search{
-  width:100%;padding:13px 16px;font-size:16px;border:1.5px solid var(--line);
+  width:100%;padding:13px 46px 13px 16px;font-size:16px;border:1.5px solid var(--line);
   border-radius:12px;background:#fff;outline:none;box-shadow:var(--shadow);
 }
 .search:focus{border-color:var(--green)}
+/* Clears the search box; hidden until there is something to clear. */
+.search-clear{
+  position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;display:flex;align-items:center;justify-content:center;
+  border:none;border-radius:50%;background:var(--green-soft);color:var(--green-deep);
+  font-size:20px;line-height:1;cursor:pointer;transition:.15s;
+}
+.search-clear:hover{background:var(--green);color:#fff}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;flex:1}
 .tab{

@@ -8,7 +8,7 @@
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet.
      app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
-<link rel="stylesheet" href="styles.css?v=21">
+<link rel="stylesheet" href="styles.css?v=22">
 </head>
 <body>
 <div class="wrap">
@@ -25,7 +25,10 @@
   </aside>
 
   <div class="controls">
-    <input type="text" class="search" id="search" placeholder="🔍  Search Japanese or English… (例: 食べる, birthday, ～ている)">
+    <div class="search-wrap">
+      <input type="text" class="search" id="search" placeholder="🔍  Search Japanese or English… (例: 食べる, birthday, ～ている)">
+      <button type="button" class="search-clear hidden" id="searchClear" aria-label="Clear the search">&times;</button>
+    </div>
     <div class="row">
       <button class="fc-btn" id="fcStart">🎴 Vocabulary Flashcards</button>
       <button class="fc-btn fc-btn-kanji" id="fcStartKanji">🈶 Kanji Flashcards</button>
@@ -173,10 +176,10 @@
   </div>
 </div>
 
-<script src="conjugation.js?v=21"></script>
-<script src="app.js?v=21"></script>
-<script src="flashcards.js?v=21"></script>
-<script src="quiz.js?v=21"></script>
-<script src="drill.js?v=21"></script>
+<script src="conjugation.js?v=22"></script>
+<script src="app.js?v=22"></script>
+<script src="flashcards.js?v=22"></script>
+<script src="quiz.js?v=22"></script>
+<script src="drill.js?v=22"></script>
 </body>
 </html>
