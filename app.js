@@ -233,6 +233,7 @@ async function loadLessons() {
 /* ---------- search & lesson filtering ---------- */
 const search = $('#search');
 const tabs   = $('#tabs');
+const searchNote = $('#searchNote');
 let activeLesson = 'all';
 
 /* An English query matches at the start of a word, so "sit" finds "to sit down"
@@ -249,13 +250,17 @@ function buildMatcher(query) {
 const startsAForm = (card, query) =>
   Boolean(card.dataset.forms) && card.dataset.forms.split(' ').some(form => form.startsWith(query));
 
+/* The lesson tabs choose what to browse, not what to search: a query looks through
+   every lesson, so a word is findable without knowing which lesson taught it. The
+   selected tab takes over again as soon as the search box is empty. */
 function applyFilters() {
   const query = search.value.trim().toLowerCase();
   const matchesText = buildMatcher(query);
+  const scopeToTab = !query && activeLesson !== 'all';
   let anyVisible = false;
 
   $$('section.lesson').forEach(section => {
-    if (activeLesson !== 'all' && section.dataset.lesson !== activeLesson) {
+    if (scopeToTab && section.dataset.lesson !== activeLesson) {
       section.classList.add('hidden');
       return;
     }
@@ -281,7 +286,19 @@ function applyFilters() {
   });
 
   $('#noresult')?.classList.toggle('hidden', anyVisible);
+  updateSearchNote(query);
   highlight(query);
+}
+
+/* Says so while a search reaches past the selected lesson, so the highlighted tab
+   and the results on screen don't look like they disagree. */
+function updateSearchNote(query) {
+  const crossLesson = Boolean(query) && activeLesson !== 'all';
+  if (crossLesson) {
+    searchNote.textContent =
+      `Searching every lesson — clear the search box to see L${activeLesson} on its own again.`;
+  }
+  searchNote.classList.toggle('hidden', !crossLesson);
 }
 
 /* Wraps matches in <mark>, after first unwrapping the previous pass's marks. */

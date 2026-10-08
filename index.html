@@ -8,7 +8,7 @@
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet.
      app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
-<link rel="stylesheet" href="styles.css?v=20">
+<link rel="stylesheet" href="styles.css?v=21">
 </head>
 <body>
 <div class="wrap">
@@ -46,6 +46,7 @@
         <button class="tab" data-lesson="9">L9</button>
       </div>
     </div>
+    <div class="search-note hidden" id="searchNote"></div>
     <div class="hint">Tip: click any vocabulary or kanji card to flip it and hide the answer. Kanji flashcards reveal readings, meaning, and sample words when flipped.</div>
     <noscript><div class="hint" style="color:#b45; font-weight:600">Note: this page loads its lesson data with JavaScript. Please enable it, or open the page in a full browser (Chrome/Safari).</div></noscript>
   </div>
@@ -172,10 +173,10 @@
   </div>
 </div>
 
-<script src="conjugation.js?v=20"></script>
-<script src="app.js?v=20"></script>
-<script src="flashcards.js?v=20"></script>
-<script src="quiz.js?v=20"></script>
-<script src="drill.js?v=20"></script>
+<script src="conjugation.js?v=21"></script>
+<script src="app.js?v=21"></script>
+<script src="flashcards.js?v=21"></script>
+<script src="quiz.js?v=21"></script>
+<script src="drill.js?v=21"></script>
 </body>
 </html>

@@ -23,6 +23,10 @@ flashcard review. Static site — no build step, no dependencies.
 loads first and exposes `window.CONJUGATION`, which `app.js` and `drill.js`
 both use.
 
+The lesson tabs choose what to browse, but the search box ignores them and looks
+through every lesson, so a word can be found without knowing which lesson taught
+it. The selected tab applies again as soon as the search box is empty.
+
 ## Running it locally
 
 The lesson data is fetched at runtime, so `file://` won't work — opening
