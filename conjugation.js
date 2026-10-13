@@ -96,6 +96,7 @@ function adjectiveParts(word, type) {
       shortneg:     [base + 'くない'],
       shortpast:    [base + 'かった'],
       shortpastneg: [base + 'くなかった'],
+      naru:         [base + 'くなる'],
     };
   }
 
@@ -109,6 +110,7 @@ function adjectiveParts(word, type) {
     shortaff:     withEndings('だ'),
     shortpast:    withEndings('だった'),
     shortpastneg: withEndings('じゃなかった', 'ではなかった'),
+    naru:         withEndings('になる'),
   };
 }
 
@@ -138,6 +140,7 @@ const FORMS = [
   { id: 'shortaff', lesson: 8, of: 'adjective', label: 'short affirmative', hint: '',       build: a => a.shortaff },  // な-adjectives only
   { id: 'shortpast',    lesson: 9, of: 'adjective', label: 'short past',          hint: '', build: a => a.shortpast },
   { id: 'shortpastneg', lesson: 9, of: 'adjective', label: 'short past negative', hint: '', build: a => a.shortpastneg },
+  { id: 'naru', lesson: 10, of: 'adjective', label: '〜なる', hint: 'becomes …', build: a => a.naru },
 ];
 
 /* The rules behind a form, as a small table the drill can show while you answer.
@@ -182,6 +185,16 @@ function ruleTable(formId) {
       ['る-verb', `drop る, add ${tail}`, verb('たべる', 'ru', pick)],
       ['irregular', past ? 'する→しなかった、くる→こなかった' : 'する→しない、くる→こない', ''],
       ['ある', past ? 'ある→なかった' : 'ある→ない', ''],
+    ] };
+  }
+
+  if (formId === 'naru') {
+    return { title: 'なる — describing a change', head: ['Type', 'Rule', 'Example'], rows: [
+      ['い-adjective', 'drop い, add くなる', `あたたかい→${adjectiveParts('あたたかい', 'i').naru[0]}`],
+      ['な-adjective', 'add になる', `しずか→${adjectiveParts('しずか', 'na').naru[0]}`],
+      ['noun', 'add になる', 'かいしゃいん→かいしゃいんになる'],
+      ['いい', 'conjugates as よい', `いい→${adjectiveParts('いい', 'i').naru[0]}`],
+      ['common mistake', 'never the な pattern on an い-adjective', '×あたたかいになる'],
     ] };
   }
 

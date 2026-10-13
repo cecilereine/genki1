@@ -1,7 +1,7 @@
 # GENKI I · Grammar & Vocabulary Lookup
 
 A searchable lookup for the vocabulary, kanji and grammar of *Genki: An
-Integrated Course in Elementary Japanese* (3rd edition), lessons 1–8, with
+Integrated Course in Elementary Japanese* (3rd edition), lessons 1–10, with
 flashcard review. Static site — no build step, no dependencies.
 
 ## Layout
@@ -14,7 +14,7 @@ flashcard review. Static site — no build step, no dependencies.
 | `app.js` | Loads the lesson JSON, renders the lists, handles search and lesson filtering |
 | `flashcards.js` | The flashcard overlay (vocabulary and kanji decks, learned-card tracking) |
 | `quiz.js` | The typed-answer vocabulary quiz (answer in English, or in Japanese with kana or kanji) |
-| `drill.js` | The conjugation drill: verb and adjective forms from lessons 3–8, built from the vocabulary lists |
+| `drill.js` | The conjugation drill: verb and adjective forms from lessons 3–10, built from the vocabulary lists |
 | `lessons/manifest.json` | The list of lesson files to load, in display order |
 | `lessons/lessonN.json` | One lesson's vocabulary, kanji and grammar |
 
@@ -75,7 +75,8 @@ Notes:
   verbs and adjectives by their vocabulary headings
   (`う-verbs`, `る-verbs`, `Irregular Verbs`, `い-adjectives`, `な-adjectives`),
   so keep those words in the right group.
-- A grammar point may set `ruleTable` to `masu`, `te`, `nai` or `adjective` to
+- A grammar point may set `ruleTable` to `masu`, `te`, `nai`, `naru` or `adjective`
+  to
   show the shared conjugation rule table from `conjugation.js` beneath it — the
   same table the drill's "Show the rule" button opens.
 - A table cell may be `null` to continue the cell above it, so one label spans
@@ -84,7 +85,7 @@ Notes:
   should include beyond the vocabulary, as `{ kana, kanji, mean, type }` with
   `type` one of `u`, `ru`, `irregular`, `i`, `na`. Lesson 6 uses it for 帰る,
   切る, 知る, 入る and 走る, so they're drilled with the て-form.
-- To add lesson 10, drop in `lessons/lesson10.json`, add it to
+- To add lesson 11, drop in `lessons/lesson11.json`, add it to
   `lessons/manifest.json`, and add the matching `<button>` to `#tabs`,
   `#fcScope`, `#qzScope` and `#drScope` in `index.html`. A lesson that teaches
   new conjugation forms also needs them in `FORMS` in `conjugation.js`.

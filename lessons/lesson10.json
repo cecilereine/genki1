@@ -1,0 +1,670 @@
+{
+  "lesson": "10",
+  "num": "L10",
+  "title": "冬休みの予定",
+  "en": "Winter Vacation Plans",
+  "vocab": [
+    {
+      "theme": "名詞 · Nouns",
+      "items": [
+        {
+          "kana": "きせつ",
+          "kanji": "季節",
+          "mean": "season"
+        },
+        {
+          "kana": "はる",
+          "kanji": "春",
+          "mean": "spring"
+        },
+        {
+          "kana": "あき",
+          "kanji": "秋",
+          "mean": "fall"
+        },
+        {
+          "kana": "ぎゅうにゅう",
+          "kanji": "牛乳",
+          "mean": "milk"
+        },
+        {
+          "kana": "ケーキ",
+          "kanji": "",
+          "mean": "cake"
+        },
+        {
+          "kana": "すし",
+          "kanji": "",
+          "mean": "sushi"
+        },
+        {
+          "kana": "てんぷら",
+          "kanji": "天ぷら",
+          "mean": "tempura"
+        },
+        {
+          "kana": "りんご",
+          "kanji": "",
+          "mean": "apple"
+        },
+        {
+          "kana": "りょうり",
+          "kanji": "料理",
+          "mean": "cuisine"
+        },
+        {
+          "kana": "サッカー",
+          "kanji": "",
+          "mean": "soccer"
+        },
+        {
+          "kana": "やきゅう",
+          "kanji": "野球",
+          "mean": "baseball"
+        },
+        {
+          "kana": "いしゃ",
+          "kanji": "医者",
+          "mean": "doctor"
+        },
+        {
+          "kana": "おかねもち",
+          "kanji": "お金持ち",
+          "mean": "rich person"
+        },
+        {
+          "kana": "ゆうめいじん",
+          "kanji": "有名人",
+          "mean": "celebrity"
+        },
+        {
+          "kana": "かお",
+          "kanji": "顔",
+          "mean": "face"
+        },
+        {
+          "kana": "としうえ",
+          "kanji": "年上",
+          "mean": "someone older"
+        },
+        {
+          "kana": "えき",
+          "kanji": "駅",
+          "mean": "station"
+        },
+        {
+          "kana": "しんかんせん",
+          "kanji": "新幹線",
+          "mean": "Shinkansen; “Bullet Train”"
+        },
+        {
+          "kana": "ちかてつ",
+          "kanji": "地下鉄",
+          "mean": "subway"
+        },
+        {
+          "kana": "ふね",
+          "kanji": "船",
+          "mean": "ship; boat"
+        },
+        {
+          "kana": "ひこうき",
+          "kanji": "飛行機",
+          "mean": "airplane"
+        },
+        {
+          "kana": "よやく",
+          "kanji": "予約",
+          "mean": "reservation"
+        },
+        {
+          "kana": "ツアー",
+          "kanji": "",
+          "mean": "tour"
+        },
+        {
+          "kana": "どうぶつえん",
+          "kanji": "動物園",
+          "mean": "zoo"
+        },
+        {
+          "kana": "じかん",
+          "kanji": "時間",
+          "mean": "time"
+        },
+        {
+          "kana": "せかい",
+          "kanji": "世界",
+          "mean": "world"
+        },
+        {
+          "kana": "びよういん",
+          "kanji": "美容院",
+          "mean": "beauty parlor"
+        },
+        {
+          "kana": "てぶくろ",
+          "kanji": "手袋",
+          "mean": "gloves"
+        },
+        {
+          "kana": "せいかつ",
+          "kanji": "生活",
+          "mean": "life; living"
+        },
+        {
+          "kana": "ことし",
+          "kanji": "今年",
+          "mean": "this year"
+        }
+      ]
+    },
+    {
+      "theme": "い-adjectives",
+      "items": [
+        {
+          "kana": "あたたかい",
+          "kanji": "暖かい",
+          "mean": "warm"
+        },
+        {
+          "kana": "すずしい",
+          "kanji": "涼しい",
+          "mean": "cool (weather — not used for things)"
+        },
+        {
+          "kana": "つめたい",
+          "kanji": "冷たい",
+          "mean": "cold (things/people)"
+        },
+        {
+          "kana": "おそい",
+          "kanji": "遅い",
+          "mean": "slow; late"
+        },
+        {
+          "kana": "ねむい",
+          "kanji": "眠い",
+          "mean": "sleepy"
+        }
+      ]
+    },
+    {
+      "theme": "な-adjective",
+      "items": [
+        {
+          "kana": "かんたん（な）",
+          "kanji": "簡単",
+          "mean": "easy; simple"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "かかる",
+          "kanji": "",
+          "mean": "to take (amount of time/money) (no particle)"
+        },
+        {
+          "kana": "とまる",
+          "kanji": "泊まる",
+          "mean": "to stay (at a hotel, etc.) (～に)"
+        },
+        {
+          "kana": "なる",
+          "kanji": "",
+          "mean": "to become"
+        }
+      ]
+    },
+    {
+      "theme": "る-verbs",
+      "items": [
+        {
+          "kana": "きめる",
+          "kanji": "決める",
+          "mean": "to decide (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "不規則動詞 · Irregular Verbs",
+      "items": [
+        {
+          "kana": "ごろごろする",
+          "kanji": "",
+          "mean": "to chill out at home; to stay home and do nothing"
+        },
+        {
+          "kana": "りょこうする",
+          "kanji": "旅行する",
+          "mean": "to travel"
+        },
+        {
+          "kana": "れんしゅうする",
+          "kanji": "練習する",
+          "mean": "to practice (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "いちばん",
+          "kanji": "一番",
+          "mean": "best"
+        },
+        {
+          "kana": "どっち／どちら",
+          "kanji": "",
+          "mean": "which"
+        },
+        {
+          "kana": "はやく",
+          "kanji": "早く／速く",
+          "mean": "(do something) early; fast"
+        },
+        {
+          "kana": "あるいて",
+          "kanji": "歩いて",
+          "mean": "on foot"
+        },
+        {
+          "kana": "～で",
+          "kanji": "",
+          "mean": "by (means of transportation); with (a tool)"
+        },
+        {
+          "kana": "どうやって",
+          "kanji": "",
+          "mean": "how; by what means"
+        },
+        {
+          "kana": "どのぐらい",
+          "kanji": "",
+          "mean": "how much; how long"
+        },
+        {
+          "kana": "～しゅうかん",
+          "kanji": "～週間",
+          "mean": "for … weeks"
+        },
+        {
+          "kana": "～かげつ",
+          "kanji": "～か月",
+          "mean": "for … months"
+        },
+        {
+          "kana": "～ねん",
+          "kanji": "～年",
+          "mean": "… years"
+        },
+        {
+          "kana": "このごろ",
+          "kanji": "",
+          "mean": "these days"
+        },
+        {
+          "kana": "～ご",
+          "kanji": "～後",
+          "mean": "in … time; after …"
+        },
+        {
+          "kana": "～か～",
+          "kanji": "",
+          "mean": "or"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "住",
+      "on": [
+        "じゅう"
+      ],
+      "kun": [
+        "す"
+      ],
+      "meaning": "to live",
+      "examples": "住む(すむ) to live・住所(じゅうしょ) address・移住する(いじゅうする) to immigrate"
+    },
+    {
+      "char": "正",
+      "on": [
+        "しょう",
+        "せい"
+      ],
+      "kun": [
+        "ただ"
+      ],
+      "meaning": "right",
+      "examples": "お正月(おしょうがつ) New Year・正しい(ただしい) right・正午(しょうご) noon・正解(せいかい) correct answer"
+    },
+    {
+      "char": "年",
+      "on": [
+        "ねん"
+      ],
+      "kun": [
+        "とし"
+      ],
+      "meaning": "year",
+      "examples": "三年生(さんねんせい) third-year student・来年(らいねん) next year・今年(ことし) this year・年(とし) year"
+    },
+    {
+      "char": "売",
+      "on": [
+        "ばい"
+      ],
+      "kun": [
+        "う"
+      ],
+      "meaning": "to sell",
+      "examples": "売る(うる) to sell・売店(ばいてん) stand; stall・自動販売機(じどうはんばいき) vending machine"
+    },
+    {
+      "char": "買",
+      "on": [
+        "ばい"
+      ],
+      "kun": [
+        "か"
+      ],
+      "meaning": "to buy",
+      "examples": "買う(かう) to buy・買い物(かいもの) shopping・売買(ばいばい) selling and buying"
+    },
+    {
+      "char": "町",
+      "on": [
+        "ちょう"
+      ],
+      "kun": [
+        "まち"
+      ],
+      "meaning": "town",
+      "examples": "町(まち) town・北山町(きたやまちょう) Kitayama Town・町長(ちょうちょう) mayor of a town"
+    },
+    {
+      "char": "長",
+      "on": [
+        "ちょう"
+      ],
+      "kun": [
+        "なが"
+      ],
+      "meaning": "long",
+      "examples": "長い(ながい) long・長男(ちょうなん) the eldest son・社長(しゃちょう) company president"
+    },
+    {
+      "char": "道",
+      "on": [
+        "どう"
+      ],
+      "kun": [
+        "みち"
+      ],
+      "meaning": "way",
+      "examples": "道(みち) way; road・書道(しょどう) calligraphy・柔道(じゅうどう) judo・北海道(ほっかいどう) Hokkaido"
+    },
+    {
+      "char": "雪",
+      "on": [
+        "せつ"
+      ],
+      "kun": [
+        "ゆき"
+      ],
+      "meaning": "snow",
+      "examples": "雪(ゆき) snow・新雪(しんせつ) new snow・雪だるま(ゆきだるま) snowman"
+    },
+    {
+      "char": "立",
+      "on": [
+        "りつ"
+      ],
+      "kun": [
+        "た"
+      ],
+      "meaning": "to stand",
+      "examples": "立つ(たつ) to stand・国立大学(こくりつだいがく) national university・私立高校(しりつこうこう) private high school"
+    },
+    {
+      "char": "自",
+      "on": [
+        "じ"
+      ],
+      "kun": [],
+      "meaning": "self",
+      "examples": "自分(じぶん) oneself・自動車(じどうしゃ) automobile・自転車(じてんしゃ) bicycle・自由(じゆう) freedom"
+    },
+    {
+      "char": "夜",
+      "on": [
+        "や"
+      ],
+      "kun": [
+        "よる",
+        "よ"
+      ],
+      "meaning": "night",
+      "examples": "夜(よる) night・夜中(よなか) middle of night・今夜(こんや) tonight・夜明け(よあけ) dawn"
+    },
+    {
+      "char": "朝",
+      "on": [
+        "ちょう"
+      ],
+      "kun": [
+        "あさ"
+      ],
+      "meaning": "morning",
+      "examples": "朝(あさ) morning・今朝(けさ) this morning・朝食(ちょうしょく) breakfast・毎朝(まいあさ) every morning"
+    },
+    {
+      "char": "持",
+      "on": [
+        "じ"
+      ],
+      "kun": [
+        "も"
+      ],
+      "meaning": "to hold",
+      "examples": "持つ(もつ) to carry; to hold・持ってくる(もってくる) to bring・所持品(しょじひん) belongings・気持ち(きもち) feeling"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "比較[ひかく] · Comparison between Two Items",
+      "tag": "Aのほうが Bより + property",
+      "def": [
+        "Japanese adjectives don't change for comparison — there is no “big/bigger”. The frame does the work: Aのほうが Bより ＋ property says A is more … than B. To ask, use AとBと + どちらのほう／どっちのほう が ＋ property. Watch the phrases rather than the word order: in real speech Aのほうが and Bより often come in the reverse order, so listen for ほうが and より to tell which one is being called superior."
+      ],
+      "ex": [
+        "中国[ちゅうごく]のほうが日本[にほん]より大[おお]きいです。 (China is larger than Japan.)",
+        "日本[にほん]とカナダとどちらのほうが寒[さむ]いですか。 (Which is colder, Japan or Canada?)",
+        "カナダのほうが寒[さむ]いです。 (Canada is colder.)"
+      ],
+      "table": {
+        "head": [
+          "Pattern",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "Aのほうが Bより ＋ property",
+            "A is more … than B"
+          ],
+          [
+            "AとBと どちらのほうが ＋ property か",
+            "Between A and B, which is more …?"
+          ],
+          [
+            "どちら／どちらのほう",
+            "polite"
+          ],
+          [
+            "どっち／どっちのほう",
+            "more colloquial"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "三[みっ]つ以上[いじょう]の比較[ひかく] · Comparison among Three or More Items",
+      "tag": "～の中[なか]で ～がいちばん",
+      "def": [
+        "With three or more items, the degree qualifier いちばん (“the most”) does the comparing: ＜AとBとC／category＞の中[なか]で Aがいちばん ＋ property. ほう and どっち are not used here — ask with the normal question words だれ, どれ, 何[なに], いつ, どこ. どれ tends to be used when a list is given, 何[なに] when the group is named collectively."
+      ],
+      "ex": [
+        "カナダとフランスと日本[にほん]の中[なか]で、どこがいちばん寒[さむ]いですか。 (Among Canada, France and Japan, which country has the coldest climate?)",
+        "季節[きせつ]の中[なか]でいつがいちばん好[す]きですか。 (What season do you like best?)",
+        "秋[あき]がいちばん好[す]きです。 (I like fall the most.)",
+        "くだものの中[なか]で、何[なに]がいちばん好[す]きですか。 (What fruit do you like best?)"
+      ]
+    },
+    {
+      "form": "形容詞[けいようし]／名詞[めいし]＋の",
+      "tag": "の = “one”, so you don't repeat the noun",
+      "def": [
+        "When it is clear what you are talking about, replace a repeated noun with の, “one”. い-adjectives and な-adjectives keep the shape they have before a noun (赤[あか]い → 赤[あか]いの, 好[す]きな → 好[す]きなの). の stands for things rather than people — for people use 人[ひと] instead, as in 頭[あたま]がいい人[ひと].",
+        "The same の covers “mine” and “yours”: noun₁の noun₂ can drop the second noun once it is obvious."
+      ],
+      "ex": [
+        "私[わたし]は黒[くろ]いセーターを持[も]っています。赤[あか]いのも持[も]っています。 (I have a black sweater. I have a red one, too.)",
+        "ケーキがたくさんあります。好[す]きなのを持[も]っていってください。 (We have a lot of cakes. Take the ones you like.)",
+        "これはソラさんのかばんですか。—— いいえ、それはメアリーさんのです。 (Is this Sora's bag? — No, that is Mary's.)",
+        "アメリカの車[くるま]のほうが日本[にほん]のより大[おお]きいです。 (American cars are larger than Japanese ones.)"
+      ]
+    },
+    {
+      "form": "～つもりだ",
+      "tag": "Short present ＋ つもりです = I intend to …",
+      "def": [
+        "つもり follows a verb in the present tense short form and says what you are planning to do. Use the ない form for what you are planning not to do. The past, ～つもりでした, describes an intention you had that did not work out."
+      ],
+      "ex": [
+        "週末[しゅうまつ]にたけしさんとテニスをするつもりです。 (I intend to play tennis with Takeshi this weekend.)",
+        "山下[やました]先生[せんせい]はあした大学[だいがく]に来[こ]ないつもりです。 (Professor Yamashita does not intend to come to school tomorrow.)",
+        "お寺[てら]を見[み]に行[い]くつもりでしたが、天気[てんき]がよくなかったから、行[い]きませんでした。 (We were planning to visit a temple, but we didn't, because the weather was not good.)"
+      ],
+      "table": {
+        "head": [
+          "Base",
+          "Example"
+        ],
+        "rows": [
+          [
+            "verb (short, present)",
+            "するつもりです (intend to do)"
+          ],
+          [
+            "verb (ない form)",
+            "来[こ]ないつもりです (intend not to come)"
+          ],
+          [
+            "past",
+            "行[い]くつもりでした (was planning to go)"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "形容詞[けいようし]＋なる · Adjective + なる",
+      "tag": "い → くなる、な-adj・名詞[めいし] → になる",
+      "def": [
+        "なる means “to become” and describes a change. い-adjectives drop the final い and add くなる — the same stem their negative uses. な-adjectives and nouns take になる. The common mistake is using the な-adjective pattern on an い-adjective: ×暖[あたた]かいになる.",
+        "An adjective with なる can describe an absolute change (it has become warm, so it is no longer cold) or a relative one (it has become warmer, but it is still cold). To make the relative reading explicit, add a ～より comparison."
+      ],
+      "ex": [
+        "日本語[にほんご]の勉強[べんきょう]が楽[たの]しくなりました。 (Studying Japanese is fun now.)",
+        "日本語[にほんご]の勉強[べんきょう]が好[す]きになりました。 (I have grown fond of studying Japanese.)",
+        "会社員[かいしゃいん]になる (to become a company employee)",
+        "メアリーさんは前[まえ]より日本語[にほんご]が上手[じょうず]になりました。 (Mary has become better in Japanese than before.)"
+      ],
+      "table": {
+        "head": [
+          "Type",
+          "Change",
+          "Example"
+        ],
+        "rows": [
+          [
+            "い-adjective",
+            "drop い, add くなる",
+            "暖[あたた]かい → 暖[あたた]かくなる (to become warm)"
+          ],
+          [
+            "な-adjective",
+            "add になる",
+            "静[しず]か（な） → 静[しず]かになる (to become quiet)"
+          ],
+          [
+            "noun",
+            "add になる",
+            "会社員[かいしゃいん] → 会社員[かいしゃいん]になる (to become a company employee)"
+          ],
+          [
+            "いい",
+            "conjugates as よい",
+            "いい → よくなる (to get better)"
+          ]
+        ]
+      },
+      "ruleTable": "naru"
+    },
+    {
+      "form": "どこかに／どこにも",
+      "tag": "question word ＋ か = some-, ＋ も = not … any-",
+      "def": [
+        "Lesson 8 had 何[なに]か (something) and 何[なに]も (not anything). Every question word works the same way: question word ＋ か for “some-”, ＋ も with a negative for “not … any-”. は, が and を are dropped with these words, but に, へ and で stay — and they go between the question word and か／も: どこかへ, どこにも, だれにも."
+      ],
+      "ex": [
+        "どこかへ行[い]きましたか。—— いいえ、どこへも行[い]きませんでした。 (Did you go anywhere? — No, I didn't go anywhere.)",
+        "だれかに会[あ]いましたか。—— いいえ、だれにも会[あ]いませんでした。 (Did you see anybody? — No, I didn't see anybody.)",
+        "何[なに]かしましたか。—— いいえ、何[なに]もしませんでした。 (Did you do anything? — No, I didn't do anything.)"
+      ],
+      "table": {
+        "head": [
+          "",
+          "some- (＋か)",
+          "not … any- (＋も)"
+        ],
+        "rows": [
+          [
+            "thing",
+            "何[なに]か",
+            "何[なに]も"
+          ],
+          [
+            "person",
+            "だれか",
+            "だれも"
+          ],
+          [
+            "place",
+            "どこか",
+            "どこも"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "助詞[じょし]の「で」 · で for means",
+      "tag": "By what means, or with what tool",
+      "def": [
+        "で marks the means of transportation you take or the instrument you use. 歩[ある]いて (on foot) is not a noun, so it takes no で. どうやって asks by what means, and どのぐらい asks how long it takes."
+      ],
+      "ex": [
+        "はしでご飯[はん]を食[た]べます。 (We eat our meals with chopsticks.)",
+        "日本語[にほんご]で話[はな]しましょう。 (Let's talk in Japanese.)",
+        "バスで駅[えき]まで行[い]きました。 (I went to the station by bus.)",
+        "テレビで映画[えいが]を見[み]ました。 (I saw a movie on TV.)",
+        "ここから動物園[どうぶつえん]までどのぐらいかかりますか。 (How long does it take from here to the zoo?)"
+      ]
+    }
+  ]
+}

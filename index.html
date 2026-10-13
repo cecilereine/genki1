@@ -8,7 +8,7 @@
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet.
      app.js reuses its own ?v= on the lesson JSON fetches, so one bump covers the data too. -->
-<link rel="stylesheet" href="styles.css?v=22">
+<link rel="stylesheet" href="styles.css?v=23">
 </head>
 <body>
 <div class="wrap">
@@ -47,6 +47,7 @@
         <button class="tab" data-lesson="7">L7</button>
         <button class="tab" data-lesson="8">L8</button>
         <button class="tab" data-lesson="9">L9</button>
+        <button class="tab" data-lesson="10">L10</button>
       </div>
     </div>
     <div class="search-note hidden" id="searchNote"></div>
@@ -56,7 +57,7 @@
 
   <div id="content"></div>
 
-  <footer>Source: Genki: An Integrated Course in Elementary Japanese, 3rd Edition · Lessons 1–8</footer>
+  <footer>Source: Genki: An Integrated Course in Elementary Japanese, 3rd Edition · Lessons 1–10</footer>
 </div>
 
 <!-- Flashcard review overlay -->
@@ -77,6 +78,7 @@
       <button data-scope="7">7</button>
       <button data-scope="8">8</button>
       <button data-scope="9">9</button>
+      <button data-scope="10">10</button>
     </div>
     <div class="fc-progress"><span id="fcBar"></span></div>
     <div id="fcBody"></div>
@@ -116,6 +118,7 @@
       <button data-scope="7">7</button>
       <button data-scope="8">8</button>
       <button data-scope="9">9</button>
+      <button data-scope="10">10</button>
     </div>
     <div class="fc-progress"><span id="qzBar"></span></div>
 
@@ -153,6 +156,7 @@
       <button data-scope="7">7</button>
       <button data-scope="8">8</button>
       <button data-scope="9">9</button>
+      <button data-scope="10">10</button>
     </div>
     <div class="dr-note" id="drScopeNote"></div>
     <div class="fc-progress"><span id="drBar"></span></div>
@@ -176,10 +180,10 @@
   </div>
 </div>
 
-<script src="conjugation.js?v=22"></script>
-<script src="app.js?v=22"></script>
-<script src="flashcards.js?v=22"></script>
-<script src="quiz.js?v=22"></script>
-<script src="drill.js?v=22"></script>
+<script src="conjugation.js?v=23"></script>
+<script src="app.js?v=23"></script>
+<script src="flashcards.js?v=23"></script>
+<script src="quiz.js?v=23"></script>
+<script src="drill.js?v=23"></script>
 </body>
 </html>

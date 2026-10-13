@@ -96,7 +96,9 @@ function questionsFor(scope) {
 }
 
 function describeScope(scope) {
-  if (scope === 'all') return 'Every form from lessons 3–8, with every verb and adjective.';
+  // read from FORMS, so adding a lesson's forms updates the line on its own
+  const lastTaught = Math.max(...FORMS.map(form => form.lesson));
+  if (scope === 'all') return `Every form from lessons 3–${lastTaught}, with every verb and adjective.`;
   const forms = FORMS.filter(form => form.lesson === Number(scope));
   const names = forms.map(form => (form.of === 'adjective' ? `adjective ${form.label}` : form.label));
   const kinds = new Set(forms.map(form => form.of));
@@ -112,11 +114,11 @@ const RU_ENDINGS = {
 };
 const I_ENDINGS = {
   neg: 'くないです', past: 'かったです', pastneg: 'くなかったです', adjte: 'くて',
-  shortneg: 'くない', shortpast: 'かった', shortpastneg: 'くなかった',
+  shortneg: 'くない', shortpast: 'かった', shortpastneg: 'くなかった', naru: 'くなる',
 };
 const NA_ENDINGS = {
   neg: 'じゃないです', past: 'でした', pastneg: 'じゃなかったです', adjte: 'で',
-  shortneg: 'じゃない', shortaff: 'だ', shortpast: 'だった', shortpastneg: 'じゃなかった',
+  shortneg: 'じゃない', shortaff: 'だ', shortpast: 'だった', shortpastneg: 'じゃなかった', naru: 'になる',
 };
 
 /* One line on why the answer looks the way it does. */
