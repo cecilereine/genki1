@@ -1,7 +1,7 @@
 # GENKI I · Grammar & Vocabulary Lookup
 
 A searchable lookup for the vocabulary, kanji and grammar of *Genki: An
-Integrated Course in Elementary Japanese* (3rd edition), lessons 1–10, with
+Integrated Course in Elementary Japanese* (3rd edition), lessons 1–11, with
 flashcard review. Static site — no build step, no dependencies.
 
 ## Layout

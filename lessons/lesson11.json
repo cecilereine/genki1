@@ -1,0 +1,568 @@
+{
+  "lesson": "11",
+  "num": "L11",
+  "title": "休みのあと",
+  "en": "After the Vacation",
+  "vocab": [
+    {
+      "theme": "名詞 · Nouns",
+      "items": [
+        {
+          "kana": "がいこく",
+          "kanji": "外国",
+          "mean": "foreign country"
+        },
+        {
+          "kana": "オーストラリア",
+          "kanji": "",
+          "mean": "Australia"
+        },
+        {
+          "kana": "かわ",
+          "kanji": "川",
+          "mean": "river"
+        },
+        {
+          "kana": "おんせん",
+          "kanji": "温泉",
+          "mean": "hot spring"
+        },
+        {
+          "kana": "つり",
+          "kanji": "",
+          "mean": "fishing"
+        },
+        {
+          "kana": "みずうみ",
+          "kanji": "湖",
+          "mean": "lake"
+        },
+        {
+          "kana": "やま",
+          "kanji": "山",
+          "mean": "mountain"
+        },
+        {
+          "kana": "キャンプ",
+          "kanji": "",
+          "mean": "camp"
+        },
+        {
+          "kana": "ドライブ",
+          "kanji": "",
+          "mean": "drive"
+        },
+        {
+          "kana": "じんじゃ",
+          "kanji": "神社",
+          "mean": "shrine"
+        },
+        {
+          "kana": "びじゅつかん",
+          "kanji": "美術館",
+          "mean": "art museum"
+        },
+        {
+          "kana": "しゃちょう",
+          "kanji": "社長",
+          "mean": "company president"
+        },
+        {
+          "kana": "かしゅ",
+          "kanji": "歌手",
+          "mean": "singer"
+        },
+        {
+          "kana": "ルームメイト",
+          "kanji": "",
+          "mean": "roommate"
+        },
+        {
+          "kana": "ホストファミリー",
+          "kanji": "",
+          "mean": "host family"
+        },
+        {
+          "kana": "しょうらい",
+          "kanji": "将来",
+          "mean": "future"
+        },
+        {
+          "kana": "ゆめ",
+          "kanji": "夢",
+          "mean": "dream"
+        },
+        {
+          "kana": "おまつり",
+          "kanji": "お祭り",
+          "mean": "festival"
+        },
+        {
+          "kana": "おしょうがつ",
+          "kanji": "お正月",
+          "mean": "New Year's"
+        },
+        {
+          "kana": "おかし",
+          "kanji": "お菓子",
+          "mean": "snacks; sweets"
+        },
+        {
+          "kana": "ビール",
+          "kanji": "",
+          "mean": "beer"
+        },
+        {
+          "kana": "おもちゃ",
+          "kanji": "",
+          "mean": "toy"
+        },
+        {
+          "kana": "こんがっき",
+          "kanji": "今学期",
+          "mean": "this semester"
+        },
+        {
+          "kana": "らいがっき",
+          "kanji": "来学期",
+          "mean": "next semester"
+        },
+        {
+          "kana": "じゅぎょう",
+          "kanji": "授業",
+          "mean": "class"
+        },
+        {
+          "kana": "こちら",
+          "kanji": "",
+          "mean": "this person (polite)"
+        }
+      ]
+    },
+    {
+      "theme": "う-verbs",
+      "items": [
+        {
+          "kana": "うそをつく",
+          "kanji": "",
+          "mean": "to tell a lie"
+        },
+        {
+          "kana": "おなかがすく",
+          "kanji": "",
+          "mean": "to become hungry"
+        },
+        {
+          "kana": "かう",
+          "kanji": "飼う",
+          "mean": "to keep a pet (～を)"
+        },
+        {
+          "kana": "サボる",
+          "kanji": "",
+          "mean": "to skip class (～を)"
+        },
+        {
+          "kana": "とる",
+          "kanji": "取る",
+          "mean": "to take a class; get a grade (～を)"
+        },
+        {
+          "kana": "ならう",
+          "kanji": "習う",
+          "mean": "to learn (～を)"
+        },
+        {
+          "kana": "のぼる",
+          "kanji": "登る",
+          "mean": "to climb (place に)"
+        },
+        {
+          "kana": "はしる",
+          "kanji": "走る",
+          "mean": "to run"
+        }
+      ]
+    },
+    {
+      "theme": "る-verbs",
+      "items": [
+        {
+          "kana": "つかれる",
+          "kanji": "疲れる",
+          "mean": "to get tired"
+        },
+        {
+          "kana": "やめる",
+          "kanji": "",
+          "mean": "to quit (～を)"
+        }
+      ]
+    },
+    {
+      "theme": "不規則動詞 · Irregular Verbs",
+      "items": [
+        {
+          "kana": "けんかする",
+          "kanji": "",
+          "mean": "to quarrel"
+        },
+        {
+          "kana": "しょうかいする",
+          "kanji": "紹介する",
+          "mean": "to introduce (person に person を)"
+        },
+        {
+          "kana": "ダイエットする",
+          "kanji": "",
+          "mean": "to go on a diet"
+        },
+        {
+          "kana": "ちこくする",
+          "kanji": "遅刻する",
+          "mean": "to be late (～に)"
+        },
+        {
+          "kana": "りゅうがくする",
+          "kanji": "留学する",
+          "mean": "to study abroad (place に)"
+        }
+      ]
+    },
+    {
+      "theme": "表現 · Adverbs and Other Expressions",
+      "items": [
+        {
+          "kana": "しゅっしん",
+          "kanji": "出身",
+          "mean": "coming from (place の)"
+        },
+        {
+          "kana": "ひさしぶり",
+          "kanji": "久しぶり",
+          "mean": "it has been a long time"
+        },
+        {
+          "kana": "まあまあ",
+          "kanji": "",
+          "mean": "okay; so-so"
+        },
+        {
+          "kana": "もっと",
+          "kanji": "",
+          "mean": "more"
+        },
+        {
+          "kana": "あと",
+          "kanji": "後",
+          "mean": "after (event の)"
+        },
+        {
+          "kana": "そして",
+          "kanji": "",
+          "mean": "and then"
+        },
+        {
+          "kana": "～だけ",
+          "kanji": "",
+          "mean": "only; just"
+        },
+        {
+          "kana": "～てん",
+          "kanji": "～点",
+          "mean": "points"
+        }
+      ]
+    },
+    {
+      "theme": "職業 · Occupations",
+      "items": [
+        {
+          "kana": "さっか",
+          "kanji": "作家",
+          "mean": "writer"
+        },
+        {
+          "kana": "ジャーナリスト",
+          "kanji": "",
+          "mean": "journalist"
+        },
+        {
+          "kana": "けいさつかん",
+          "kanji": "警察官",
+          "mean": "police officer"
+        },
+        {
+          "kana": "しょうぼうし",
+          "kanji": "消防士",
+          "mean": "firefighter"
+        },
+        {
+          "kana": "きょうし",
+          "kanji": "教師",
+          "mean": "schoolteacher"
+        },
+        {
+          "kana": "けんきゅうしゃ",
+          "kanji": "研究者",
+          "mean": "researcher"
+        },
+        {
+          "kana": "うちゅうひこうし",
+          "kanji": "宇宙飛行士",
+          "mean": "astronaut"
+        },
+        {
+          "kana": "スポーツせんしゅ",
+          "kanji": "スポーツ選手",
+          "mean": "athlete"
+        },
+        {
+          "kana": "だいとうりょう",
+          "kanji": "大統領",
+          "mean": "president of a country"
+        },
+        {
+          "kana": "はいゆう",
+          "kanji": "俳優",
+          "mean": "actor"
+        },
+        {
+          "kana": "かんごし",
+          "kanji": "看護師",
+          "mean": "nurse"
+        },
+        {
+          "kana": "シェフ",
+          "kanji": "",
+          "mean": "chef"
+        },
+        {
+          "kana": "まんがか",
+          "kanji": "漫画家",
+          "mean": "cartoonist"
+        }
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "char": "手",
+      "on": [
+        "しゅ"
+      ],
+      "kun": [
+        "て"
+      ],
+      "meaning": "hand",
+      "examples": "手紙(てがみ) letter"
+    },
+    {
+      "char": "紙",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "かみ"
+      ],
+      "meaning": "paper",
+      "examples": "紙(かみ) paper"
+    },
+    {
+      "char": "好",
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "す",
+        "この"
+      ],
+      "meaning": "to like",
+      "examples": "好き(すき) liked"
+    },
+    {
+      "char": "近",
+      "on": [
+        "きん"
+      ],
+      "kun": [
+        "ちか"
+      ],
+      "meaning": "near",
+      "examples": "近い(ちかい) near"
+    },
+    {
+      "char": "明",
+      "on": [
+        "めい",
+        "みょう"
+      ],
+      "kun": [
+        "あか"
+      ],
+      "meaning": "bright",
+      "examples": "明るい(あかるい) bright"
+    },
+    {
+      "char": "病",
+      "on": [
+        "びょう"
+      ],
+      "kun": [],
+      "meaning": "illness",
+      "examples": "病気(びょうき) illness"
+    },
+    {
+      "char": "院",
+      "on": [
+        "いん"
+      ],
+      "kun": [],
+      "meaning": "institution",
+      "examples": "病院(びょういん) hospital"
+    },
+    {
+      "char": "映",
+      "on": [
+        "えい"
+      ],
+      "kun": [
+        "うつ"
+      ],
+      "meaning": "reflect",
+      "examples": "映画(えいが) film"
+    },
+    {
+      "char": "画",
+      "on": [
+        "が",
+        "かく"
+      ],
+      "kun": [],
+      "meaning": "picture",
+      "examples": "映画(えいが) film"
+    },
+    {
+      "char": "歌",
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "うた"
+      ],
+      "meaning": "song",
+      "examples": "歌う(うたう) to sing"
+    },
+    {
+      "char": "市",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "いち"
+      ],
+      "meaning": "city",
+      "examples": "市役所(しやくしょ) city hall"
+    },
+    {
+      "char": "所",
+      "on": [
+        "しょ"
+      ],
+      "kun": [
+        "ところ"
+      ],
+      "meaning": "place",
+      "examples": "所(ところ) place"
+    },
+    {
+      "char": "勉",
+      "on": [
+        "べん"
+      ],
+      "kun": [
+        "つと"
+      ],
+      "meaning": "make effort",
+      "examples": "勉強する(べんきょうする) to study"
+    },
+    {
+      "char": "強",
+      "on": [
+        "きょう",
+        "ごう"
+      ],
+      "kun": [
+        "つよ"
+      ],
+      "meaning": "strong",
+      "examples": "強い(つよい) strong"
+    },
+    {
+      "char": "有",
+      "on": [
+        "ゆう"
+      ],
+      "kun": [
+        "あ"
+      ],
+      "meaning": "exist",
+      "examples": "有名(ゆうめい) famous"
+    },
+    {
+      "char": "旅",
+      "on": [
+        "りょ"
+      ],
+      "kun": [
+        "たび"
+      ],
+      "meaning": "travel",
+      "examples": "旅行(りょこう) travel"
+    }
+  ],
+  "grammar": [
+    {
+      "form": "～たい · Want to do",
+      "tag": "verb stem + たい",
+      "def": [
+        "Attach たい to the verb stem to express your own wish or ask about another person’s wish. It conjugates like an い-adjective; with a transitive verb, the object may take を or が. To report another person’s wish, use a quotation or ～たがっています."
+      ],
+      "ex": [
+        "日本[にほん]に行[い]きたいです。 (I want to go to Japan.)",
+        "映画[えいが]を見[み]たくないです。 (I do not want to see a movie.)"
+      ]
+    },
+    {
+      "form": "～たり～たりする · Examples of activities",
+      "tag": "short past + り",
+      "def": [
+        "Attach り to the short past form of verbs and finish with する to list examples of activities without implying an exhaustive list or a fixed order. Conjugate する for tense."
+      ],
+      "ex": [
+        "週末[しゅうまつ]は本[ほん]を読[よ]んだり、映画[えいが]を見[み]たりしました。 (I read and watched movies, among other things.)"
+      ]
+    },
+    {
+      "form": "～ことがある · Experience",
+      "tag": "short past + ことがある",
+      "def": [
+        "Use the affirmative short past form plus ことがある to say that you have had an experience. ことがありません says you have never had it."
+      ],
+      "ex": [
+        "日本[にほん]に行[い]ったことがあります。 (I have been to Japan.)",
+        "馬[うま]に乗[の]ったことがありません。 (I have never ridden a horse.)"
+      ]
+    },
+    {
+      "form": "Noun A や Noun B · Examples",
+      "tag": "A や B",
+      "def": [
+        "Use や to list examples of nouns, suggesting there may be others."
+      ],
+      "ex": [
+        "京都[きょうと]や奈良[なら]に行[い]きました。 (I visited Kyoto and Nara, among other places.)"
+      ]
+    }
+  ]
+}
